@@ -10,6 +10,8 @@
     "deploy": "npm run build && firebase deploy"
   },
   "dependencies": {
+    "@nivo/core": "^0.87.0",
+    "@nivo/heatmap": "^0.87.0",
     "@radix-ui/react-accordion": "^1.2.1",
     "@radix-ui/react-avatar": "^1.1.1",
     "@radix-ui/react-dialog": "^1.1.2",
@@ -17,6 +19,10 @@
     "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tabs": "^1.1.1",
+    "@visx/group": "^3.3.0",
+    "@visx/shape": "^3.5.0",
+    "apexcharts": "^3.54.1",
+    "chart.js": "^4.4.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "d3": "^7.9.0",
@@ -25,6 +31,8 @@
     "lucide-react": "^0.453.0",
     "next": "^15.0.1",
     "react": "^18.2.0",
+    "react-apexcharts": "^1.4.4",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "recharts": "^2.13.0",
     "tailwind-merge": "^2.5.4",
