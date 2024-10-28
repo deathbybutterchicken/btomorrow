@@ -16,6 +16,7 @@ import { TimelineSection } from "./sections/TimelineSection";
 import { AnalyticsSection } from "./sections/AnalyticsSection";
 import { InvestorsSection } from "./sections/InvestorsSection";
 import { Button } from "./ui/button";
+import StrategyEvolution from "./sections/StrategyEvolution";
 
 const pages = [
   {
@@ -29,14 +30,14 @@ const pages = [
     id: 1,
     title: "Founder",
     subtitle: "Mike Cessario",
-    color: "bg-[#fcf8ec]",
+    color: "bg-[#625B97]",
     textColor: "text-black",
   },
   {
     id: 2,
     title: "Executive Team",
     subtitle: "Leadership",
-    color: "bg-[#FCF4EA]",
+    color: "bg-[#625B97]",
     textColor: "text-white",
   },
   {
@@ -55,10 +56,16 @@ const pages = [
   },
   {
     id: 5,
+    title: "Strategy Evolution",
+    subtitle: "Growth & Partnerships",
+    color: "bg-[#625B97]",
+    textColor: "text-white",
+  },
+  {
+    id: 6,
     title: "Top Investors",
     subtitle: "Our Backers",
-    color:
-      "bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white via-blue-500 to-white",
+    color: "bg-[#625B97]",
     textColor: "text-gray-800",
   },
 ];
@@ -121,6 +128,9 @@ export default function LiquidDeathLanding() {
                   <AnalyticsSection getPageScale={getPageScale} />
                 )}
                 {index === 5 && (
+                  <StrategyEvolution getPageScale={getPageScale} />
+                )}
+                {index === 6 && (
                   <InvestorsSection getPageScale={getPageScale} />
                 )}
               </>

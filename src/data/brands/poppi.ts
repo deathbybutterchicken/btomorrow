@@ -1,149 +1,933 @@
-// src/data/brands/poppi.ts
-import { BrandData } from "@/types/brand";
+export const executives = [
+  {
+    name: "Allison Ellsworth",
+    title: "Co-Founder & Chief Brand Officer",
+    image: "", // No image URL provided in documents
+    education: "Bachelor of Arts (BA), Sociology, University of North Texas",
+    experience: [
+      "Oil and Gas Research (7 years)",
+      "Expert in stakeholder engagement and negotiations",
+      "Worked with landowners, government officials, and Native American reservations",
+      "Co-founded Mother Beverage in 2016 (now Poppi)",
+    ],
+    entrepreneurial: [
+      "Created Poppi's viral TikTok presence with over 2 billion views",
+      "Successfully pitched on Shark Tank securing $400,000 investment",
+      "Led company growth from farmers markets to national retail presence",
+    ],
+    linkedin: "https://www.linkedin.com/in/allison-ellsworth-50528a27/",
+  },
+  {
+    name: "Stephen Ellsworth",
+    title: "Co-Founder & Chief Product Officer",
+    image: "", // No image URL provided in documents
+    education: "BS, Business/Corporate Communications, University of Utah",
+    experience: [
+      "Background in Oil and Gas Industry",
+      "Expertise in project management and GIS mapping",
+      "Co-founded Mother Beverage in 2016 (now Poppi)",
+    ],
+    entrepreneurial: [
+      "Helped develop the original Poppi formula",
+      "Scaled company to over 35,000 retail locations",
+      "Instrumental in product development and operations",
+    ],
+    linkedin: "https://www.linkedin.com/in/stephenellsworth/",
+  },
+  {
+    name: "Chris Hall",
+    title: "Chief Executive Officer",
+    image: "", // No image URL provided in documents
+    education: "BS Business, Marketing and HR, Central Washington University",
+    experience: [
+      "Chief Executive Officer at Talking Rain Beverage Company",
+      "Chief Operating Officer at Talking Rain Beverage Company",
+      "Vice President of Sales at Talking Rain Beverage Company",
+      "Sonar Technician Submarines - 2nd Class Petty Officer at U.S. Navy",
+    ],
+    entrepreneurial: [
+      "Led Sparkling Ice to become #1 selling sparkling water brand in the U.S.",
+      "Launched new beverage brands under Talking Rain portfolio",
+      "Focused on innovation and market expansion",
+    ],
+    linkedin: "https://www.linkedin.com/in/chris-swenson-hall/",
+  },
+  {
+    name: "Joshua Gittler",
+    title: "Chief Financial Officer",
+    image: "", // No image URL provided in documents
+    education: [
+      "BS, Finance and International Business, Penn State University",
+      "MBA, Investment Banking Immersion, Cornell Johnson Graduate School of Management",
+    ],
+    experience: [
+      "CFO at Nutrabolt",
+      "Senior Vice President of Finance & Corporate Development at NBG Home",
+      "Head of Corporate Finance at Amplify Snack Brands",
+      "Senior roles at Jefferies & Company, TD Securities, and J.P. Morgan",
+    ],
+    entrepreneurial: [
+      "Key role in Amplify Snack Brands' $1.6 billion sale to Hershey",
+      "Leading financial strategy and operations at Poppi",
+    ],
+    linkedin: "https://www.linkedin.com/in/joshua-gittler-65638b10/",
+  },
+  {
+    name: "Bridget McCarthy Lasda",
+    title: "Chief Sales Officer",
+    image: "", // No image URL provided in documents
+    education: [
+      "BS, Special Education, Penn State University",
+      "MBA, Emory University - Goizueta Business School",
+    ],
+    experience: [
+      "Chief Customer Officer at King Juice Co./Calypso Lemonade",
+      "Vice President of National Sales at The HEINEKEN Company",
+      "Vice President of Sales at The Coca-Cola Company",
+      "Vice President of Category Commercialization at The Coca-Cola Company",
+    ],
+    entrepreneurial: [
+      "Led Women's Leadership Forum re-launch at HEINEKEN",
+      "Driving significant revenue growth across beverage brands",
+      "Building strong relationships with retailers and enhancing brand visibility",
+    ],
+    linkedin: "https://www.linkedin.com/in/bridgetmlasda/",
+  },
+  {
+    name: "Andy Judd",
+    title: "Chief Marketing Officer",
+    image: "", // No image URL provided in documents
+    education: [
+      "BBA, Marketing, University of Oklahoma - Price College of Business",
+      "MBA, Marketing, University of Oklahoma - Price College of Business",
+    ],
+    experience: [
+      "Chief Commercial Officer at Laird Superfood",
+      "Chief Marketing Officer at Yasso, Inc.",
+      "Chief Marketing Officer at ONE Brands",
+      "Vice President of Marketing at Pinnacle Foods",
+      "Director of Marketing at Saputo Inc.",
+    ],
+    entrepreneurial: [
+      "Board member at Naturally Boulder (2019-2022)",
+      "Developed innovative marketing strategies across multiple brands",
+      "Expertise in influencer marketing and brand building",
+    ],
+    linkedin: "https://www.linkedin.com/in/andy-judd/",
+  },
+];
 
-export const poppiData: BrandData = {
-  id: "poppi",
-  name: "POPPI",
-  tagline: "THE GUT-FRIENDLY SODA",
-  mainImage: "/poppilanding.png",
-  description: "A prebiotic soda brand revolutionizing the beverage industry",
-  founders: [
-    {
-      name: "Allison Ellsworth",
-      title: "Co-Founder & Chief Brand Officer",
-      image:
-        "https://media.licdn.com/dms/image/C5603AQF_nL_mZ52H3A/profile-displayphoto-shrink_200_200/0/1516937333623?e=1699488000&v=beta&t=5jM2kM_PJPFxheV0u3NQi3b-GwG3j2ZUIXf0IEEAuCo",
-      experience: [
-        "Co-Founder of Poppi",
-        "Led brand development and marketing strategies",
-        "Featured on Shark Tank and secured investment from Rohan Oza",
-      ],
-      entrepreneurial: [
-        "Created Poppi from a home recipe to a national brand",
-        "Pioneered the prebiotic soda category",
-      ],
-      linkedin: "https://www.linkedin.com/in/allison-ellsworth-352b54147/",
-    },
-    {
-      name: "Stephen Ellsworth",
-      title: "Co-Founder & CEO",
-      image:
-        "https://media.licdn.com/dms/image/C5603AQH-CIfNfi4Wjg/profile-displayphoto-shrink_200_200/0/1607468010408?e=1699488000&v=beta&t=R7ZB0Al_ZZ_Lg1BJ7aXhjxj0xhj6ChyRKZbI6G8zX8E",
-      experience: [
-        "Co-Founder of Poppi",
-        "Oversees company operations and strategic partnerships",
-        "Background in sales and entrepreneurship",
-      ],
-      entrepreneurial: [
-        "Scaled Poppi from a kitchen experiment to a multi-million dollar company",
-        "Secured partnerships with major retailers nationwide",
-      ],
-      linkedin: "https://www.linkedin.com/in/stephen-ellsworth-95994a43/",
-    },
-  ],
-  executives: [
-    {
-      name: "Graham Goeppert",
-      title: "SVP of eCommerce",
-      image:
-        "https://media.licdn.com/dms/image/v2/C4E03AQFu4Sd6LvKFLw/profile-displayphoto-shrink_400_400/0/1601817103173?e=2147483647&v=beta&t=t86Pu1CedRhvGhJTCaJQBHU3T-f7kLFz2pmF3r2Yk8g",
-      education: "Bachelor of Arts (BA), Communication, UC Santa Barbara",
-      experience: [
-        "Senior Director of eCommerce at ONE Brands",
-        "Director of eCommerce at ONE Brands",
-        "Senior Manager - eCommerce at CytoSport, Inc.",
-        "Sports Marketing at CytoSport, Inc.",
-      ],
-    },
-    // ... other executives data
-  ],
-  timeline: [
-    {
-      date: "2015",
-      eventName: "Initial Phase",
-      category: "Branding & Marketing",
-      eventDescription:
-        "Stephen and Allison Ellsworth founded the brand in Austin, TX, creating a soda from fruit juice, apple cider vinegar, and inulin prebiotics.",
-    },
-    // ... rest of timeline data
-  ],
-  analytics: {
-    capitalRaisedData: [
-      { date: "2018-12", cumulativeRaised: 0.525 },
-      { date: "2019-06", cumulativeRaised: 3.025 },
-      { date: "2020-01", cumulativeRaised: 13.025 },
-      { date: "2021-06", cumulativeRaised: 26.525 },
-      { date: "2022-12-13", cumulativeRaised: 56.525 },
-      { date: "2023-06", cumulativeRaised: 98.425 },
+export const founderData = [
+  {
+    name: "Allison Ellsworth",
+    title: "Co-Founder & Chief Brand Officer",
+    education: "Bachelor of Arts (BA), Sociology, University of North Texas",
+    professionalBackground: [
+      "Seven years experience in oil and gas research",
+      "Extensive experience in negotiation and stakeholder engagement",
+      "Worked with landowners, government officials, city councils, and Native American reservations",
+      "Expert in complex regulatory environments and relationship-building",
     ],
-    valuationData: [
-      {
-        date: "2018-12-16",
-        preMoneyValuation: 1.2,
-        postMoneyValuation: 1.6,
+    socials: {
+      twitter: "https://x.com/drinkpoppi",
+      linkedin: "https://www.linkedin.com/in/allison-ellsworth-50528a27/",
+    },
+    entrepreneurialCareer: {
+      title: "Co-Founder & Chief Brand Officer at Poppi",
+      ventures: {
+        prePoppi: "Developed Mother Beverage in 2016 with husband Stephen",
+        poppiLaunch:
+          "Rebranded from Mother Beverage to Poppi in March 2018 with Shark Tank judge Rohan Oza",
       },
-      // ... rest of valuation data
+    },
+    inspiration: [
+      "Personal health journey while working in oil and gas industry",
+      "Discovered benefits of apple cider vinegar during wellness journey",
+      "Desire to create a healthier soda alternative",
+      "Commitment to health-conscious living",
     ],
-    revenueData: [
-      { year: 2018, revenue: 0.852 },
-      { year: 2019, revenue: 2.8 },
-      { year: 2020, revenue: 8.6 },
-      { year: 2021, revenue: 31 },
-      { year: 2022, revenue: 100 },
-      { year: 2023, revenue: 500 },
-    ],
-    ownershipData: [
-      {
-        date: "2018-12-16",
-        foundersOwnership: 75,
-        investorsOwnership: 25,
-      },
-      // ... rest of ownership data
+    publicPresence: [
+      "Created viral TikTok content generating over 2 billion views",
+      "Appears frequently on podcasts including 'Win the Day' and 'The Kara Goldin Show'",
+      "Successfully pitched on Shark Tank securing $400,000 investment",
+      "Active social media presence driving brand growth",
     ],
   },
-  investors: [
-    {
-      name: "CAVU Consumer Partners",
-      logoUrl:
-        "https://media.licdn.com/dms/image/v2/C4E0BAQFMd0Vu4QPdfg/company-logo_200_200/0/1661386855794/cavu_consumer_partners_logo?e=2147483647&v=beta&t=fGcgfOMsC28xg9UQ2xyps566qA_09iX0AQpfX4lYt1g",
-      totalRoundsParticipated: 4,
-      roundsParticipated: ["Seed Funding", "Series A", "Series A2", "Series B"],
-      leadInvestments: ["Series B"],
-      otherInvestments: ["Once Upon a Farm", "Vital Proteins", "Hippeas"],
-      website: "https://cavuconsumerpartners.com",
-      description:
-        "CAVU Consumer Partners is a venture capital firm focused on investing in and building brands in the consumer products space.",
+  {
+    name: "Stephen Ellsworth",
+    title: "Co-Founder & Chief Product Officer",
+    education: "BS, Business/Corporate Communications, University of Utah",
+    professionalBackground: [
+      "Experience in oil and gas sector",
+      "Background in project management",
+      "Expertise in GIS mapping",
+      "Strong analytical and operational skills",
+    ],
+    socials: {
+      twitter: "https://x.com/drinkpoppi",
+      linkedin: "https://www.linkedin.com/in/stephenellsworth/",
     },
-    // ... other investors
-  ],
-  brandColors: {
-    primary: "black",
-    secondary: "#355070",
-    accent: "#FF6B6B",
-    background: "bg-orange-50",
-    text: "text-black",
+    entrepreneurialCareer: {
+      title: "Co-Founder & Chief Product Officer at Poppi",
+      ventures: {
+        prePoppi: "Co-developed Mother Beverage concept in 2016",
+        poppiLaunch:
+          "Transformed Mother Beverage into Poppi in 2018, focusing on scalable production and distribution",
+      },
+    },
+    inspiration: [
+      "Personal interest in health and wellness",
+      "Discovery of apple cider vinegar benefits",
+      "Vision to create a more palatable health drink",
+      "Commitment to innovative product development",
+    ],
+    publicPresence: [
+      "Frequent podcast appearances discussing entrepreneurial journey",
+      "Speaks about product development and innovation",
+      "Participates in industry events and competitions",
+      "Helps drive social media engagement and brand presence",
+    ],
   },
-  pages: [
-    {
-      id: 0,
-      title: "POPPI",
-      subtitle: "THE GUT-FRIENDLY SODA",
-      color: "black",
-      textColor: "text-[#355070]",
-    },
-    {
-      id: 1,
-      title: "Founder",
-      subtitle: "Mike Cessario",
-      color: "bg-gradient-to-b from-black via-[#001F3F] to-[#355070]",
-      textColor: "text-black",
-    },
-    // ... other pages
-  ],
-};
+];
 
-// src/data/brands/index.ts
-export const brands = {
-  poppi: poppiData,
-  // Add other brands here
+export const distributionStages = [
+  {
+    year: "2018",
+    stage: "Initial Launch",
+    requirements: [
+      "Founder Investment of $100,000",
+      "Friends and family funding of $125,000",
+      "Shark Tank investment of $400,000 for 25% stake",
+      "Basic production capability",
+      "Initial retail relationships",
+      "Rebranding from Mother Beverage to Poppi",
+    ],
+    keyMetrics: [
+      "Revenue: $852,000",
+      "Regional retail partnerships",
+      "Brand visibility metrics",
+      "Initial market response",
+    ],
+    enablers: [
+      "Rohan Oza partnership",
+      "Rebranded packaging design",
+      "Shift from glass bottles to cans",
+      "Initial retail presence",
+    ],
+  },
+  {
+    year: "2019-2020",
+    stage: "Retail Expansion",
+    requirements: [
+      "Seed funding of $2.5 million",
+      "Series A funding of $10 million",
+      "Expanded production capacity",
+      "Distribution partnerships",
+      "E-commerce capabilities",
+    ],
+    keyMetrics: [
+      "2019 Revenue: $2.8 million",
+      "2020 Revenue: $8.6 million",
+      "Online retail performance",
+      "Store penetration metrics",
+    ],
+    enablers: [
+      "Whole Foods partnership",
+      "Amazon marketplace presence",
+      "COVID-19 online retail expansion",
+      "Entry into 1,800 retail locations",
+    ],
+  },
+  {
+    year: "2021",
+    stage: "Major Retail & Social Media Growth",
+    requirements: [
+      "Series A2 funding of $13.5 million",
+      "Influencer marketing infrastructure",
+      "Expanded distribution network",
+      "Social media strategy",
+    ],
+    keyMetrics: [
+      "Revenue: $31 million",
+      "TikTok engagement metrics",
+      "Celebrity investor participation",
+      "Retail expansion to 6,000 locations",
+    ],
+    enablers: [
+      "Celebrity investors including Russell Westbrook",
+      "Viral TikTok presence",
+      "Expanded retail partnerships",
+      "Strong social media strategy",
+    ],
+  },
+  {
+    year: "2022",
+    stage: "National Scale",
+    requirements: [
+      "Series B funding of $25 million",
+      "Nationwide distribution capability",
+      "Multiple SKU management",
+      "Enhanced production capacity",
+    ],
+    keyMetrics: [
+      "Revenue: $100 million",
+      "465% growth rate",
+      "Retail presence in 23,000 stores",
+      "Market penetration metrics",
+    ],
+    enablers: [
+      "Celebrity partnerships",
+      "Expanded flavor portfolio",
+      "Strong retail relationships",
+      "Efficient supply chain",
+    ],
+  },
+  {
+    year: "2023-2024",
+    stage: "Mass Market Dominance",
+    requirements: [
+      "Series C funding of $41.9 million",
+      "Mass market distribution network",
+      "Brand collaboration capabilities",
+      "Enhanced marketing infrastructure",
+    ],
+    keyMetrics: [
+      "Revenue: $500 million",
+      "35,000 retail locations",
+      "Amazon market share: 19%",
+      "Brand awareness metrics",
+    ],
+    enablers: [
+      "Mattel/Barbie collaboration",
+      "Post Malone partnership",
+      "Super Bowl commercial success",
+      "Expansion to major retailers including Walmart, Costco",
+      "Projected growth to 58,000 locations",
+    ],
+  },
+];
+
+export const marketingStages = [
+  {
+    category: "Celebrity Partnerships",
+    requirements: [
+      "Venture capital funding secured",
+      "Strong social media presence",
+      "Content creation infrastructure",
+      "Influencer marketing strategy",
+    ],
+    examples: [
+      {
+        partnership: "Post Malone Collaboration",
+        conditions: [
+          "Custom flavor development capability",
+          "Personal brand alignment story",
+          "Mass market distribution network",
+          "Social media amplification strategy",
+        ],
+      },
+      {
+        partnership: "Jennifer Lopez Partnership",
+        conditions: [
+          "Lifestyle brand positioning",
+          "Health and wellness alignment",
+          "Social media reach",
+          "Content creation capability",
+        ],
+      },
+    ],
+  },
+  {
+    category: "Brand Collaborations",
+    requirements: [
+      "Brand recognition established",
+      "Co-branding expertise",
+      "Product innovation capability",
+      "Retail distribution network",
+    ],
+    examples: [
+      {
+        partnership: "Mattel/Barbie Collaboration",
+        conditions: [
+          "Youth market appeal",
+          "Product development capability",
+          "Creative packaging design",
+          "Cross-promotional strategy",
+        ],
+      },
+      {
+        partnership: "Miami Pickleball Club",
+        conditions: [
+          "Sports and wellness alignment",
+          "Event activation capability",
+          "Celebrity athlete partnerships",
+          "Venue distribution strategy",
+        ],
+      },
+    ],
+  },
+  {
+    category: "Digital & Events",
+    requirements: [
+      "Social media infrastructure",
+      "Event production capability",
+      "Influencer network",
+      "Content creation resources",
+    ],
+    examples: [
+      {
+        partnership: "TikTok Campaigns",
+        conditions: [
+          "Viral content strategy",
+          "Influencer relationships",
+          "Quick response capability",
+          "Social media engagement metrics",
+        ],
+      },
+      {
+        partnership: "Pop-Up Experiences",
+        conditions: [
+          "Poppi Mart event capability",
+          "Celebrity attendance (Paris Hilton)",
+          "Experiential marketing expertise",
+          "Brand activation design",
+          "Super Bowl commercial production",
+        ],
+      },
+    ],
+  },
+  {
+    category: "Influencer Marketing",
+    requirements: [
+      "Social media strategy",
+      "Content creation tools",
+      "Influencer relationship management",
+      "Performance tracking systems",
+    ],
+    examples: [
+      {
+        partnership: "TikTok Creators",
+        conditions: [
+          "Emily Mariko partnership",
+          "Emilie Kiser collaboration",
+          "Mada Graviet engagement",
+          "Organic content strategy",
+        ],
+      },
+      {
+        partnership: "Celebrity Investors",
+        conditions: [
+          "Russell Westbrook involvement",
+          "The Chainsmokers partnership",
+          "Investment structure capability",
+          "Brand ambassador program",
+        ],
+      },
+    ],
+  },
+];
+
+export const topInvestors = [
+  {
+    name: "CAVU Consumer Partners",
+    logoUrl:
+      "https://www.cavuventures.com/wp-content/uploads/2022/03/CAVU-Logo.png",
+    totalRoundsParticipated: 4,
+    roundsParticipated: ["Seed Round", "Series A", "Series A2", "Series B"],
+    leadInvestments: ["Series A", "Series A2"],
+    otherInvestments: ["Vitamin Water", "Vita Coco", "Bai"],
+    website: "https://www.cavuventures.com",
+    description:
+      "CAVU Consumer Partners is a venture capital firm focusing on consumer goods, led by Rohan Oza, known for successful beverage brand investments.",
+  },
+  {
+    name: "Russell Westbrook",
+    logoUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/4/47/Russell_Westbrook_%282021%29.jpg",
+    totalRoundsParticipated: 1,
+    roundsParticipated: ["Series A2"],
+    leadInvestments: [],
+    otherInvestments: ["Why Not? Foundation", "Honor the Gift"],
+    website: null,
+    description:
+      "NBA star Russell Westbrook is a strategic investor in consumer brands and wellness products.",
+  },
+  {
+    name: "The Chainsmokers",
+    logoUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/9/9f/The_Chainsmokers_2019.png",
+    totalRoundsParticipated: 1,
+    roundsParticipated: ["Series A2"],
+    leadInvestments: [],
+    otherInvestments: ["JaJa Tequila", "MANTL", "Step"],
+    website: "https://www.thechainsmokers.com",
+    description:
+      "The Chainsmokers are musicians and entrepreneurs who invest in consumer brands and technology startups.",
+  },
+  {
+    name: "Halsey",
+    logoUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d7/Halsey_2019_by_Glenn_Francis.jpg",
+    totalRoundsParticipated: 1,
+    roundsParticipated: ["Series A2"],
+    leadInvestments: [],
+    otherInvestments: ["about-face beauty"],
+    website: null,
+    description:
+      "Singer-songwriter Halsey invests in consumer brands and wellness products.",
+  },
+  {
+    name: "Kevin Love",
+    logoUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/4/4e/Kevin_Love_2018.jpg",
+    totalRoundsParticipated: 1,
+    roundsParticipated: ["Series A2"],
+    leadInvestments: [],
+    otherInvestments: ["Mental health initiatives", "Wellness brands"],
+    website: null,
+    description:
+      "NBA player Kevin Love is an investor focused on health and wellness brands.",
+  },
+  {
+    name: "Priyanka Chopra",
+    logoUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/3/36/Priyanka_Chopra_at_2023_Met_Gala.png",
+    totalRoundsParticipated: 1,
+    roundsParticipated: ["Series B"],
+    leadInvestments: [],
+    otherInvestments: ["Bumble", "Perfect Moment"],
+    website: null,
+    description:
+      "Actress and entrepreneur Priyanka Chopra invests in consumer brands and technology startups.",
+  },
+  {
+    name: "Joe Jonas",
+    logoUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/8/8e/Joe_Jonas_2019_by_Glenn_Francis.jpg",
+    totalRoundsParticipated: 1,
+    roundsParticipated: ["Series B"],
+    leadInvestments: [],
+    otherInvestments: ["Rob's Backstage Popcorn"],
+    website: null,
+    description:
+      "Singer and entrepreneur Joe Jonas invests in consumer products and beverage companies.",
+  },
+  {
+    name: "Mindy Kaling",
+    logoUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a6/Mindy_Kaling_2022.jpg",
+    totalRoundsParticipated: 1,
+    roundsParticipated: ["Series B"],
+    leadInvestments: [],
+    otherInvestments: ["Propel water", "Startup investments"],
+    website: null,
+    description:
+      "Actress, writer, and producer Mindy Kaling invests in consumer brands and entertainment ventures.",
+  },
+];
+
+export const ownershipData = [
+  { date: "2018-12-16", foundersOwnership: 79.17, investorsOwnership: 20.83 }, // Initial ownership after friends/family round
+  { date: "2018-12-31", foundersOwnership: 75.0, investorsOwnership: 25.0 }, // After Shark Tank deal
+  { date: "2019-06-01", foundersOwnership: 65.0, investorsOwnership: 35.0 }, // After seed round
+  { date: "2020-12-31", foundersOwnership: 55.0, investorsOwnership: 45.0 }, // After Series A
+  { date: "2021-08-30", foundersOwnership: 45.0, investorsOwnership: 55.0 }, // After Series A2
+  { date: "2022-12-13", foundersOwnership: 35.0, investorsOwnership: 65.0 }, // After Series B
+  { date: "2023-12-31", foundersOwnership: 25.0, investorsOwnership: 75.0 }, // After Series C
+];
+
+export const investorParticipation = [
+  {
+    investor: "CAVU Consumer Partners",
+    "Seed Round": 1,
+    "Series A": 1,
+    "Series A2": 1,
+    "Series B": 1,
+    "Series C": 0,
+  },
+  {
+    investor: "Rohan Oza",
+    "Seed Round": 1,
+    "Series A": 1,
+    "Series A2": 1,
+    "Series B": 1,
+    "Series C": 0,
+  },
+  {
+    investor: "Russell Westbrook",
+    "Seed Round": 0,
+    "Series A": 0,
+    "Series A2": 1,
+    "Series B": 0,
+    "Series C": 0,
+  },
+  {
+    investor: "The Chainsmokers",
+    "Seed Round": 0,
+    "Series A": 0,
+    "Series A2": 1,
+    "Series B": 0,
+    "Series C": 0,
+  },
+  {
+    investor: "Access Capital",
+    "Seed Round": 0,
+    "Series A": 0,
+    "Series A2": 0,
+    "Series B": 1,
+    "Series C": 0,
+  },
+  {
+    investor: "Priyanka Chopra",
+    "Seed Round": 0,
+    "Series A": 0,
+    "Series A2": 0,
+    "Series B": 1,
+    "Series C": 0,
+  },
+  {
+    investor: "Joe Jonas",
+    "Seed Round": 0,
+    "Series A": 0,
+    "Series A2": 0,
+    "Series B": 1,
+    "Series C": 0,
+  },
+];
+
+export const valuationData = [
+  { date: "2018-12-16", preMoneyValuation: 0.94, postMoneyValuation: 1.26 }, // Angel round with Rohan Oza
+  { date: "2019-06-01", preMoneyValuation: 2.5, postMoneyValuation: 5.0 }, // Early stage VC
+  { date: "2020-12-31", preMoneyValuation: 8.0, postMoneyValuation: 18.0 }, // Series A
+  { date: "2021-08-30", preMoneyValuation: 25.0, postMoneyValuation: 38.5 }, // Series A2
+  { date: "2022-12-13", preMoneyValuation: 75.0, postMoneyValuation: 100.0 }, // Series B
+  { date: "2023-12-31", preMoneyValuation: 150.0, postMoneyValuation: 173.0 }, // Series C (projected)
+];
+
+export const revenueData = [
+  { year: 2018, revenue: 0.852 },
+  { year: 2019, revenue: 2.8 },
+  { year: 2020, revenue: 8.6 },
+  { year: 2021, revenue: 31.0 },
+  { year: 2022, revenue: 100.0 },
+  { year: 2023, revenue: 500.0 },
+];
+
+export const capitalRaisedData = [
+  { date: "2018-12-16", cumulativeRaised: 0.1 }, // Friends and family round ($125,000)
+  { date: "2018-12-31", cumulativeRaised: 0.5 }, // Shark Tank investment ($400,000)
+  { date: "2019-06-01", cumulativeRaised: 3.0 }, // Early stage VC ($2.5M)
+  { date: "2020-12-31", cumulativeRaised: 13.0 }, // Series A ($10M)
+  { date: "2021-08-30", cumulativeRaised: 26.5 }, // Series A2 ($13.5M)
+  { date: "2022-12-13", cumulativeRaised: 51.5 }, // Series B ($25M)
+  { date: "2023-12-31", cumulativeRaised: 93.4 }, // Series C ($41.9M)
+];
+
+export const revenueWithMilestones = [
+  { year: 2018, revenue: 0.852, milestone: "Farmer's Market to Retail" },
+  { year: 2019, revenue: 2.8, milestone: "Regional Retail Growth" },
+  { year: 2020, revenue: 8.6, milestone: "Major Retail Expansion" },
+  {
+    year: 2021,
+    revenue: 31.0,
+    milestone: "Celebrity Investments & TikTok Viral",
+  },
+  { year: 2022, revenue: 100.0, milestone: "National Scale" },
+  { year: 2023, revenue: 500.0, milestone: "Mass Market Dominance" },
+];
+
+export const businessEvents = [
+  {
+    year: 2018,
+    category: "Launch",
+    event: "Shark Tank Deal & Rebranding to Poppi",
+  },
+  {
+    year: 2018,
+    category: "Product",
+    event: "Launch of Initial Three Flavors",
+  },
+  {
+    year: 2020,
+    category: "Retail",
+    event: "Whole Foods & Major Retail Entry",
+  },
+  {
+    year: 2021,
+    category: "Marketing",
+    event: "Viral TikTok Growth (2B+ Views)",
+  },
+  {
+    year: 2021,
+    category: "Investment",
+    event: "Celebrity Investment Round (Westbrook, Chainsmokers)",
+  },
+  {
+    year: 2022,
+    category: "Expansion",
+    event: "Expansion to 23,000 Retail Locations",
+  },
+  {
+    year: 2023,
+    category: "Partnership",
+    event: "Mattel/Barbie Collaboration Launch",
+  },
+  {
+    year: 2023,
+    category: "Marketing",
+    event: "Post Malone Custom Flavor Release",
+  },
+  {
+    year: 2024,
+    category: "Retail",
+    event: "Expansion to 58,000 Locations Projected",
+  },
+  {
+    year: 2024,
+    category: "Marketing",
+    event: "Super Bowl Commercial Success",
+  },
+  {
+    year: 2024,
+    category: "Innovation",
+    event: "Launch of New Iced Tea Flavors",
+  },
+];
+
+export const timelineData = [
+  {
+    date: "2015",
+    eventName: "Initial Phase",
+    category: "Branding & Marketing",
+    eventDescription:
+      "Stephen and Allison Ellsworth founded the brand in Austin, TX, creating a soda from fruit juice, apple cider vinegar, and inulin prebiotics, sold at Dallas farmer's markets under the name 'Mother Beverages.'",
+  },
+  {
+    date: "2018",
+    eventName: "Founder Investment of $100,000",
+    category: "Funding",
+    eventDescription:
+      "Raised $125,000 from friends and family and invested $100,000 into launching the brand, seeking further help from Shark Tank investors.",
+    additionalInfo: {
+      dealInfo: {
+        dealTypes: "Capitalization",
+        dealDate: "2018",
+        dealStatus: "Completed",
+        financingSource: "Individual",
+      },
+      companyInfo: {
+        financingStatus: "Corporation",
+        businessStatus: "Startup",
+        ceoLeadMGT: "Allison Ellsworth",
+        site: "Dallas, TX",
+      },
+      totalCapital: {
+        dealAmount: "£0.10M",
+        preMoneyValuation: "£0.38M",
+        postValuation: "£0.48M",
+        totalInvestedCapital: "£0.10M",
+        raisedToDate: "£0.10M",
+      },
+      equity: {
+        percentAcquired: "20.83%",
+        totalInvestedEquity: "£0.10M",
+      },
+      dealSynopsis:
+        "The company was capitalized with $125,000 in funding from friends and family on an undisclosed date.",
+    },
+  },
+  {
+    date: "2018-12-16",
+    eventName: "Shark Tank Appearance",
+    category: "Funding",
+    eventDescription:
+      "Secured $400,000 in exchange for a 25% stake from Rohan Oza, leading to a surge in online traffic and product sell-out.",
+    additionalInfo: {
+      dealInfo: {
+        dealTypes: "Angel (individual)",
+        dealDate: "16-Dec-2018",
+        dealStatus: "Completed",
+        financingSource: "Individual",
+      },
+      companyInfo: {
+        financingStatus: "Venture Capital-Backed",
+        businessStatus: "Generating Revenue",
+        ceoLeadMGT: "Allison Ellsworth",
+        site: "Dallas, TX",
+      },
+      totalCapital: {
+        dealAmount: "£0.31M",
+        preMoneyValuation: "£0.94M",
+        postValuation: "£1.26M",
+        totalInvestedCapital: "£0.31M",
+        raisedToDate: "£0.41M",
+      },
+      equity: {
+        vcRound: "Angel",
+        percentAcquired: "25.00%",
+        totalInvestedEquity: "£0.31M",
+      },
+      dealSynopsis:
+        "The company raised $400,000 of angel funding from Rohan Oza on December 16, 2018, putting the company's pre-money valuation at $1.2 million.",
+      investors: [
+        {
+          name: "Rohan Oza",
+          status: "New Investor",
+          leadSole: "No",
+          comments: "Lead Partner: Rohan Oza, Form of Payment: Cash",
+        },
+      ],
+    },
+  },
+  {
+    date: "2018",
+    eventName: "Launch of Poppi",
+    category: "Branding & Marketing",
+    eventDescription:
+      "Rebranded from 'Mother Beverages' to 'Poppi' with guidance from Rohan Oza and CAVU Consumer Partners. Launched with three flavors—Ginger Lemon, Strawberry Vanilla, and Cinnamon Cola—using vibrant branding and shifting to vibrant cans with bold fruit imagery.",
+  },
+  {
+    date: "2018",
+    eventName: "Sales of $852,000",
+    category: "Revenue",
+    eventDescription:
+      "Generated $852,000 in sales by focusing on regional retail partnerships.",
+  },
+  {
+    date: "2019-06-01",
+    eventName: "Seed Funding of $2.5 million",
+    category: "Funding",
+    eventDescription:
+      "Raised $2.5 million to expand product lines and enter new retail markets.",
+    additionalInfo: {
+      dealInfo: {
+        dealTypes: "Early Stage VC",
+        dealDate: "01-Jun-2019",
+        dealStatus: "Completed",
+        financingSource: "Venture Capital",
+      },
+      companyInfo: {
+        financingStatus: "Venture Capital-Backed",
+        businessStatus: "Generating Revenue",
+        ceoLeadMGT: "Stephen Ellsworth",
+        site: "Dallas, TX",
+      },
+      equity: {
+        vcRound: "1st Round",
+      },
+      dealSynopsis:
+        "The company raised an undisclosed amount of venture funding from CAVU Consumer Partners, Plus Capital, and Rocana Ventures in June 2019.",
+      investors: [
+        {
+          name: "CAVU Consumer Partners",
+          status: "New Investor",
+          leadSole: "No",
+          comments: "Lead Partner: Rohan Oza, Form of Payment: Cash",
+        },
+        {
+          name: "Plus Capital",
+          status: "New Investor",
+          leadSole: "No",
+          comments: "Form of Payment: Cash",
+        },
+        {
+          name: "Rocana Ventures Partners",
+          status: "New Investor",
+          leadSole: "No",
+          comments: "Form of Payment: Cash",
+        },
+      ],
+    },
+  },
+  {
+    date: "2019",
+    eventName: "Sales Growth",
+    category: "Revenue",
+    eventDescription:
+      "Increased sales to $2.8 million due to broader distribution and strategic pop-up events.",
+  },
+  {
+    date: "2020",
+    eventName: "Series A & Retail Expansion",
+    category: "Funding",
+    eventDescription:
+      "Secured $10 million in Series A funding and expanded to over 1,800 retail locations, including Whole Foods, Wegmans, and Sprouts. Revenue grew to $8.6 million.",
+    additionalInfo: {
+      dealInfo: {
+        dealTypes: "Series A",
+        dealStatus: "Completed",
+        financingSource: "Venture Capital",
+      },
+      investors: [
+        {
+          name: "CAVU Consumer Partners",
+          status: "Follow-On Investor",
+          leadSole: "Yes",
+          comments: "Lead Partner: Rohan Oza",
+        },
+      ],
+    },
+  },
+  {
+    date: "2021",
+    eventName: "Series A2 & Viral Growth",
+    category: "Funding",
+    eventDescription:
+      "Raised $13.5 million with celebrity investors including Russell Westbrook and The Chainsmokers. Achieved over 2 billion TikTok views and expanded to 6,000 retail locations. Revenue reached $31 million.",
+    additionalInfo: {
+      investors: [
+        "Russell Westbrook",
+        "The Chainsmokers",
+        "Kygo",
+        "Halsey",
+        "Kevin Love",
+        "Ellie Goulding",
+        "Olivia Munn",
+        "Nicole Scherzinger",
+      ],
+    },
+  },
+  {
+    date: "2022",
+    eventName: "Series B & National Scale",
+    category: "Funding",
+    eventDescription:
+      "Secured $25 million in Series B funding with support from Priyanka Chopra, Joe Jonas, and Mindy Kaling. Reached $100 million in revenue and expanded to 23,000 stores.",
+  },
+  {
+    date: "2023",
+    eventName: "Major Brand Partnerships",
+    category: "Branding & Marketing",
+    eventDescription:
+      "Launched Barbie-themed flavor with Mattel and partnered with Post Malone for custom Wild Berry can. Achieved $500 million in sales and expanded to 35,000 retail locations.",
+    additionalInfo: {
+      image: {
+        url: "https://www.helloscholar.com//images/pics/600_mkXDPw_final_correct.jpg",
+        alt: "Barbie Poppi Collaboration",
+        caption:
+          "Mattel and Poppi collaborated to launch a Barbie-themed flavor.",
+      },
+    },
+  },
+  {
+    date: "2024",
+    eventName: "Market Leadership",
+    category: "Retail & Distribution",
+    eventDescription:
+      "Became #1 selling soft drink on Amazon with 19% market share. Super Bowl commercial reached 29.1 million viewers. Hosted successful Poppi Mart featuring Paris Hilton. Projected expansion to 58,000 locations.",
+    additionalInfo: {
+      image: {
+        url: "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit,w_1024,h_1024/images/panoramic/poppi-paris-hilton-inc_537052_xot1cl.jpg",
+        alt: "Poppi Mart Event",
+        caption: "Poppi hosted a pop-up event in Los Angeles.",
+      },
+    },
+  },
+];
+
+export const HEADINGS = {
+  line1: "A SODA",
+  line2: "FOR YOUR GUT",
+  mainHeading: "POPPI",
+  imageAlt: "Poppi Landing Page Url",
 };

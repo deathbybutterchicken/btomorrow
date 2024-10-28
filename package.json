@@ -10,8 +10,10 @@
     "deploy": "npm run build && firebase deploy"
   },
   "dependencies": {
+    "@nivo/bar": "^0.87.0",
     "@nivo/core": "^0.87.0",
     "@nivo/heatmap": "^0.87.0",
+    "@nivo/line": "^0.87.0",
     "@radix-ui/react-accordion": "^1.2.1",
     "@radix-ui/react-avatar": "^1.1.1",
     "@radix-ui/react-dialog": "^1.1.2",
@@ -34,17 +36,21 @@
     "react-apexcharts": "^1.4.4",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
+    "react-is": "^18.3.1",
     "recharts": "^2.13.0",
     "tailwind-merge": "^2.5.4",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "victory": "^37.3.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
+    "@types/react-chartjs-2": "^2.0.2",
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^8.11.0",
     "@typescript-eslint/parser": "^8.11.0",
     "autoprefixer": "^10.4.20",
+    "babel-plugin-recharts": "^2.0.0",
     "eslint": "^8",
     "eslint-config-next": "15.0.0",
     "postcss": "^8.4.47",

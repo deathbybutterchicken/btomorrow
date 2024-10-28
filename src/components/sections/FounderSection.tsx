@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { Linkedin } from "lucide-react";
+import { founderData } from "@/data/brands/liquiddeath";
 
 interface FounderSectionProps {
   getPageScale: (index: number) => number;
@@ -12,7 +13,7 @@ export function FounderSection({ getPageScale }: FounderSectionProps) {
   return (
     <motion.div
       className="relative w-full h-screen overflow-y-auto bg-[#fcf8ec]"
-      animate={{ scale: getPageScale(0) }}
+      // animate={{ scale: getPageScale(0) }}
     >
       <div className="container mx-auto px-4 py-12 min-h-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl w-full">
@@ -49,15 +50,19 @@ export function FounderSection({ getPageScale }: FounderSectionProps) {
                         strokeLinejoin="round"
                       />
                     </svg>
-                    <span className="text-2xl font-bold">Mike Cessario</span>
+                    <span className="text-2xl font-bold">
+                      {founderData.name}
+                    </span>
                   </div>
-                  <h2 className="text-4xl font-bold mb-6">Founder</h2>
+                  <h2 className="text-4xl font-bold mb-6">
+                    {founderData.title}
+                  </h2>
                   <div className="mb-6">
                     <h3 className="text-2xl font-bold mb-4">Education</h3>
                     <p className="text-lg leading-relaxed mb-2">
-                      <span className="font-semibold">Bachelor Degree:</span>{" "}
-                      Communication and Rhetoric from the University of
-                      Pittsburgh.
+                      <span className="font-semibold">
+                        {founderData.education}
+                      </span>
                     </p>
                   </div>
                   <div className="mb-6">
@@ -65,23 +70,16 @@ export function FounderSection({ getPageScale }: FounderSectionProps) {
                       Professional Background
                     </h3>
                     <ul className="list-disc list-inside text-lg leading-relaxed mb-2">
-                      <li>
-                        Served as Creative Director at various advertising
-                        agencies, developing campaigns for high-profile brands.
-                      </li>
-                      <li>
-                        Produced the &quot;Save the Bros&quot; campaign for
-                        Organic Valley.
-                      </li>
-                      <li>Former Creative Director at Netflix.</li>
-                      <li>Played in punk rock and heavy metal bands.</li>
+                      {founderData.professionalBackground.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
                     </ul>
                   </div>
                   <div className="mb-6">
                     <h3 className="text-2xl font-bold mb-4">Socials</h3>
                     <div className="flex space-x-4">
                       <Link
-                        href="https://x.com/cessario?lang=en"
+                        href={founderData.socials.twitter}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-gray-300"
@@ -99,13 +97,13 @@ export function FounderSection({ getPageScale }: FounderSectionProps) {
                         <span className="sr-only">Twitter</span>
                       </Link>
                       <Link
-                        href="https://www.linkedin.com/in/mikecessario/"
+                        href={founderData.socials.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-gray-300"
                       >
                         <Linkedin className="w-6 h-6" />
-                        <span className="sr-only">LinkedIn</span>
+                        <span className="sr-only">LslinkedIn</span>
                       </Link>
                     </div>
                   </div>
@@ -156,7 +154,7 @@ export function FounderSection({ getPageScale }: FounderSectionProps) {
                 </span>
               </div>
               <h2 className="text-xl font-bold mb-4">
-                Founder and CEO of Liquid Death
+                {founderData.entrepreneurialCareer.title}
               </h2>
               <h3 className="text-lg font-semibold mb-2">
                 Entrepreneurial Ventures
@@ -164,7 +162,7 @@ export function FounderSection({ getPageScale }: FounderSectionProps) {
               <div className="mb-4">
                 <h4 className="text-lg font-semibold mb-1">Pre-Liquid Death</h4>
                 <p className="text-lg leading-relaxed">
-                  Explored creating a brandy brand called Western Grace.
+                  {founderData.entrepreneurialCareer.ventures.preLiquidDeath}
                 </p>
               </div>
               <div className="mb-4">
@@ -172,8 +170,7 @@ export function FounderSection({ getPageScale }: FounderSectionProps) {
                   Liquid Death Launch
                 </h4>
                 <p className="text-lg leading-relaxed">
-                  Founded in 2017 with three partners: J.R. Riggins, Pat Cook (a
-                  bartender), and Will Carsola (an artist).
+                  {founderData.entrepreneurialCareer.ventures.liquidDeathLaunch}
                 </p>
               </div>
             </CardContent>
@@ -202,25 +199,17 @@ export function FounderSection({ getPageScale }: FounderSectionProps) {
               <div className="mb-6">
                 <h3 className="text-lg font-semibold mb-2">Inspiration</h3>
                 <ul className="list-disc list-inside text-lg leading-relaxed">
-                  <li>
-                    Inspired by punk rock culture and the Vans Warped Tour music
-                    festival.
-                  </li>
-                  <li>Background in graphic design and advertising.</li>
-                  <li>
-                    Influenced by Mad Magazine and the DIY ethos of punk
-                    culture.
-                  </li>
+                  {founderData.inspiration.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
                 </ul>
               </div>
               <div className="mb-6">
                 <h3 className="text-lg font-semibold mb-2">Public Presence</h3>
                 <ul className="list-disc list-inside text-lg leading-relaxed">
-                  <li>Active on social media platforms.</li>
-                  <li>
-                    Featured in interviews and articles in various publications.
-                  </li>
-                  <li>Speaks at events about entrepreneurship and branding.</li>
+                  {founderData.publicPresence.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
                 </ul>
               </div>
             </CardContent>

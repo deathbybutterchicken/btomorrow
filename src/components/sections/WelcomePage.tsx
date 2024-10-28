@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { HEADINGS } from "@/data/brands/liquiddeath";
 
 interface WelcomePageProps {
   getPageScale: (index: number) => number;
@@ -24,7 +25,7 @@ export function WelcomePage({ getPageScale }: WelcomePageProps) {
       {/* Main Heading */}
       <div className="absolute inset-x-0 top-0 p-4 sm:p-8 flex justify-center">
         <h1 className="text-[12vw] sm:text-[10vw] font-bold text-black tracking-tight whitespace-nowrap overflow-hidden text-center">
-          LIQUID.DEATH
+          {HEADINGS.mainHeading}
         </h1>
       </div>
 
@@ -34,7 +35,7 @@ export function WelcomePage({ getPageScale }: WelcomePageProps) {
           <div className="relative w-1/3 max-w-xl aspect-[3/2] mb-8">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/file%20(1)-ysMqT25Xisbmc6fahrZVW38EAYsuqf.png"
-              alt="Liquid Death Canned Water Products"
+              alt={HEADINGS.imageAlt}
               layout="fill"
               objectFit="contain"
               priority
@@ -45,13 +46,13 @@ export function WelcomePage({ getPageScale }: WelcomePageProps) {
               className="text-[6vw] sm:text-[4vw] font-bold text-[#355070] tracking-tight whitespace-nowrap overflow-hidden"
               style={{ lineHeight: "1" }}
             >
-              TURNING WATER INTO A BOLD
+              {HEADINGS.line1}
             </h2>
             <h2
               className="text-[6vw] sm:text-[4vw] font-bold text-[#355070] tracking-tight whitespace-nowrap overflow-hidden"
               style={{ lineHeight: "1" }}
             >
-              LIFESTYLE STATEMENT
+              {HEADINGS.line2}
             </h2>
           </div>
         </div>

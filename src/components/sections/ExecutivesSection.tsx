@@ -3,77 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { User, Linkedin, GraduationCap } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-
-const executives = [
-  {
-    name: "Mike Fine",
-    title: "Chief Retail Officer",
-    image:
-      "https://media.licdn.com/dms/image/D5603AQHGAcFStYLEkw/profile-displayphoto-shrink_200_200/0/1679403780575?e=2147483647&v=beta&t=HJfWsY2gCdLTSfheNR9EyMh6cr_tzx2i34GNZHc0_Hs",
-    experience: [
-      "Chief Customer and Marketing Officer at Accelerator Active Energy",
-      "Vice President, Marketing at BODYARMOR",
-      "Held positions at Nestle Waters, Coca-Cola, and Pepsi",
-      "Nearly two decades of non-alcoholic beverage industry experience",
-    ],
-    entrepreneurial: ["Helped scale BODYARMOR to over $1 billion in revenue"],
-    linkedin: "https://www.linkedin.com/in/michael-fine-b171771/",
-  },
-  {
-    name: "Marisa Bertha",
-    title: "Chief Strategy Officer",
-    image: "https://avatars.sched.co/7/7d/11642316/avatar.jpg?261",
-    experience: [
-      "Senior Vice President, Strategy at Liquid Death",
-      "Vice President, Growth at 7-Eleven",
-      "Created and oversaw emerging brands",
-      "Led 7-Ventures, the company's corporate venture arm",
-    ],
-    entrepreneurial: [
-      "Leads fundraising, investor relations, and strategy execution at Liquid Death",
-    ],
-    linkedin: "https://www.linkedin.com/in/marisabertha/",
-  },
-  {
-    name: "Karim Sadik-Khan",
-    title: "Chief Financial Officer",
-    image:
-      "https://s.yimg.com/ny/api/res/1.2/xmi.W2PFAR_JqN3GDPRcxA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTU2MQ--/https://media.zenfs.com/en/fortune_175/f4b02665f0bbd78ad57d25f738bc3dc2",
-    experience: [
-      "CFO for Beam Suntory (BSI) North America",
-      "14-year tenure with the company",
-      "Held several financial leadership roles",
-      "Worked at PepsiCo, Dr. Pepper-Snapple, and IBM",
-      "19 years of management and finance experience",
-    ],
-    entrepreneurial: [
-      "Involved in Jim Beam's IPO in 2011",
-      "Involved in the acquisition of Jim Beam by Suntory in 2014",
-    ],
-    linkedin: "https://www.linkedin.com/in/karim-sadik-khan-01904712/",
-  },
-  {
-    name: "Michael Jones",
-    title: "Board Member",
-    image:
-      "https://media.licdn.com/dms/image/C4E03AQE8m1uVt3cuzQ/profile-displayphoto-shrink_200_200/0/1589828861550?e=2147483647&v=beta&t=02kZAc1EZOvuPAWTTDx6F-nkSGg5zxJ_gT7LheAPOS0",
-    education:
-      "Bachelor of Arts in International Business and Marketing from the University of Oregon",
-    experience: [
-      "Founder and CEO of Science Inc.",
-      "Founded Userplane in 2001 (acquired by AOL in 2006)",
-      "CEO of Myspace (2010-2011)",
-      "Launched Tsavo Media in 2008 (sold for $75 million)",
-      "Angel investor since 2005",
-    ],
-    entrepreneurial: [
-      "Named Student Entrepreneur of the Year in 1997 at the University of Oregon",
-      "Personally invested in more than 30 startups",
-      "Involved in successful exits like Dollar Shave Club and HelloSociety",
-    ],
-    linkedin: "https://www.linkedin.com/in/mjones/",
-  },
-];
+import { executives } from "@/data/brands/liquiddeath";
 
 interface ExecutivesSectionProps {
   getPageScale: (index: number) => number;

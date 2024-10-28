@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { ChevronUp, ChevronDown } from "lucide-react";
 import { CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { topInvestors } from "@/data/brands/liquiddeath";
 
 type Investor = {
   name: string;
@@ -19,92 +20,6 @@ type Investor = {
 interface InvestorsSectionProps {
   getPageScale: (index: number) => number;
 }
-
-const topInvestors = [
-  {
-    name: "SuRo Capital",
-    logoUrl: "https://s3-symbol-logo.tradingview.com/suro-capital--600.png",
-    totalRoundsParticipated: 2,
-    roundsParticipated: ["Deal #8", "Deal #9"],
-    leadInvestments: [],
-    otherInvestments: ["Coursera", "Palantir", "Course Hero"],
-    website: "https://surocap.com",
-    description:
-      "SuRo Capital is a publicly traded fund investing in high-growth, venture-backed private companies.",
-  },
-  {
-    name: "Live Nation Entertainment",
-    logoUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw_vwBk4mOrfEeIsqLjHHxso9NelJp7SLTcg&s",
-    totalRoundsParticipated: 4,
-    roundsParticipated: ["Deal #6", "Deal #7", "Deal #8", "Deal #12"],
-    leadInvestments: [],
-    otherInvestments: ["Ticketmaster", "House of Blues"],
-    website: "https://www.livenationentertainment.com",
-    description:
-      "Live Nation Entertainment is the worlds leading live entertainment company, comprised of global market leaders.",
-  },
-  {
-    name: "Science Inc.",
-    logoUrl:
-      "https://media.licdn.com/dms/image/v2/D560BAQGnlO29lFscuQ/company-logo_200_200/company-logo_200_200/0/1719256270542/scienceinc_logo?e=2147483647&v=beta&t=lkRl9gf-vnyizlUXJEHa9H6gJGUIm9rxvfSIafu-Vu0",
-    totalRoundsParticipated: 4,
-    roundsParticipated: ["Deal #1", "Deal #2", "Deal #7", "Deal #8"],
-    leadInvestments: ["Deal #1", "Deal #8"],
-    otherInvestments: ["Dollar Shave Club", "MeUndies", "PlayVS"],
-    website: "https://www.science-inc.com",
-    description:
-      "Science Inc. is a startup studio and venture fund that creates, invests, acquires, and scales successful digital businesses.",
-  },
-  {
-    name: "Gray's Creek Capital Partners",
-    logoUrl:
-      "https://grayscreekcapital.com/wp-content/uploads/2021/03/cropped-Site-Icon.png",
-    totalRoundsParticipated: 1,
-    roundsParticipated: ["Deal #12"],
-    leadInvestments: [],
-    otherInvestments: ["Data not publicly available"],
-    website: null,
-    description:
-      "Gray's Creek Capital Partners is an investment firm focusing on private equity and venture capital investments.",
-  },
-  {
-    name: "Josh Brolin",
-    logoUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_v8k2arE-Pu7z0Vpp2JX8aOsAIsNM5DahEg&s",
-    totalRoundsParticipated: 1,
-    roundsParticipated: ["Deal #12"],
-    leadInvestments: [],
-    otherInvestments: ["Data not publicly available"],
-    website: null,
-    description:
-      "Josh Brolin is an actor and producer who has started investing in entertainment and technology startups.",
-  },
-  {
-    name: "DeAndre Hopkins",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/0/05/DeAndre_Hopkins_2020.jpg",
-    totalRoundsParticipated: 1,
-    roundsParticipated: ["Deal #12"],
-    leadInvestments: [],
-    otherInvestments: ["Rockets of Awesome", "BioSteel Sports Nutrition"],
-    website: null,
-    description:
-      "DeAndre Hopkins is a professional NFL player who invests in various startups, particularly in consumer goods.",
-  },
-  {
-    name: "Neal Brennan",
-    logoUrl:
-      "https://bigthink.com/wp-content/uploads/2023/08/Neal-Brennan-profile-02.jpg?w=512&h=512&crop=1",
-    totalRoundsParticipated: 1,
-    roundsParticipated: ["Deal #12"],
-    leadInvestments: [],
-    otherInvestments: ["Data not publicly available"],
-    website: "https://www.nealbrennan.com",
-    description:
-      "Neal Brennan is a comedian, writer, and producer with interests in investing in entertainment-related startups.",
-  },
-];
 
 interface TopInvestorsProps {
   getPageScale: (index: number) => number;
@@ -180,7 +95,7 @@ function TopInvestors({ getPageScale }: TopInvestorsProps) {
   return (
     <motion.div
       className="min-h-screen bg-orange-50 text-black p-8"
-      animate={{ scale: 1 / getPageScale(8) }}
+      // animate={{ scale: getPageScale(2) }}
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
@@ -202,8 +117,8 @@ function TopInvestors({ getPageScale }: TopInvestorsProps) {
 export function InvestorsSection({ getPageScale }: InvestorsSectionProps) {
   return (
     <motion.div
-      className="relative w-full h-screen overflow-y-auto bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white via-blue-500 to-white p-6"
-      animate={{ scale: getPageScale(0) }}
+      className="relative w-full h-screen overflow-y-auto p-6"
+      // animate={{ scale: getPageScale(0) }}
     >
       <div className="container mx-auto px-4 py-12">
         <TopInvestors getPageScale={getPageScale} />
@@ -211,3 +126,6 @@ export function InvestorsSection({ getPageScale }: InvestorsSectionProps) {
     </motion.div>
   );
 }
+
+// Ensure default export for compatibility
+export default InvestorsSection;
