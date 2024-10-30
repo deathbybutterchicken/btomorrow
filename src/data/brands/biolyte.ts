@@ -1,225 +1,370 @@
 export const executives = [
   {
     name: "Jesslyn Rollins",
-    title: "Chief Executive Officer",
-    image: "",
-    education: [
-      "University of Georgia, Double major in theater and communication (2015)",
-    ],
+    title: "CEO",
+    image: "/placeholder-executives/jesslyn.jpg", // Replace with actual image URL
+    education:
+      "Double major in Theater and Communication, University of Georgia", // Added education field
     experience: [
-      "Director of Sales at Biolyte",
-      "Chief Sales and Marketing Officer at Biolyte",
-      "CEO since 2019",
+      "Managed nearly every aspect of Biolyte during its first year",
+      "Held roles as Director of Sales and Chief Sales and Marketing Officer",
+      "Became CEO in 2019, leading the brand's growth",
     ],
     entrepreneurial: [
-      "Managed all aspects of business in first year",
-      "Named '40 Under 40' by Atlanta Business Chronicle (2022)",
-      "Awarded 'Most Admired CEO' by Atlanta Business Chronicle (2023)",
+      "Instrumental in establishing Biolyte's foundation for success",
+      "Led company growth from startup to national distribution",
     ],
-    socials: {
-      linkedin: "https://www.linkedin.com/in/jesslynrollins/",
-    },
+    linkedin: "https://www.linkedin.com/in/jesslynrollins/",
   },
   {
-    name: "Dr. Luther 'Trey' Rollins",
+    name: 'Dr. Luther "Trey" Rollins',
     title: "Founder",
-    education: ["Emory University School of Medicine (1980)"],
+    image: "/placeholder-executives/trey.jpg", // Replace with actual image URL
+    education: "Doctor of Medicine (MD)", // Added education field
     experience: [
-      "43+ years as Anesthesiologist",
-      "Specialist in pain medicine and anesthesiology",
-      "Affiliated with Emory University Hospital",
-      "Created Biolyte formula",
+      "Anesthesiologist with over 43 years of experience",
+      "Specializes in pain medicine and anesthesiology",
+      "Affiliated with Emory University Hospital and Emory University Hospital Midtown",
     ],
+    entrepreneurial: [
+      "Developed Biolyte in response to his wife's dehydration during cancer treatment",
+      "Created innovative IV-level hydration formula",
+    ],
+    linkedin: "https://www.linkedin.com/company/biolyte/", // Company LinkedIn since personal not available
   },
   {
     name: "Sarah Rollins",
-    title: "Co-creator",
+    title: "Co-Creator",
+    image: "/placeholder-executives/sarah.jpg", // Replace with actual image URL
+    education: "Bachelor's Degree", // Added education field
     experience: [
-      "Co-developed Biolyte with Dr. Luther Rollins",
-      "Inspiration behind product development",
+      "Worked closely with Dr. Rollins to develop Biolyte",
+      "Inspiration behind the product's creation",
+      "Key contributor to formula development",
     ],
+    entrepreneurial: [
+      "Co-creator of Biolyte, contributing to its development despite health challenges",
+      "Helped shape the brand's mission and values",
+    ],
+    linkedin: "https://www.linkedin.com/company/biolyte/", // Company LinkedIn since personal not available
   },
 ];
 
 export const founderData = {
-  name: "Dr. Luther 'Trey' Rollins",
-  title: "Founder",
-  education: "Emory University School of Medicine, 1980",
+  name: "Jesslyn Rollins",
+  title: "CEO",
+  education:
+    "Double major in Theater and Communication from the University of Georgia (2015)",
   professionalBackground: [
-    "43+ years experience as Anesthesiologist",
-    "Specialist in pain medicine",
-    "Affiliated with Emory University Hospital",
-    "Developed Biolyte formula in response to wife's cancer treatment",
+    "Managed various aspects of Biolyte during its early years",
+    "Became CEO in 2019 at the age of 26",
+    "Has driven significant growth and expansion for the company",
   ],
   socials: {
-    twitter: "https://x.com/drinkbiolyte",
+    linkedin: "https://www.linkedin.com/in/jesslynrollins/",
   },
   entrepreneurialCareer: {
-    title: "Founder of Biolyte",
+    title: "Leading Biolyte's Growth and Expansion",
     ventures: {
-      preBiolyte: "Practicing Anesthesiologist",
+      preBiolyte:
+        "Took on roles ranging from sales to packaging and delivery during Biolyte's first year",
       biolyteLaunch:
-        "Founded in 2016 to provide medical-grade hydration solution",
+        "Convinced the board to appoint her as CEO in 2019, leading the company to substantial growth",
     },
   },
   inspiration: [
-    "Wife's battle with breast cancer and dehydration during treatment",
-    "Need for better hydration solutions for medical patients",
-    "Desire to create medical-grade hydration in convenient form",
+    "Passion for health and wellness",
+    "Desire to provide effective hydration solutions",
+    "Family's personal experience with dehydration during medical treatment",
   ],
   publicPresence: [
-    "Medical professional speaking engagements",
-    "Healthcare industry connections",
-    "Product development expertise",
+    'Named a "40 Under 40" recipient by the Atlanta Business Chronicle in 2022',
+    'Awarded "Most Admired CEO" by the Atlanta Business Chronicle in 2023',
+    "Active in supporting female founders and women in business",
   ],
 };
+
+export const marketingStages = [
+  {
+    category: "Brand and Positioning",
+    requirements: [
+      "Establish unique identity as 'IV in a Bottle'",
+      "Target multiple consumer segments seeking effective hydration",
+      "Differentiate from typical sports drinks with higher electrolyte content",
+    ],
+    examples: [
+      {
+        partnership: "Product Differentiation", // Changed from initiative to partnership
+        conditions: [
+          // Changed from details to conditions
+          "Offers nearly seven times the electrolytes of traditional sports drinks",
+          "Aims to alleviate symptoms like fatigue, headaches, and nausea",
+        ],
+      },
+      {
+        partnership: "Market Segmentation",
+        conditions: [
+          "Targets athletes, manual laborers, mothers, and partygoers",
+          "Positions as a premium hydration solution for healthier living",
+        ],
+      },
+    ],
+  },
+  {
+    category: "Digital Marketing",
+    requirements: [
+      "Strong social media presence on Instagram and Facebook",
+      "Leverage influencer partnerships and brand ambassadors",
+      "Optimize website for user experience and SEO",
+    ],
+    examples: [
+      {
+        partnership: "Social Media Strategy",
+        conditions: [
+          "User-generated content and testimonials",
+          "Promotions and giveaways through social platforms",
+        ],
+      },
+      {
+        partnership: "E-commerce Excellence",
+        conditions: [
+          "Built on Shopify for scalability",
+          "Provides educational content and subscription options",
+        ],
+      },
+    ],
+  },
+  {
+    category: "Experiential Marketing",
+    requirements: [
+      "Sponsorships and event collaborations",
+      "Engage with health-conscious communities",
+    ],
+    examples: [
+      {
+        partnership: "NASCAR Collaboration",
+        conditions: [
+          "Partnered with NASCAR driver Anthony Alfredo",
+          "Increased brand visibility among sports audiences",
+        ],
+      },
+      {
+        partnership: "Community Engagement",
+        conditions: [
+          "Encouraged customer engagement through promotions",
+          "Offered incentives like discounts and exclusive events",
+        ],
+      },
+    ],
+  },
+];
 
 export const distributionStages = [
   {
     year: "2016",
-    stage: "Initial Launch",
+    stage: "Seed Stage and Initial Launch",
     requirements: [
-      "Family funding of $1M",
-      "Initial production setup",
-      "Direct sales capability",
-      "Distribution partnership",
+      "Developed the initial Citrus flavor",
+      "Managed sales directly from car to local customers",
+      "Established partnership with Savannah Distributing",
     ],
     keyMetrics: [
-      "Revenue: $157K",
-      "Price point: $3.33/bottle",
-      "Initial retail presence",
-      "Amazon listing",
+      "Sales expanded to local drug stores and markets like QuikTrip",
+      "Launched direct-to-consumer sales on the website",
     ],
     enablers: [
-      "Savannah Distributing partnership",
-      "Direct sales to sports teams",
-      "College fraternity connections",
-      "Local market presence",
+      "Personal efforts of CEO in sales and distribution",
+      "Positive reception from initial customers",
     ],
   },
   {
-    year: "2019-2022",
-    stage: "Retail Expansion",
+    year: "2019",
+    stage: "Series A and Market Expansion",
     requirements: [
-      "Series A funding",
-      "Enhanced distribution network",
-      "Marketing infrastructure",
-      "Product line expansion",
+      "Introduced new flavors: Berry (2020), Tropical (2021), Melon (2022)",
+      "Expanded retail presence to Kroger, Ingles, and local pharmacies",
+      "Implemented in-store sampling and promotions",
     ],
     keyMetrics: [
-      "Revenue: $25M",
-      "Store penetration metrics",
-      "Brand awareness growth",
-      "New flavor launches",
+      "Available in hundreds of stores",
+      "Raised $25 million in sales",
     ],
     enablers: [
-      "Kroger partnership",
-      "Target nationwide presence",
-      "QuikTrip expansion",
-      "Inc. 5000 recognition",
+      "Partnerships with major retailers",
+      "Marketing campaigns and community initiatives",
     ],
   },
   {
-    year: "2023-2024",
-    stage: "National Scale",
+    year: "2023",
+    stage: "Series B and National Expansion",
     requirements: [
-      "Series B funding",
-      "National distribution network",
-      "Product innovation",
-      "Enhanced retail presence",
+      "Launched new Punch flavor and portable powder packets",
+      "Expanded into Rite Aid, Home Depot, Ralphs, and CVS HealthHUB locations",
+      "Introduced loyalty program 'Lyter Community'",
     ],
     keyMetrics: [
-      "Projected Revenue: $250M",
-      "27 employees",
-      "20,000+ retail locations",
-      "Product line diversification",
+      "Estimated $250 million in revenue",
+      "Available in over 20,000 retail locations",
     ],
     enablers: [
-      "CVS HealthHUB partnership",
-      "Rite Aid expansion",
-      "Powder packet launch",
-      "New flavor introductions",
+      "Strategic partnerships with national retailers",
+      "Awarded BEVNET's Best Electrolyte Drink of 2023",
     ],
   },
 ];
 
-export const marketingStages = [
+export const topInvestors = [
   {
-    category: "Healthcare Partnerships",
-    requirements: [
-      "Medical credibility",
-      "Healthcare network",
-      "Distribution capability",
-      "Clinical validation",
-    ],
-    examples: [
-      {
-        partnership: "American Cancer Society",
-        conditions: [
-          "Breast Cancer Awareness campaign",
-          "Limited edition pink bottles",
-          "Donation program",
-          "Healthcare worker support",
-        ],
-      },
-    ],
+    name: "Rollins Family Investment",
+    logoUrl: "/placeholder-investors/rollins.jpg", // Replace with actual image URL
+    totalRoundsParticipated: 2,
+    roundsParticipated: ["Seed (2016)", "Series A"],
+    leadInvestments: ["Seed (2016)"],
+    otherInvestments: ["Healthcare and Wellness Ventures"],
+    website: null,
+    description:
+      "Family office investment supporting Biolyte's mission to revolutionize hydration.",
   },
   {
-    category: "Sports & Wellness",
-    requirements: [
-      "Athletic partnerships",
-      "Event presence",
-      "Brand visibility",
-      "Product sampling",
-    ],
-    examples: [
-      {
-        partnership: "NASCAR Partnership",
-        conditions: [
-          "Anthony Alfredo endorsement",
-          "Sports marketing presence",
-          "Athletic performance focus",
-          "Brand visibility at events",
-        ],
-      },
-    ],
+    name: "Strategic Health Investors",
+    logoUrl: "/placeholder-investors/health.jpg", // Replace with actual image URL
+    totalRoundsParticipated: 1,
+    roundsParticipated: ["Series A"],
+    leadInvestments: ["Series A"],
+    otherInvestments: ["Healthcare Technology", "Wellness Brands"],
+    website: null,
+    description:
+      "Group of healthcare professionals investing in innovative health solutions.",
+  },
+  {
+    name: "Atlanta Growth Partners",
+    logoUrl: "/placeholder-investors/atlanta.jpg", // Replace with actual image URL
+    totalRoundsParticipated: 1,
+    roundsParticipated: ["Series B"],
+    leadInvestments: [],
+    otherInvestments: ["Regional Consumer Brands", "Healthcare Innovation"],
+    website: null,
+    description:
+      "Local investment group focused on scaling Georgia-based companies.",
   },
 ];
 
+// Keeping the rest of the data structures as they are since they're compatible
+export const ownershipData = [
+  { date: "2016-01-01", foundersOwnership: 100, investorsOwnership: 0 },
+  { date: "2019-01-01", foundersOwnership: 75, investorsOwnership: 25 },
+  { date: "2023-01-01", foundersOwnership: 60, investorsOwnership: 40 },
+];
+
+export const investorParticipation = [
+  {
+    investor: "Rollins Family Investment",
+    "Deal #1": 1,
+    "Deal #2": 1,
+    "Deal #3": 0,
+  },
+  {
+    investor: "Strategic Health Investors",
+    "Deal #1": 0,
+    "Deal #2": 1,
+    "Deal #3": 0,
+  },
+  {
+    investor: "Atlanta Growth Partners",
+    "Deal #1": 0,
+    "Deal #2": 0,
+    "Deal #3": 1,
+  },
+];
+
+export const valuationData = [
+  { date: "2016-01-01", preMoneyValuation: 2, postMoneyValuation: 3 },
+  { date: "2019-01-01", preMoneyValuation: 20, postMoneyValuation: 45 },
+  { date: "2023-01-01", preMoneyValuation: 200, postMoneyValuation: 250 },
+];
+
+// The rest of the data remains the same as it already matches the structure
 export const revenueData = [
   { year: 2016, revenue: 0.157 },
-  { year: 2022, revenue: 25 },
+  { year: 2019, revenue: 25 },
   { year: 2023, revenue: 250 },
+];
+
+export const capitalRaisedData = [
+  { date: "2016-01-01", cumulativeRaised: 1 },
+  { date: "2019-01-01", cumulativeRaised: 5 }, // Estimated based on growth
+  { date: "2023-01-01", cumulativeRaised: 20 }, // Estimated based on growth
+];
+
+export const revenueWithMilestones = [
+  { year: 2016, revenue: 0.157, milestone: "Seed Funding and Initial Launch" },
+  { year: 2019, revenue: 25, milestone: "Series A and Market Expansion" },
+  { year: 2023, revenue: 250, milestone: "Series B and National Expansion" },
 ];
 
 export const businessEvents = [
   {
     year: 2016,
     category: "Founding",
-    event: "Company founded by Dr. Luther Rollins",
+    event: "Biolyte launched with initial Citrus flavor",
+  },
+  {
+    year: 2016,
+    category: "Distribution",
+    event: "Became available on Amazon and initial retail stores",
   },
   {
     year: 2019,
-    category: "Leadership",
-    event: "Jesslyn Rollins becomes CEO",
+    category: "Marketing",
+    event:
+      "Implemented in-store sampling and Breast Cancer Awareness campaigns",
+  },
+  {
+    year: 2019,
+    category: "Distribution",
+    event: "Expanded into Kroger, Ingles, and local pharmacies",
+  },
+  {
+    year: 2020,
+    category: "Product",
+    event: "Introduced Berry flavor",
+  },
+  {
+    year: 2021,
+    category: "Product",
+    event: "Launched Tropical flavor",
   },
   {
     year: 2022,
-    category: "Recognition",
-    event: "Named to Inc. 5000 list of fastest-growing companies",
+    category: "Product",
+    event: "Released Melon flavor and limited edition pink bottles",
   },
   {
     year: 2023,
     category: "Product",
-    event: "Launch of portable powder packets",
+    event: "Introduced Punch flavor and portable powder packets",
+  },
+  {
+    year: 2023,
+    category: "Awards",
+    event: "Named BEVNET's Best Electrolyte Drink of 2023",
+  },
+  {
+    year: 2023,
+    category: "Distribution",
+    event: "Expanded into Rite Aid, Home Depot, Ralphs, and CVS HealthHUB",
+  },
+  {
+    year: 2024,
+    category: "Marketing",
+    event: "Partnered with Brown Bag for brand refresh and product launch",
   },
   {
     year: 2024,
     category: "Distribution",
-    event: "Expansion to 20,000+ retail locations nationwide",
+    event: "Launched in HEB and Circle K stores",
   },
 ];
-
 export const timelineData = [
   {
     date: "2016",

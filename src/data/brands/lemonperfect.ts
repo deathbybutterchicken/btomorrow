@@ -1,287 +1,459 @@
 export const executives = [
   {
     name: "Yanni Hufnagel",
-    title: "Founder & Executive Chairman",
-    image: "",
-    education: [
-      "Bachelor of Arts in Sociology from University of North Texas",
-      "Bachelor's Degree from Cornell University in Industrial and Labor Relations",
-      "Master's Degree in Adult and Higher Education from University of Oklahoma",
-    ],
+    title: "Founder and Executive Chairman",
+    image: "URL_TO_IMAGE",
     experience: [
-      "Assistant basketball coach at Harvard University",
-      "Assistant coach at University of Nevada, Reno",
-      "Assistant coach at Vanderbilt University",
+      "Former college basketball coach at Harvard University, Vanderbilt University, and University of Nevada, Reno",
+      "Strong background in performance and nutrition",
     ],
-    entrepreneurial: ["Founded Lemon Perfect in 2017"],
+    entrepreneurial: [
+      "Founded Lemon Perfect in 2017, combining passion for health and fitness with entrepreneurship",
+    ],
     linkedin: "https://www.linkedin.com/in/yhufnagel/",
-  },
-  {
-    name: "Jeff Popkin",
-    title: "Chief Executive Officer",
-    image: "",
-    education: [
-      "BBA, Finance from The University of Texas at Arlington (1982-1987)",
-    ],
-    experience: [
-      "Various roles at RedBull",
-      "Leadership positions at Vita Coco",
-      "Experience at GT Spirits",
-      "Extensive experience in consumer goods and beverage industry",
-    ],
-    linkedin: "https://www.linkedin.com/in/jeff-popkin-97769862/",
   },
   {
     name: "Jim Brennan",
     title: "President & Chief Revenue Officer",
-    image: "",
-    education: [
-      "The Wharton School Executive Development Program",
-      "Spring Garden College Bachelor's degree, Business Administration",
-    ],
+    image: "URL_TO_IMAGE",
     experience: [
-      "32-year career with The Coca-Cola Company",
-      "EVP, National Retail Sales, US Region (2018-2020)",
-      "SVP, National Retail Sales, East Region (2013-2018)",
-      "Managed $8 billion beverage portfolio at Coca-Cola",
+      "32-year career with The Coca-Cola Company and Coca-Cola Enterprises",
+      "Held roles including Executive Vice President of National Retail Sales",
     ],
     entrepreneurial: [
-      "Joined Lemon Perfect as Operating Advisor before becoming President",
+      "Instrumental in Lemon Perfect's rapid growth and success",
     ],
     linkedin: "https://www.linkedin.com/in/jimbrennan14/",
+  },
+  {
+    name: "Jeff Popkin",
+    title: "Chief Executive Officer",
+    image: "URL_TO_IMAGE",
+    experience: [
+      "Former CEO at Vita Coco",
+      "Previous roles at Red Bull, The Coca-Cola Company, and GT Spirits",
+      "Experience with startups and established companies in the beverage industry",
+    ],
+    entrepreneurial: [
+      "Brings extensive leadership experience to Lemon Perfect",
+    ],
+    linkedin: "https://www.linkedin.com/in/jeff-popkin-97769862/",
+  },
+  {
+    name: "Richa Anand",
+    title: "Senior Director, Brand Marketing",
+    image: "URL_TO_IMAGE",
+    experience: [
+      "Former Marketing Manager at Taco Bell",
+      "Over 8 years of experience in marketing and brand management",
+    ],
+    entrepreneurial: ["Leads brand marketing initiatives at Lemon Perfect"],
+    linkedin: "https://www.linkedin.com/in/richaanand1/",
+  },
+  {
+    name: "Rachael Marsteller",
+    title: "Senior Director of Sales",
+    image: "URL_TO_IMAGE",
+    experience: [
+      "13 years at The Coca-Cola Company as Sales Director",
+      "Expertise in sales strategy and execution",
+    ],
+    entrepreneurial: [
+      "Drives sales growth and retail partnerships at Lemon Perfect",
+    ],
+    linkedin: "https://www.linkedin.com/in/rachael-marsteller-8b280269/",
   },
 ];
 
 export const founderData = {
   name: "Yanni Hufnagel",
-  title: "Founder & Executive Chairman",
-  education:
-    "Multiple degrees including Cornell University and University of Oklahoma",
+  title: "Founder and Executive Chairman",
+  education: [
+    "Bachelor's Degree in Industrial and Labor Relations from Cornell University",
+    "Master's Degree in Adult and Higher Education from the University of Oklahoma",
+  ],
   professionalBackground: [
-    "Successful career as a college basketball coach",
-    "Assistant coach at Harvard University",
-    "Assistant coach at University of Nevada, Reno",
-    "Assistant coach at Vanderbilt University",
+    "Former college basketball coach at Harvard University, Vanderbilt University, and University of Nevada, Reno",
+    "Strong work ethic and understanding of performance and nutrition inspired the creation of Lemon Perfect",
   ],
   socials: {
     linkedin: "https://www.linkedin.com/in/yhufnagel/",
   },
   entrepreneurialCareer: {
-    title: "Founder of Lemon Perfect",
+    title: "Founder and Executive Chairman of Lemon Perfect",
     ventures: {
-      preLemonPerfect: "College basketball coaching career",
+      preLemonPerfect:
+        "Developed interest in health and wellness during coaching career",
       lemonPerfectLaunch:
-        "Founded in 2017 with focus on healthy, zero-sugar beverages",
+        "Founded Lemon Perfect in 2017, merging passion for health, fitness, and entrepreneurship",
     },
   },
   inspiration: [
     "Passion for health and fitness",
-    "Understanding of performance and nutrition from coaching career",
-    "Vision to create a healthy alternative to sugary drinks",
+    "Desire to create a zero-sugar, naturally flavored beverage",
+  ],
+  publicPresence: [
+    "Featured in interviews and articles in various publications",
+    "Speaks at events about entrepreneurship and health-focused branding",
   ],
 };
 
 export const distributionStages = [
   {
-    year: "2019",
-    stage: "Initial Launch",
+    year: "2017",
+    stage: "Brand Founded and Initial Launch",
     requirements: [
-      "Seed funding of $3.7M secured",
-      "E-commerce platform development",
-      "Initial local store partnerships",
-      "Digital marketing infrastructure",
+      "Development of the Lemon Perfect beverage",
+      "Establishment of e-commerce platform",
+      "Initial seed funding secured",
+    ],
+    keyMetrics: ["Sales: Modest", "Launched with Lemon flavor"],
+    enablers: [
+      "Digital marketing campaigns",
+      "Focus on zero sugar and natural ingredients",
+      "Targeting health-conscious millennials",
+    ],
+  },
+  {
+    year: "2019",
+    stage: "Seed Funding and Local Retail Expansion",
+    requirements: [
+      "Received $3.7 million in seed funding",
+      "Product-market fit validation",
+      "Expansion into small local and regional stores",
     ],
     keyMetrics: [
-      "Modest initial sales",
-      "Price point: $1.99 (12 oz)",
-      "E-commerce conversion rate",
-      "Local store performance",
+      "Pricing: $1.99 per 12 oz bottle",
+      "Increased brand awareness",
     ],
     enablers: [
-      "Online platform launch",
-      "Small-scale social media campaigns",
-      "Focus on health-conscious millennials",
+      "Digital marketing targeting millennials",
+      "Emphasis on organic ingredients",
     ],
   },
   {
     year: "2020",
-    stage: "Major Retail Expansion",
+    stage: "Second Seed Funding and National Distribution",
     requirements: [
-      "Seed funding of $6.6M",
-      "Distribution partnerships",
-      "DSD agreements",
-      "Amazon presence",
+      "Received $6.6 million in seed funding",
+      "Partnerships with major retailers",
+      "Direct-store-distribution agreements",
     ],
     keyMetrics: [
-      "Retail penetration rate",
-      "Amazon sales performance",
-      "Regional market share",
-      "Distribution efficiency",
+      "Distribution through Publix, Ralphs, Stew Leonard's",
+      "Available on Amazon",
     ],
     enablers: [
-      "Partnerships with Publix, Ralphs",
-      "DSD agreements in Southern California",
-      "Big Geyser partnership in Northeast",
+      "Collaborations with health and fitness influencers",
+      "Enhanced digital presence",
     ],
   },
   {
-    year: "2021-2022",
-    stage: "National Scale",
+    year: "2021",
+    stage: "Series A Funding and Celebrity Engagement",
     requirements: [
-      "Series A funding of $46.6M total",
-      "Celebrity partnerships",
-      "National distribution network",
-      "Enhanced marketing capability",
+      "Received $15.6 million in Series A funding",
+      "Expansion of flavor offerings",
+      "Interest from celebrities like Beyoncé",
     ],
     keyMetrics: [
-      "Revenue: $60M (2022)",
-      "Store penetration metrics",
-      "Brand awareness growth",
-      "Celebrity partnership ROI",
+      "New flavors: Dragon Fruit Mango, Strawberry Passionfruit, Peach Raspberry",
+      "Entered Whole Foods, Sprouts, Farmers Market, Target, and Kroger",
     ],
     enablers: [
-      "Beyoncé investment and partnership",
-      "Entry into Whole Foods, Sprouts",
-      "Expanded flavor portfolio",
+      "BOGO promotions at Publix",
+      "Increased brand visibility through celebrity association",
     ],
   },
   {
-    year: "2023-2024",
-    stage: "Growth & Innovation",
+    year: "2022",
+    stage: "Additional Series A Funding and Rapid Growth",
     requirements: [
-      "Series B funding of $36M",
-      "Nationwide sampling capability",
-      "Enhanced production capacity",
-      "Retail optimization",
+      "Received $31 million in Series A funding (additional)",
+      "Expanded marketing and endorsements",
+      "Increased retail distribution",
+    ],
+    keyMetrics: ["Revenue: $60 million", "Added Costco to retail partners"],
+    enablers: [
+      "Investments from athletes like Sloane Stephens and Jalen Hurts",
+      "Social media influencer partnerships on TikTok",
+    ],
+  },
+  {
+    year: "2023",
+    stage: "Series B Funding and Product Expansion",
+    requirements: [
+      "Received $36 million in Series B funding",
+      "Transitioned to 15.2-ounce bottles",
+      "Launched new flavors",
     ],
     keyMetrics: [
-      "Projected Revenue: $100M",
-      "New bottle size performance",
-      "Marketing campaign effectiveness",
-      "Product innovation success",
+      "Projected revenue: $100 million",
+      "New flavors: Blueberry, Coconut, Watermelon",
     ],
     enablers: [
-      "Larger 15.2oz bottle launch",
-      "New flavor introductions",
-      "Mobile sampling campaigns",
-      "Expanded celebrity partnerships",
+      "Launched 'Stay Hydrated, Stay Perfect' campaign",
+      "'Drink More Lemons' nationwide mobile sampling campaign",
     ],
   },
 ];
 
 export const marketingStages = [
   {
-    category: "Celebrity Partnerships",
+    category: "Digital Marketing and Influencer Collaborations",
     requirements: [
-      "Strong brand presence",
-      "Significant funding secured",
-      "Clear partnership strategy",
-      "Content creation capability",
+      "Strong digital marketing capabilities",
+      "Partnerships with health and fitness influencers",
+      "Content creation resources",
     ],
     examples: [
       {
-        partnership: "Beyoncé Investment",
+        partnership: "Health and Fitness Influencers",
         conditions: [
-          "Series A funding secured",
-          "Strong market presence",
-          "Clear growth trajectory",
-          "Brand alignment with celebrity",
+          "Collaborated on Instagram and YouTube",
+          "Focused on zero sugar and natural ingredients",
         ],
       },
       {
-        partnership: "Athletes Endorsements",
+        partnership: "TikTok Campaigns",
         conditions: [
-          "Partnerships with Sloane Stephens",
-          "NFL quarterback Jalen Hurts deal",
-          "Focus on sports and wellness",
-          "Active lifestyle alignment",
+          "Created engaging short videos",
+          "Targeted active lifestyle integration",
         ],
       },
     ],
   },
   {
-    category: "Digital Marketing",
+    category: "Celebrity Endorsements",
     requirements: [
-      "Social media presence",
-      "Influencer network",
-      "Content strategy",
-      "Digital campaign capability",
+      "Sufficient capital for celebrity deals",
+      "Established brand credibility",
+      "Clear ROI measurement systems",
     ],
     examples: [
       {
-        partnership: "Health & Fitness Influencers",
+        partnership: "Beyoncé's Investment",
         conditions: [
-          "Instagram and YouTube focus",
-          "Wellness content creation",
-          "Authentic brand integration",
-          "Engagement metrics tracking",
+          "Received investment in 2022",
+          "Boosted media attention and brand visibility",
         ],
       },
       {
-        partnership: "TikTok Campaign",
+        partnership: "Athlete Endorsements",
         conditions: [
-          "Short-form video strategy",
-          "Active lifestyle focus",
-          "Youth demographic targeting",
-          "Viral content creation",
+          "Investments from Sloane Stephens and Jalen Hurts",
+          "Expanded reach in sports and wellness communities",
         ],
       },
     ],
   },
+  {
+    category: "Promotional Campaigns",
+    requirements: [
+      "Marketing budget allocation",
+      "Strong social media presence",
+      "Logistics for sampling events",
+    ],
+    examples: [
+      {
+        partnership: "'Stay Hydrated, Stay Perfect' Campaign",
+        conditions: [
+          "Large-scale social media engagement",
+          "Focused on hydration and wellness messaging",
+        ],
+      },
+      {
+        partnership: "'Drink More Lemons' Mobile Sampling",
+        conditions: [
+          "Nationwide sampling to increase product trial",
+          "Added celebrity ambassadors for wider appeal",
+        ],
+      },
+    ],
+  },
+];
+
+export const topInvestors = [
+  {
+    name: "Beyoncé Knowles-Carter",
+    logoUrl: "URL_TO_IMAGE",
+    totalRoundsParticipated: 1,
+    roundsParticipated: ["Deal #2"],
+    leadInvestments: [],
+    otherInvestments: ["WTRMLN WTR", "22 Days Nutrition"],
+    website: null,
+    description:
+      "Beyoncé is a world-renowned singer and entrepreneur investing in health and wellness brands.",
+  },
+  {
+    name: "Melitas Ventures",
+    logoUrl: "URL_TO_IMAGE",
+    totalRoundsParticipated: 2,
+    roundsParticipated: ["Deal #1", "Deal #2"],
+    leadInvestments: [],
+    otherInvestments: ["Essentia Water", "KOIA"],
+    website: "https://www.melitasventures.com",
+    description:
+      "Melitas Ventures is an early-stage venture fund focused on investments in the beverage and consumer packaged goods sectors.",
+  },
+  {
+    name: "Goat Rodeo Capital",
+    logoUrl: "URL_TO_IMAGE",
+    totalRoundsParticipated: 2,
+    roundsParticipated: ["Deal #1", "Deal #2"],
+    leadInvestments: [],
+    otherInvestments: ["Hoplark", "ZBiotics"],
+    website: "https://www.goatrodeocapital.com",
+    description:
+      "Goat Rodeo Capital invests in early-stage food and beverage companies.",
+  },
+  {
+    name: "Beechwood Capital",
+    logoUrl: "URL_TO_IMAGE",
+    totalRoundsParticipated: 2,
+    roundsParticipated: ["Deal #1", "Deal #2"],
+    leadInvestments: [],
+    otherInvestments: ["Harry's", "Lola"],
+    website: "https://www.beechwoodcap.com",
+    description:
+      "Beechwood Capital is a growth equity firm investing in high-growth consumer brands.",
+  },
+  {
+    name: "Trousdale Ventures",
+    logoUrl: "URL_TO_IMAGE",
+    totalRoundsParticipated: 2,
+    roundsParticipated: ["Deal #1", "Deal #2"],
+    leadInvestments: [],
+    otherInvestments: ["Hydrant", "Pop & Bottle"],
+    website: "https://trousdalevc.com",
+    description:
+      "Trousdale Ventures invests in innovative consumer and technology companies.",
+  },
+];
+
+export const ownershipData = [
+  { date: "2017-01-01", foundersOwnership: 100, investorsOwnership: 0 },
+  { date: "2021-01-09", foundersOwnership: 34.54, investorsOwnership: 65.46 },
+  { date: "2022-04-28", foundersOwnership: 25.89, investorsOwnership: 74.11 },
+  { date: "2023-02-09", foundersOwnership: 19.19, investorsOwnership: 80.81 },
+];
+
+export const investorParticipation = [
+  {
+    investor: "Melitas Ventures",
+    "Deal #1": 1,
+    "Deal #2": 1,
+    "Deal #3": 0,
+  },
+  {
+    investor: "Goat Rodeo Capital",
+    "Deal #1": 1,
+    "Deal #2": 1,
+    "Deal #3": 0,
+  },
+  {
+    investor: "Beechwood Capital",
+    "Deal #1": 1,
+    "Deal #2": 1,
+    "Deal #3": 0,
+  },
+  {
+    investor: "Beyoncé Knowles-Carter",
+    "Deal #1": 0,
+    "Deal #2": 1,
+    "Deal #3": 0,
+  },
+  {
+    investor: "93 Ventures",
+    "Deal #1": 0,
+    "Deal #2": 0,
+    "Deal #3": 1,
+  },
+];
+
+export const valuationData = [
+  { date: "2021-01-09", preMoneyValuation: 30, postMoneyValuation: 42.44 },
+  { date: "2022-04-28", preMoneyValuation: 70, postMoneyValuation: 84 },
+  { date: "2023-02-09", preMoneyValuation: 106, postMoneyValuation: 143 },
+];
+
+export const revenueData = [
+  { year: 2021, revenue: 15 },
+  { year: 2022, revenue: 60 },
+  { year: 2023, revenue: 100 },
 ];
 
 export const capitalRaisedData = [
   { date: "2019-01-01", cumulativeRaised: 3.7 },
   { date: "2020-01-01", cumulativeRaised: 10.3 },
-  { date: "2021-01-01", cumulativeRaised: 25.9 },
-  { date: "2022-01-01", cumulativeRaised: 56.9 },
+  { date: "2021-01-09", cumulativeRaised: 25.9 },
+  { date: "2022-04-28", cumulativeRaised: 56.9 },
   { date: "2023-02-09", cumulativeRaised: 92.9 },
 ];
 
-export const revenueData = [
-  { year: 2019, revenue: null },
-  { year: 2020, revenue: null },
-  { year: 2021, revenue: null },
-  { year: 2022, revenue: 60 },
-  { year: 2023, revenue: 100 },
-];
-
-export const valuationData = [
-  { date: "2021-01-09", preMoneyValuation: 22.27, postMoneyValuation: 42.44 },
-  { date: "2022-04-28", preMoneyValuation: 53.86, postMoneyValuation: 64.63 },
-  { date: "2023-02-09", preMoneyValuation: 86.46, postMoneyValuation: 116.46 },
+export const revenueWithMilestones = [
+  {
+    year: 2021,
+    revenue: 15,
+    milestone: "Series A Funding and Retail Expansion",
+  },
+  {
+    year: 2022,
+    revenue: 60,
+    milestone: "Additional Series A Funding and Celebrity Investments",
+  },
+  {
+    year: 2023,
+    revenue: 100,
+    milestone: "Series B Funding and Product Expansion",
+  },
 ];
 
 export const businessEvents = [
   {
     year: 2017,
-    category: "Founding",
-    event: "Company Founded by Yanni Hufnagel",
+    category: "Branding & Marketing",
+    event: "Brand founded by Yanni Hufnagel",
   },
   {
     year: 2019,
-    category: "Distribution",
-    event: "Initial retail launch & e-commerce platform",
+    category: "Funding",
+    event: "Received $3.7 million in seed funding",
   },
   {
     year: 2020,
-    category: "Retail",
-    event: "Major expansion into Publix and other retailers",
+    category: "Funding",
+    event: "Received $6.6 million in seed funding",
   },
   {
     year: 2021,
-    category: "Marketing",
-    event: "Beyoncé partnership & investment",
+    category: "Branding & Marketing",
+    event: "Beyoncé showed interest, enhancing brand visibility",
+  },
+  {
+    year: 2021,
+    category: "Funding",
+    event: "Received $15.6 million in Series A funding",
   },
   {
     year: 2022,
-    category: "Product",
-    event: "New flavor launches and retail expansion",
+    category: "Funding",
+    event: "Received $31 million in Series A funding (additional)",
+  },
+  {
+    year: 2022,
+    category: "Revenue",
+    event: "Achieved $60 million in sales",
   },
   {
     year: 2023,
-    category: "Innovation",
-    event: "Larger bottle size introduction",
+    category: "Funding",
+    event: "Received $36 million in Series B funding",
+  },
+  {
+    year: 2023,
+    category: "Product",
+    event: "Transitioned to 15.2-ounce bottles and launched new flavors",
   },
 ];
 

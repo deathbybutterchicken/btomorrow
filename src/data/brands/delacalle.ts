@@ -2,312 +2,398 @@ export const executives = [
   {
     name: "Alex Matthews",
     title: "Co-Founder & CEO",
-    image:
-      "https://media.licdn.com/dms/image/v2/D5605AQE5BAIDjACHGw/feedshare-thumbnail_720_1280/feedshare-thumbnail_720_1280/0/1719250229420?e=2147483647&v=beta&t=jmkP30IMT-OLsPW-oKvgle6F2wz0SMDCQ1W_heO5-G4",
-    education: ["University of Bristol, Degree in Marketing (1992-1995)"],
+    image: "URL_TO_IMAGE",
     experience: [
-      "Regional Director at Berkeley Scott (2000-2004)",
-      "West Coast Manager at G-Star (2009-2012)",
-      "CEO & Co-Founder of Juice Served Here (2012-2017)",
-      "Chief Marketing Officer at Forager Project (2018-2019)",
-      "Founder of HERE Studio LA (2018-Present)",
-      "Co-Founder of Highly Likely (2018-Present)",
-      "Co-Founder & CEO of VINA Beverages Inc (2019-Present)",
-      "Co-Founder of SIZE (2019-Present)",
+      "Former Regional Director at Berkeley Scott",
+      "West Coast Manager at G-Star",
+      "Co-Founder & CEO of Juice Served Here",
+      "Chief Marketing Officer at Forager Project",
     ],
     entrepreneurial: [
-      "Founded multiple successful ventures in food and beverage sector",
-      "Built and scaled multiple consumer brands",
-      "15+ years experience in consumer goods industry",
+      "Founder of HERE Studio LA",
+      "Co-Founder of Highly Likely eatery",
+      "Co-Founder & CEO of VINA Beverages Inc",
+      "Co-Founder & CEO of De La Calle",
     ],
-    socials: {
-      twitter: "https://x.com/delacalleco?lang=en-GB",
-      linkedin: "linkedin.com/in/alexkmatthews",
-    },
+    linkedin: "https://www.linkedin.com/in/alexkmatthews/",
   },
   {
     name: "Rafael Martin Del Campo",
-    title: "Co-Founder & Chief of Fermentation",
-    image: "",
-    education: ["Background in food science and fermentation"],
+    title: "Co-Founder and Chief of Fermentation",
+    image: "URL_TO_IMAGE",
     experience: [
       "Third-generation tepache maker",
-      "Expert in traditional fermentation techniques",
-      "Regular presence at Natural Products Expo",
+      "Background in food science and fermentation",
     ],
-    entrepreneurial: [
-      "Combined traditional tepache-making expertise with modern production methods",
-      "Key role in product development and authenticity",
-    ],
+    entrepreneurial: ["Co-Founder and Chief of Fermentation at De La Calle"],
+    linkedin: null,
   },
-  {
-    name: "Marco Serrano",
-    title: "VP Operations and Supply Chain",
-    image: "",
-    experience: [
-      "Leadership in operations and supply chain management",
-      "Scaling production and distribution operations",
-    ],
-  },
-  {
-    name: "Mario Alanis",
-    title: "Inventory Manager",
-    education: [
-      "California State Polytechnic University-Pomona, Biochemistry (2012-2015)",
-    ],
-    experience: [
-      "Inventory Control Specialist at DrinkPAK (2021-2023)",
-      "Supply Chain Coordinator at Glanbia Nutritionals (2019-2021)",
-      "Customer Service Lead at Best Choice Products (2017-2018)",
-      "Customer Service Representative at Lineage Logistics (2015-2017)",
-    ],
-  },
-  {
-    name: "Steve Hernandez",
-    title: "Territory Sales Manager",
-    education: [
-      "Master's degree in Education Administration, Sam Houston State University (2014-2016)",
-    ],
-    experience: [
-      "Defensive Coordinator/Assistant Head Coach at Southwest Legacy HS (2013-2021)",
-      "Head Varsity Football Coach at St. Gerard Catholic HS (2010-2012)",
-    ],
-  },
+  // Additional team members if available
 ];
 
 export const founderData = {
-  name: "Alex Matthews & Rafael Martin Del Campo",
-  title: "Co-Founders",
-  education:
-    "Marketing degree from University of Bristol, Food Science background",
+  name: "Alex Matthews",
+  title: "Co-Founder & CEO",
+  education: ["Degree in Marketing from the University of Bristol (1992-1995)"],
   professionalBackground: [
-    "Alex: Over 15 years in consumer goods industry",
-    "Alex: Founded multiple successful beverage companies",
-    "Rafael: Third-generation tepache maker",
-    "Rafael: Expert in traditional fermentation techniques",
+    "Over 15 years of experience in the consumer goods industry",
+    "Former CEO & Co-Founder of Juice Served Here",
+    "Chief Marketing Officer at Forager Project",
   ],
   socials: {
-    twitter: "https://x.com/delacalleco?lang=en-GB",
-    linkedin: "linkedin.com/in/alexkmatthews",
+    linkedin: "https://www.linkedin.com/in/alexkmatthews/",
   },
   entrepreneurialCareer: {
-    title: "Co-Founders of De La Calle",
+    title: "Serial Entrepreneur in Food and Beverage Industry",
     ventures: {
-      preDeLaCalle: {
-        alex: [
-          "Founder of HERE Studio LA",
-          "Co-Founder & CEO of VINA Beverages Inc",
-          "Co-Founder of SIZE",
-          "Co-Founder of Highly Likely",
-          "CEO of Juice Served Here",
-        ],
-        rafael: [
-          "Traditional tepache production",
-          "Food science and fermentation expertise",
-        ],
-      },
+      preDeLaCalle: [
+        "Founder of HERE Studio LA",
+        "Co-Founder of Highly Likely eatery",
+        "Co-Founder & CEO of VINA Beverages Inc",
+        "Co-Founder of SIZE",
+      ],
       deLaCalleLaunch:
-        "Founded in 2020, combining traditional Mexican beverage expertise with modern brand building",
+        "Co-Founded De La Calle in 2020 with Rafael Martin Del Campo to introduce traditional Mexican tepache to the U.S. market",
     },
   },
   inspiration: [
-    "Met in 2018 over shared passion for Mexican street food and drinks",
-    "Alex's instant connection with tepache's potential",
-    "Rafael's family heritage in tepache making",
-    "Vision to modernize traditional Mexican beverages",
-    "Combination of traditional expertise and modern branding",
+    "Passion for authentic Mexican street food and drinks",
+    "Desire to create a low-calorie, low-sugar Mexican soda alternative",
   ],
   publicPresence: [
-    "Regular participation in industry events and conferences",
-    "Presence at Natural Products Expo",
-    "Active social media engagement",
-    "Creative brand promotion through Instagram",
+    "Participated in industry events and conferences",
+    "Featured in interviews with Forbes and other publications",
   ],
 };
 
 export const distributionStages = [
   {
     year: "2020",
-    stage: "Initial Launch",
+    stage: "Founding and Pilot Production",
     requirements: [
-      "Initial pilot plant setup",
-      "1,000-square-foot facility",
-      "Fermentation capabilities",
-      "Initial retail partnerships",
+      "Set up a 1,000-square-foot pilot plant for fermentation",
+      "Develop initial tepache recipes",
+      "Establish brand identity",
     ],
-    keyMetrics: [
-      "Production capacity",
-      "Product development progress",
-      "Initial market testing",
-    ],
+    keyMetrics: ["No product launched initially"],
     enablers: [
-      "Pilot plant establishment",
-      "Early retail discussions",
-      "Product development expertise",
+      "Founders' expertise in fermentation and branding",
+      "Growing consumer interest in functional beverages",
     ],
   },
   {
     year: "2021",
-    stage: "Retail Entry",
+    stage: "Product Launch and Initial Distribution",
     requirements: [
-      "Series A funding of $2.6M",
-      "Distribution partnerships",
-      "Product line development",
-      "Marketing infrastructure",
+      "Secured $2.6 million in Series A funding",
+      "Produced and launched five signature tepache flavors",
+      "Established retail partnerships",
     ],
     keyMetrics: [
-      "2,000+ retail locations",
-      "Premium pricing at $3.29/can",
-      "Social media engagement",
-      "Initial flavor portfolio",
+      "Available in over 2,000 locations",
+      "Won BevNet awards for Best New Product and Best Packaging",
     ],
     enablers: [
-      "Whole Foods partnership",
-      "HEB distribution",
-      "Erewhon presence",
-      "Gopuff delivery service",
+      "Investment from KarpReilly",
+      "Effective social media marketing and product giveaways",
     ],
   },
   {
     year: "2022",
-    stage: "Market Expansion",
+    stage: "Expansion and New Flavors",
     requirements: [
-      "PE Growth funding of $7M",
-      "Enhanced distribution network",
-      "Product line expansion",
-      "Marketing capabilities",
+      "Raised $7 million in growth capital",
+      "Launched five new flavors",
+      "Expanded retail presence nationally",
     ],
     keyMetrics: [
-      "Expanded retail presence",
-      "New flavor launches",
-      "Social media growth",
-      "Market penetration",
+      "Available in retailers like Kroger and for delivery on Good Eggs",
     ],
     enablers: [
-      "Kroger partnership",
-      "Natural Products Expo presence",
-      "Good Eggs delivery",
-      "Seasonal promotions",
+      "Investments from DrinkPAK, HERE Studio, and KarpReilly",
+      "Participation in expos like Natural Products Expo for sampling",
     ],
   },
   {
-    year: "2023-2024",
-    stage: "National Scale",
+    year: "2023",
+    stage: "Brand Growth and Market Recognition",
     requirements: [
-      "PE Growth funding of $22M",
-      "Nationwide distribution network",
-      "Price optimization strategy",
-      "Brand repositioning",
+      "Launched limited-edition fragrance line 'TENTACION'",
+      "Expanded merchandise offerings",
+      "Enhanced online and retail distribution channels",
     ],
     keyMetrics: [
-      "Revenue: $61M (2023)",
-      "27,000+ store locations",
-      "Price reduction to $2.49/can",
-      "Amazon marketplace entry",
+      "Sales of $61 million",
+      "Available on Amazon and nationwide in Walmart",
     ],
     enablers: [
-      "Walmart nationwide presence",
-      "Costco partnership",
-      "Albertsons & Vons distribution",
-      "Brand repositioning success",
+      "Media features in Esquire and Forbes",
+      "Increased demand for top-selling flavors",
+    ],
+  },
+  {
+    year: "2024",
+    stage: "Rebranding and Massive Retail Expansion",
+    requirements: [
+      "Raised $14 million in additional capital",
+      "Repositioned brand as modern Mexican soda",
+      "Lowered price point to $2.49 per can",
+    ],
+    keyMetrics: [
+      "Available in over 27,000 stores including Albertsons, Vons, and Costco",
+      "Partnerships with brands like Nopalera",
+    ],
+    enablers: [
+      "Investment from undisclosed investors",
+      "Strategic marketing and pricing adjustments",
     ],
   },
 ];
 
 export const marketingStages = [
   {
-    category: "Digital Marketing",
+    category: "Branding and Positioning",
     requirements: [
-      "Social media presence",
-      "Content strategy",
-      "Digital campaign capability",
-      "Community engagement",
+      "Unique brand identity focusing on modern Mexican soda",
+      "Distancing from traditional kombucha market",
+      "Appealing to both Latino and broader consumer segments",
     ],
     examples: [
       {
-        partnership: "Social Media Growth",
+        partnership: "Rebranding Initiative",
         conditions: [
-          "Instagram presence",
-          "TikTok engagement",
-          "Product giveaways",
-          "Recipe content",
+          "Updated can art emphasizing 'modern Mexican soda'",
+          "Adjusted packaging copy to reflect new positioning",
         ],
       },
       {
-        partnership: "Expo Presence",
+        partnership: "Pricing Strategy",
         conditions: [
-          "Natural Products Expo",
-          "Sampling opportunities",
-          "Trade show presence",
-          "Industry networking",
+          "Reduced price to $2.49 per can",
+          "Offered top-selling flavors at $1.49 in Walmart",
         ],
       },
     ],
   },
   {
-    category: "Brand Collaborations",
+    category: "Digital Marketing",
     requirements: [
-      "Partner alignment",
-      "Cultural relevance",
-      "Marketing integration",
-      "Distribution capability",
+      "Strong social media presence on Instagram and TikTok",
+      "Content creation including blogs, recipes, and giveaways",
+      "Engagement with followers through interactive posts",
     ],
     examples: [
       {
-        partnership: "Nopalera Beauty",
+        partnership: "Social Media Campaigns",
         conditions: [
-          "Mexican beauty brand alignment",
-          "Subscription program integration",
-          "Cultural authenticity",
-          "Cross-promotional marketing",
+          "Product giveaways and seasonal promotions",
+          "User-generated content and community engagement",
+        ],
+      },
+      {
+        partnership: "Website Optimization",
+        conditions: [
+          "Subscription and loyalty programs",
+          "Online merchandise sales",
+        ],
+      },
+    ],
+  },
+  {
+    category: "Collaborations and Partnerships",
+    requirements: [
+      "Strategic partnerships with complementary brands",
+      "Co-marketing opportunities during cultural events",
+    ],
+    examples: [
+      {
+        partnership: "Nopalera Collaboration",
+        conditions: [
+          "Offered beauty products as complimentary gifts to subscribers",
+          "Celebrated Hispanic Heritage Month together",
+        ],
+      },
+      {
+        partnership: "Tia Lupita Foods Shoutout",
+        conditions: [
+          "Cross-promotion on Instagram",
+          "Aligned with brands sharing similar values",
         ],
       },
     ],
   },
 ];
 
-export const capitalRaisedData = [
-  { date: "2020-01-01", cumulativeRaised: 0 },
-  { date: "2021-04-09", cumulativeRaised: 2.6 },
-  { date: "2022-02-24", cumulativeRaised: 9.6 },
-  { date: "2024-02-12", cumulativeRaised: 31.6 },
+export const topInvestors = [
+  {
+    name: "KarpReilly",
+    logoUrl: "URL_TO_IMAGE",
+    totalRoundsParticipated: 3,
+    roundsParticipated: ["Deal #1", "Deal #2", "Deal #3"],
+    leadInvestments: ["Deal #1"],
+    otherInvestments: ["Sprinkles Cupcakes", "Mendocino Farms"],
+    website: "https://karpreilly.com",
+    description:
+      "KarpReilly is a private investment firm that partners with growth companies in the consumer sector.",
+  },
+  {
+    name: "DrinkPAK",
+    logoUrl: "URL_TO_IMAGE",
+    totalRoundsParticipated: 1,
+    roundsParticipated: ["Deal #2"],
+    leadInvestments: [],
+    otherInvestments: ["Industry leader in beverage manufacturing"],
+    website: "https://drinkpak.com",
+    description:
+      "DrinkPAK is a leading contract manufacturer of premium alcoholic and non-alcoholic beverages.",
+  },
+  {
+    name: "HERE Studio",
+    logoUrl: "URL_TO_IMAGE",
+    totalRoundsParticipated: 2,
+    roundsParticipated: ["Deal #2", "Deal #3"],
+    leadInvestments: [],
+    otherInvestments: [
+      "Branding and development services for innovative brands",
+    ],
+    website: "https://herestudio.la",
+    description:
+      "HERE Studio helps innovative brands grow by providing marketing and development services.",
+  },
+  // Add more investors if applicable
+];
+
+export const ownershipData = [
+  { date: "2021-04-09", foundersOwnership: 55.34, investorsOwnership: 44.66 },
+  { date: "2022-02-24", foundersOwnership: 30.26, investorsOwnership: 69.74 },
+  { date: "2024-02-12", foundersOwnership: 19.18, investorsOwnership: 80.82 },
+];
+
+export const investorParticipation = [
+  {
+    investor: "KarpReilly",
+    "Deal #1": 1,
+    "Deal #2": 1,
+    "Deal #3": 0,
+  },
+  {
+    investor: "DrinkPAK",
+    "Deal #1": 0,
+    "Deal #2": 1,
+    "Deal #3": 0,
+  },
+  {
+    investor: "HERE Studio",
+    "Deal #1": 0,
+    "Deal #2": 1,
+    "Deal #3": 1,
+  },
+  // Add more investors if applicable
 ];
 
 export const valuationData = [
-  { date: "2021-04-09", preMoneyValuation: 2.89, postMoneyValuation: 5.06 },
-  { date: "2022-02-24", preMoneyValuation: 7.39, postMoneyValuation: 12.57 },
-  { date: "2024-02-12", preMoneyValuation: 28.4, postMoneyValuation: 36.49 },
+  { date: "2021-04-09", preMoneyValuation: 4, postMoneyValuation: 5.06 },
+  { date: "2022-02-24", preMoneyValuation: 10, postMoneyValuation: 12.57 },
+  { date: "2024-02-12", preMoneyValuation: 46.25, postMoneyValuation: 60.25 },
 ];
 
 export const revenueData = [
-  { year: 2020, revenue: null },
   { year: 2021, revenue: null },
   { year: 2022, revenue: null },
   { year: 2023, revenue: 61 },
+  { year: 2024, revenue: null }, // Undisclosed
+];
+
+export const capitalRaisedData = [
+  { date: "2021-04-09", cumulativeRaised: 2.6 },
+  { date: "2022-02-24", cumulativeRaised: 9.6 },
+  { date: "2024-02-12", cumulativeRaised: 23.6 },
+];
+
+export const revenueWithMilestones = [
+  {
+    year: 2021,
+    revenue: null,
+    milestone: "Product Launch and Initial Distribution",
+  },
+  {
+    year: 2022,
+    revenue: null,
+    milestone: "Expansion and New Flavors Launched",
+  },
+  { year: 2023, revenue: 61, milestone: "Sales Growth and Market Recognition" },
+  {
+    year: 2024,
+    revenue: null,
+    milestone: "Rebranding and Massive Retail Expansion",
+  },
 ];
 
 export const businessEvents = [
   {
     year: 2020,
     category: "Founding",
-    event: "Company Founded & Pilot Plant Setup",
+    event: "De La Calle founded by Alex Matthews and Rafael Martin Del Campo",
   },
-  { year: 2021, category: "Product", event: "Launch of Initial Five Flavors" },
   {
     year: 2021,
-    category: "Distribution",
-    event: "Entry into 2,000+ Retail Locations",
+    category: "Funding",
+    event: "Raised $2.6 million in Series A funding",
   },
-  { year: 2022, category: "Product", event: "Launch of Five New Flavors" },
+  {
+    year: 2021,
+    category: "Product",
+    event: "Launched five signature tepache flavors",
+  },
+  {
+    year: 2021,
+    category: "Awards",
+    event: "Won BevNet awards for Best New Product and Best Packaging",
+  },
+  {
+    year: 2022,
+    category: "Funding",
+    event: "Raised $7 million in growth capital",
+  },
+  {
+    year: 2022,
+    category: "Product",
+    event: "Launched five new tepache flavors",
+  },
   {
     year: 2023,
-    category: "Marketing",
-    event: "Launch of TENTACION Fragrance Line",
+    category: "Branding",
+    event: "Launched limited-edition fragrance line 'TENTACION'",
+  },
+  {
+    year: 2023,
+    category: "Revenue",
+    event: "Achieved sales of $61 million",
+  },
+  {
+    year: 2023,
+    category: "Distribution",
+    event: "Became available on Amazon and nationwide in Walmart",
   },
   {
     year: 2024,
-    category: "Strategy",
-    event: "Brand Repositioning & Price Reduction",
+    category: "Funding",
+    event: "Raised $14 million from undisclosed investors",
+  },
+  {
+    year: 2024,
+    category: "Branding",
+    event: "Repositioned brand as modern Mexican soda and lowered price",
+  },
+  {
+    year: 2024,
+    category: "Partnership",
+    event: "Partnered with Nopalera for Hispanic Heritage Month",
+  },
+  {
+    year: 2024,
+    category: "Distribution",
+    event: "Expanded to over 27,000 stores including Costco",
   },
 ];
 

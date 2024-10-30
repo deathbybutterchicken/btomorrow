@@ -3,13 +3,61 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { User, Linkedin, GraduationCap } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { executives } from "@/data/brands/liquiddeath";
+import { useEffect, useState } from "react";
 
 interface ExecutivesSectionProps {
   getPageScale: (index: number) => number;
+  brandId: string;
 }
 
-export function ExecutivesSection({ getPageScale }: ExecutivesSectionProps) {
+interface Executive {
+  name: string;
+  title: string;
+  image?: string;
+  education?: string;
+  experience: string[];
+  entrepreneurial: string[];
+  linkedin: string;
+}
+
+export function ExecutivesSection({
+  getPageScale,
+  brandId,
+}: ExecutivesSectionProps) {
+  const [executives, setExecutives] = useState<Executive[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        setIsLoading(true);
+        const brandData = await import(`@/data/brands/${brandId}`);
+        setExecutives(brandData.executives || []);
+      } catch (error) {
+        console.error("Error loading executives data:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    loadData();
+  }, [brandId]);
+
+  if (isLoading) {
+    return (
+      <div className="w-full h-screen flex items-center justify-center bg-orange-50">
+        <p>Loading executives...</p>
+      </div>
+    );
+  }
+
+  if (!executives?.length) {
+    return (
+      <div className="w-full h-screen flex items-center justify-center bg-orange-50">
+        <p>No executives data available.</p>
+      </div>
+    );
+  }
+
   return (
     <motion.div
       className="relative w-full h-screen overflow-y-auto bg-orange-50 p-6"
@@ -19,7 +67,6 @@ export function ExecutivesSection({ getPageScale }: ExecutivesSectionProps) {
         LEADERSHIP
       </h2>
 
-      {/* Cards */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-10 pb-6">
         {executives.map((exec, index) => (
           <Card key={index} className="bg-[#2B4B5C] overflow-hidden shadow-lg">
@@ -30,15 +77,17 @@ export function ExecutivesSection({ getPageScale }: ExecutivesSectionProps) {
                     {exec.name}
                   </CardTitle>
                   <p className="text-lg text-white opacity-90">{exec.title}</p>
-                  <Link
-                    href={exec.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center mt-2 text-white hover:text-blue-200"
-                  >
-                    <Linkedin className="w-5 h-5 mr-1" />
-                    LinkedIn Profile
-                  </Link>
+                  {exec.linkedin && (
+                    <Link
+                      href={exec.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center mt-2 text-white hover:text-blue-200"
+                    >
+                      <Linkedin className="w-5 h-5 mr-1" />
+                      LinkedIn Profile
+                    </Link>
+                  )}
                 </div>
                 <Avatar className="w-24 h-24 border-2 border-white">
                   <AvatarImage src={exec.image} alt={exec.name} />
@@ -57,26 +106,30 @@ export function ExecutivesSection({ getPageScale }: ExecutivesSectionProps) {
                   </div>
                 </div>
               )}
-              <div className="space-y-2">
-                <h3 className="text-lg font-semibold text-white">
-                  Professional Background
-                </h3>
-                <ul className="list-disc list-inside text-white">
-                  {exec.experience.map((exp, i) => (
-                    <li key={i}>{exp}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-lg font-semibold text-white">
-                  Entrepreneurial Career
-                </h3>
-                <ul className="list-disc list-inside text-white">
-                  {exec.entrepreneurial.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
+              {exec.experience?.length > 0 && (
+                <div className="space-y-2">
+                  <h3 className="text-lg font-semibold text-white">
+                    Professional Background
+                  </h3>
+                  <ul className="list-disc list-inside text-white">
+                    {exec.experience.map((exp, i) => (
+                      <li key={i}>{exp}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {exec.entrepreneurial?.length > 0 && (
+                <div className="space-y-2">
+                  <h3 className="text-lg font-semibold text-white">
+                    Entrepreneurial Career
+                  </h3>
+                  <ul className="list-disc list-inside text-white">
+                    {exec.entrepreneurial.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </CardContent>
           </Card>
         ))}

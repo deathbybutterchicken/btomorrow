@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Card,
   CardContent,
@@ -10,15 +10,59 @@ import {
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import { distributionStages, marketingStages } from "@/data/brands/liquiddeath"; // Import the constants
 
 interface StrategyEvolutionProps {
   getPageScale: (index: number) => number;
+  brandId: string;
+}
+
+interface Stage {
+  stage: string;
+  year: string;
+  requirements: string[];
+  enablers: string[];
+  keyMetrics: string[];
+}
+
+interface MarketingStage {
+  category: string;
+  requirements: string[];
+  examples: {
+    partnership: string;
+    conditions: string[];
+  }[];
 }
 
 const StrategyEvolution: React.FC<StrategyEvolutionProps> = ({
   getPageScale,
+  brandId,
 }) => {
+  const [strategyData, setStrategyData] = useState<{
+    distributionStages: Stage[];
+    marketingStages: MarketingStage[];
+  }>({
+    distributionStages: [],
+    marketingStages: [],
+  });
+
+  useEffect(() => {
+    const loadData = async () => {
+      const brandData = await import(`@/data/brands/${brandId}`);
+      setStrategyData({
+        distributionStages: brandData.distributionStages || [],
+        marketingStages: brandData.marketingStages || [],
+      });
+    };
+    loadData();
+  }, [brandId]);
+
+  if (
+    !strategyData.distributionStages.length &&
+    !strategyData.marketingStages.length
+  ) {
+    return null;
+  }
+
   return (
     <div className="p-4 space-y-4 bg-gray-50 overflow-auto max-h-screen">
       <div className="space-y-2">
@@ -36,7 +80,7 @@ const StrategyEvolution: React.FC<StrategyEvolutionProps> = ({
 
         <TabsContent value="distribution">
           <div className="space-y-4">
-            {distributionStages.map((stage, index) => (
+            {strategyData.distributionStages.map((stage, index) => (
               <Card
                 key={index}
                 className="bg-[#FFF7ED] backdrop-blur-sm bg-opacity-5"
@@ -91,7 +135,7 @@ const StrategyEvolution: React.FC<StrategyEvolutionProps> = ({
 
         <TabsContent value="marketing">
           <div className="space-y-4">
-            {marketingStages.map((stage, index) => (
+            {strategyData.marketingStages.map((stage, index) => (
               <Card key={index}>
                 <CardHeader>
                   <CardTitle>{stage.category}</CardTitle>

@@ -3,21 +3,64 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { Linkedin } from "lucide-react";
-import { founderData } from "@/data/brands/liquiddeath";
+import { useEffect, useState } from "react";
 
 interface FounderSectionProps {
   getPageScale: (index: number) => number;
+  brandId: string;
 }
 
-export function FounderSection({ getPageScale }: FounderSectionProps) {
+interface FounderData {
+  name: string;
+  title: string;
+  education: string;
+  professionalBackground: string[];
+  socials: {
+    twitter: string;
+    linkedin: string;
+  };
+  entrepreneurialCareer: {
+    title: string;
+    ventures: {
+      preLiquidDeath: string;
+      liquidDeathLaunch: string;
+    };
+  };
+  inspiration: string[];
+  publicPresence: string[];
+}
+
+export function FounderSection({ getPageScale, brandId }: FounderSectionProps) {
+  const [founderData, setFounderData] = useState<FounderData | null>(null);
+
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const brandData = await import(`@/data/brands/${brandId}`);
+        setFounderData(brandData.founderData || null);
+      } catch (error) {
+        console.error("Error loading founder data:", error);
+        setFounderData(null);
+      }
+    };
+    loadData();
+  }, [brandId]);
+
+  if (!founderData) return null;
+
+  const socialLinks = {
+    twitter: founderData.socials?.twitter || "#",
+    linkedin: founderData.socials?.linkedin || "#",
+  };
+
   return (
     <motion.div
-      className="relative w-full h-screen overflow-y-auto bg-[#fcf8ec]"
-      // animate={{ scale: getPageScale(0) }}
+      className="relative w-full h-screen overflow-y-auto bg-[#3C5E66]"
+      animate={{ scale: getPageScale(0) }}
     >
       <div className="container mx-auto px-4 py-12 min-h-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl w-full">
-          <Card className="col-span-1 lg:col-span-2 bg-[#2B4B5C] text-white">
+          <Card className="col-span-1 lg:col-span-2 bg-[#8CACA9] text-[#10151B]">
             <CardContent className="p-6">
               <div className="flex flex-col lg:flex-row">
                 <div className="lg:w-1/2 lg:pr-6">
@@ -70,41 +113,45 @@ export function FounderSection({ getPageScale }: FounderSectionProps) {
                       Professional Background
                     </h3>
                     <ul className="list-disc list-inside text-lg leading-relaxed mb-2">
-                      {founderData.professionalBackground.map((item, index) => (
-                        <li key={index}>{item}</li>
-                      ))}
+                      {founderData.professionalBackground?.map(
+                        (item, index) => <li key={index}>{item}</li>
+                      ) || <li>No professional background available</li>}
                     </ul>
                   </div>
                   <div className="mb-6">
                     <h3 className="text-2xl font-bold mb-4">Socials</h3>
                     <div className="flex space-x-4">
-                      <Link
-                        href={founderData.socials.twitter}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white hover:text-gray-300"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          className="w-6 h-6"
+                      {socialLinks.twitter && (
+                        <Link
+                          href={socialLinks.twitter}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[#10151B] hover:text-[#10151B]/50"
                         >
-                          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                        </svg>
-                        <span className="sr-only">Twitter</span>
-                      </Link>
-                      <Link
-                        href={founderData.socials.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white hover:text-gray-300"
-                      >
-                        <Linkedin className="w-6 h-6" />
-                        <span className="sr-only">LslinkedIn</span>
-                      </Link>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            className="w-6 h-6"
+                          >
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                          </svg>
+                          <span className="sr-only">Twitter</span>
+                        </Link>
+                      )}
+                      {socialLinks.linkedin && (
+                        <Link
+                          href={socialLinks.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[#10151B] hover:text-[#10151B]/50"
+                        >
+                          <Linkedin className="w-6 h-6" />
+                          <span className="sr-only">LinkedIn</span>
+                        </Link>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -114,19 +161,20 @@ export function FounderSection({ getPageScale }: FounderSectionProps) {
                     style={{ paddingBottom: "100%" }}
                   >
                     <Image
-                      src="https://mastersofscale.com/wp-content/uploads/2024/07/MoS_MikeCessario_colorcutout-350x350.webp"
+                      src="https://cdn.prod.website-files.com/5fce0f6bc9af69423eefaa13/64466094c008d96198b4a9fc_Mike.jpeg"
                       alt="Mike Cessario holding Liquid Death cans"
                       layout="fill"
                       objectFit="cover"
                       className="rounded-lg"
                       sizes="200px"
+                      style={{ opacity: 0.9 }}
                     />
                   </div>
                 </div>
               </div>
             </CardContent>
           </Card>
-          <Card className="bg-[#2B4B5C] text-white">
+          <Card className="bg-[#20464F] text-[#CFD5D2]">
             <CardContent className="p-6">
               <div className="flex items-center mb-4">
                 <svg
@@ -175,7 +223,7 @@ export function FounderSection({ getPageScale }: FounderSectionProps) {
               </div>
             </CardContent>
           </Card>
-          <Card className="bg-[#B8D8E3] text-black">
+          <Card className="bg-[#94B4AF] text-black">
             <CardContent className="p-6">
               <div className="flex items-center mb-4">
                 <svg
@@ -199,17 +247,17 @@ export function FounderSection({ getPageScale }: FounderSectionProps) {
               <div className="mb-6">
                 <h3 className="text-lg font-semibold mb-2">Inspiration</h3>
                 <ul className="list-disc list-inside text-lg leading-relaxed">
-                  {founderData.inspiration.map((item, index) => (
+                  {founderData.inspiration?.map((item, index) => (
                     <li key={index}>{item}</li>
-                  ))}
+                  )) || <li>No inspiration available</li>}
                 </ul>
               </div>
               <div className="mb-6">
                 <h3 className="text-lg font-semibold mb-2">Public Presence</h3>
                 <ul className="list-disc list-inside text-lg leading-relaxed">
-                  {founderData.publicPresence.map((item, index) => (
+                  {founderData.publicPresence?.map((item, index) => (
                     <li key={index}>{item}</li>
-                  ))}
+                  )) || <li>No public presence available</li>}
                 </ul>
               </div>
             </CardContent>

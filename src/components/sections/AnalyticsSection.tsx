@@ -37,13 +37,6 @@ import {
   Tooltip, // Import Tooltip for Chart.js
   Legend, // Import Legend for Chart.js
 } from "chart.js";
-import {
-  valuationData,
-  revenueWithMilestones,
-  businessEvents,
-  ownershipData,
-  capitalRaisedData,
-} from "@/data/brands/liquiddeath";
 import { Chart as ChartJSReact } from "react-chartjs-2"; // Keep Tooltip and Legend from chart.js
 
 // Register the components
@@ -383,21 +376,47 @@ function AnalyticsDashboard({
 // Analytics Section Wrapper
 interface AnalyticsSectionProps {
   getPageScale: (index: number) => number; // Define the type for getPageScale
+  brandId: string;
 }
 
-export function AnalyticsSection({ getPageScale }: AnalyticsSectionProps) {
+export function AnalyticsSection({
+  getPageScale,
+  brandId,
+}: AnalyticsSectionProps) {
+  const [analyticsData, setAnalyticsData] = useState({
+    valuationData: [],
+    revenueWithMilestones: [],
+    businessEvents: [],
+    ownershipData: [],
+    capitalRaisedData: [],
+  });
+
+  useEffect(() => {
+    const loadData = async () => {
+      const brandData = await import(`@/data/brands/${brandId}`);
+      setAnalyticsData({
+        valuationData: brandData.valuationData || [],
+        revenueWithMilestones: brandData.revenueWithMilestones || [],
+        businessEvents: brandData.businessEvents || [],
+        ownershipData: brandData.ownershipData || [],
+        capitalRaisedData: brandData.capitalRaisedData || [],
+      });
+    };
+    loadData();
+  }, [brandId]);
+
   return (
     <motion.div
-      className="relative w-full h-screen overflow-y-auto bg-gradient-to-b from-black via-black to-[#001F3F]"
+      className="relative w-full h-screen overflow-y-auto bg-black"
       animate={{ scale: getPageScale(0) }}
     >
       <div className="container mx-auto px-4 py-12">
         <AnalyticsDashboard
-          valuationData={valuationData}
-          revenueWithMilestones={revenueWithMilestones}
-          businessEvents={businessEvents}
-          ownershipData={ownershipData}
-          capitalRaisedData={capitalRaisedData}
+          valuationData={analyticsData.valuationData}
+          revenueWithMilestones={analyticsData.revenueWithMilestones}
+          businessEvents={analyticsData.businessEvents}
+          ownershipData={analyticsData.ownershipData}
+          capitalRaisedData={analyticsData.capitalRaisedData}
         />
       </div>
     </motion.div>

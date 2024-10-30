@@ -5,8 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-
-// ... other imports ...
+import { NavBar } from "./ui/nav-bar";
 
 // Import sections
 import { WelcomePage } from "./sections/WelcomePage";
@@ -22,22 +21,22 @@ const pages = [
   {
     id: 0,
     title: "Welcome",
-    subtitle: "Liquid Death Landing Page",
+    subtitle: " Landing Page",
     color: "bg-orange-50",
     textColor: "text-black",
   },
   {
     id: 1,
     title: "Founder",
-    subtitle: "Mike Cessario",
-    color: "bg-[#625B97]",
+    subtitle: "Brand Fouder",
+    color: "bg-[#3C5E66]",
     textColor: "text-black",
   },
   {
     id: 2,
     title: "Executive Team",
-    subtitle: "Leadership",
-    color: "bg-[#625B97]",
+    subtitle: "Leadership Team",
+    color: "bg-orange-50",
     textColor: "text-white",
   },
   {
@@ -51,26 +50,30 @@ const pages = [
     id: 4,
     title: "Analytics Dashboard",
     subtitle: "Key Metrics",
-    color: "bg-gradient-to-b from-black via-black to-[#001F3F]",
+    color: "bg-black",
     textColor: "text-white",
   },
   {
     id: 5,
     title: "Strategy Evolution",
     subtitle: "Growth & Partnerships",
-    color: "bg-[#625B97]",
+    color: "bg-gray-50",
     textColor: "text-white",
   },
   {
     id: 6,
     title: "Top Investors",
     subtitle: "Our Backers",
-    color: "bg-[#625B97]",
+    color: "bg-orange-50",
     textColor: "text-gray-800",
   },
 ];
 
-export default function LiquidDeathLanding() {
+interface BrandLandingProps {
+  brandId: string;
+}
+
+export default function BrandLanding({ brandId }: BrandLandingProps) {
   const [currentPage, setCurrentPage] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -101,43 +104,70 @@ export default function LiquidDeathLanding() {
   };
 
   return (
-    <div
-      ref={containerRef}
-      className="h-screen overflow-y-auto snap-y snap-mandatory"
-    >
-      {pages.map((page, index) => (
-        <motion.div
-          key={page.id}
-          id={page.id.toString()}
-          className={`h-screen w-full snap-start flex items-center justify-center ${page.color}`}
-          style={{ minHeight: "100vh" }}
-        >
+    <>
+      <NavBar />
+      <div
+        ref={containerRef}
+        className="h-screen overflow-y-auto snap-y snap-mandatory"
+      >
+        {pages.map((page, index) => (
           <motion.div
-            className="w-full h-full"
-            animate={{ scale: getPageScale(3) }}
+            key={page.id}
+            id={page.id.toString()}
+            className={`h-screen w-full snap-start flex items-center justify-center ${page.color}`}
+            style={{ minHeight: "100vh" }}
           >
-            {index === 0 && <WelcomePage getPageScale={getPageScale} />}
-            {index !== 0 && (
-              <>
-                {index === 1 && <FounderSection getPageScale={getPageScale} />}
-                {index === 2 && (
-                  <ExecutivesSection getPageScale={getPageScale} />
-                )}
-                {index === 3 && <TimelineSection getPageScale={getPageScale} />}
-                {index === 4 && (
-                  <AnalyticsSection getPageScale={getPageScale} />
-                )}
-                {index === 5 && (
-                  <StrategyEvolution getPageScale={getPageScale} />
-                )}
-                {index === 6 && (
-                  <InvestorsSection getPageScale={getPageScale} />
-                )}
-              </>
-            )}
+            <motion.div
+              className="w-full h-full"
+              animate={{ scale: getPageScale(3) }}
+            >
+              {index === 0 && (
+                <WelcomePage getPageScale={getPageScale} brandId={brandId} />
+              )}
+              {index !== 0 && (
+                <>
+                  {index === 1 && (
+                    <FounderSection
+                      getPageScale={getPageScale}
+                      brandId={brandId}
+                    />
+                  )}
+                  {index === 2 && (
+                    <ExecutivesSection
+                      getPageScale={getPageScale}
+                      brandId={brandId}
+                    />
+                  )}
+                  {index === 3 && (
+                    <TimelineSection
+                      getPageScale={getPageScale}
+                      brandId={brandId}
+                    />
+                  )}
+                  {index === 4 && (
+                    <AnalyticsSection
+                      getPageScale={getPageScale}
+                      brandId={brandId}
+                    />
+                  )}
+                  {index === 5 && (
+                    <StrategyEvolution
+                      getPageScale={getPageScale}
+                      brandId={brandId}
+                    />
+                  )}
+                  {index === 6 && (
+                    <InvestorsSection
+                      getPageScale={getPageScale}
+                      brandId={brandId}
+                    />
+                  )}
+                </>
+              )}
+            </motion.div>
           </motion.div>
-        </motion.div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 }

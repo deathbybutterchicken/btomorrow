@@ -1,16 +1,12 @@
 export const executives = [
   {
     name: "Doss Cunningham",
-    title: "Co-Founder & Chief Brand Officer, Nutrabolt",
-    image: "",
-    education: [
-      "M.S., Finance/Accounting, Mays Business School - Texas A&M University",
-    ],
+    title: "Co-Founder & Chief Brand Officer",
+    image: "URL_TO_IMAGE",
     experience: [
-      "Joined Nutrabolt in 2007, becoming CEO the same year",
-      "Over 16 years of leadership in sports nutrition",
-      "Expanded company into high-growth markets including Asia",
-      "Led strategic growth and global expansion",
+      "Joined Nutrabolt in 2007 and became CEO the same year",
+      "Led Nutrabolt to global success in the sports nutrition sector",
+      "Over 16 years of leadership experience",
     ],
     entrepreneurial: [
       "Founder at LivWell Ventures",
@@ -18,237 +14,354 @@ export const executives = [
       "Co-Founder & Chairman at FitJoy",
       "Co-Founder at Arrive Logistics",
     ],
-    socials: {
-      twitter: "https://x.com/NutraboltDoss",
-      linkedin: "https://www.linkedin.com/in/dosscunningham/",
-    },
+    linkedin: "https://www.linkedin.com/in/dosscunningham/",
+    // Added education to match Liquid Death structure
+    education:
+      "M.S. in Finance/Accounting from Mays Business School - Texas A&M University",
   },
   {
     name: "Sabba Naserian",
     title: "Chief Revenue Officer, Emerging Brands & New Ventures",
-    education: ["Bachelor of Commerce, Marketing, Carleton University"],
+    image: "URL_TO_IMAGE",
     experience: [
-      "Chief Revenue Officer at Nutrabolt",
-      "EVP & Chief Growth Officer at Nutrabolt",
-      "VP Client Success at Indelible Agency",
-      "VP Business Development at Canopy Growth Corporation",
+      "Former VP at Canopy Growth Corporation",
+      "Led revenue strategies at Nutrabolt",
+      "Developed operational efficiencies at Indelible Agency",
     ],
+    entrepreneurial: [
+      "Focused on driving growth for new brands within Nutrabolt",
+    ],
+    linkedin: "https://www.linkedin.com/in/sabbadabadoo/",
   },
   {
     name: "Kyle Thomas",
     title: "Global Chief Commercial Officer",
-    education: [
-      "Bachelor of Business Administration, Marketing, University of North Texas",
-      "Business Leadership, Queens University of Charlotte",
-    ],
+    image: "URL_TO_IMAGE",
     experience: [
-      "Various leadership roles at Coca-Cola Company",
-      "Extensive experience in beverage industry sales",
-      "Led emerging brands division",
+      "Former E.V.P. at Nutrabolt",
+      "Held leadership roles at The Coca-Cola Company",
+      "Over 25 years of experience in the beverage industry",
     ],
+    entrepreneurial: ["Led global expansion of C4 Energy brand"],
+    linkedin: "https://www.linkedin.com/in/kylethomaskrt/",
+  },
+  {
+    name: "Brittany Cullison",
+    title: "Chief People Officer",
+    image: "URL_TO_IMAGE",
+    experience: [
+      "Over 15 years in human resources",
+      "Led HR strategies at Nutrabolt",
+      "Former HR Director at 12th Man Foundation",
+    ],
+    entrepreneurial: ["Pioneered innovative HR practices at Nutrabolt"],
+    linkedin: "https://www.linkedin.com/in/brittanycullison/",
+  },
+  {
+    name: "Robert Zajac",
+    title: "Chief Marketing Officer",
+    image: "URL_TO_IMAGE",
+    experience: [
+      "Former SVP at Abercrombie & Fitch",
+      "Held leadership roles at Nike and ESPN",
+      "Expertise in global brand marketing",
+    ],
+    entrepreneurial: [
+      "Transformed C4's marketing strategy",
+      "Led breakthrough brand campaigns",
+    ],
+    linkedin: "https://www.linkedin.com/in/rtzajac/",
   },
 ];
 
 export const founderData = {
   name: "Doss Cunningham",
   title: "Co-Founder & Chief Brand Officer",
-  education: "M.S. Finance/Accounting from Texas A&M University",
+  education:
+    "M.S. in Finance/Accounting from Mays Business School - Texas A&M University",
   professionalBackground: [
-    "Joined Nutrabolt in 2007 as CEO",
-    "Led company to global success in sports nutrition",
-    "Expanded into high-growth markets",
-    "Strategic expertise in finance and accounting",
+    "Joined Nutrabolt in 2007 and became CEO the same year",
+    "Led the company to global success in sports nutrition",
+    "Over 16 years of leadership experience",
   ],
   socials: {
-    twitter: "https://x.com/NutraboltDoss",
     linkedin: "https://www.linkedin.com/in/dosscunningham/",
+    twitter: "https://x.com/NutraboltDoss",
   },
   entrepreneurialCareer: {
-    title: "Founder of Multiple Ventures",
+    title: "Serial Entrepreneur in Health and Wellness",
     ventures: {
-      preCellucor: [
-        "Founder at LivWell Ventures",
-        "Co-Founder at GiveJoy Foundation",
-        "Co-Founder & Chairman at FitJoy",
-        "Co-Founder at Arrive Logistics",
-      ],
-      cellucorLaunch:
-        "Led Nutrabolt's transformation into a global leader in sports nutrition",
+      preLemonPerfect:
+        "Developed multiple successful ventures in health and wellness space",
+      lemonPerfectLaunch: "Founded Nutrabolt and led the creation of C4 Energy",
     },
   },
   inspiration: [
-    "Passion for health and fitness",
-    "Science-driven approach to product development",
-    "Focus on performance and quality",
-    "Vision for accessible performance solutions",
+    "Passion for health, fitness, and empowering consumers",
+    "Desire to create science-driven, high-quality supplements",
   ],
   publicPresence: [
-    "Featured in media discussing leadership strategies",
-    "Regular podcast appearances",
-    "Named Entrepreneur Of The Year® 2021 for Central Texas",
-    "Active in industry events and conferences",
+    "Featured in media outlets discussing leadership strategies",
+    "Named Entrepreneur Of The Year® 2021 for Central Texas by Ernst & Young LLP",
   ],
 };
 
 export const distributionStages = [
   {
-    year: "2002-2009",
-    stage: "Initial Launch",
+    year: "2002",
+    stage: "Founding and Initial Launch",
     requirements: [
-      "No external funding",
-      "Direct-to-consumer focus",
-      "Regional sales strategy",
-      "Product development",
+      "Established Cellucor under Nutrabolt",
+      "Focused on creating premium supplements",
+      "Targeted fitness professionals and bodybuilders",
     ],
-    keyMetrics: [
-      "Revenue: $50,000",
-      "Initial regional presence",
-      "Direct sales channels",
-      "Early product line development",
-    ],
+    keyMetrics: ["Sales: $50,000 through direct-to-consumer channels"],
     enablers: [
-      "Focus on quality ingredients",
-      "Targeting fitness professionals",
-      "Building brand credibility",
-      "Product effectiveness",
+      "High-quality product formulations",
+      "Word-of-mouth marketing within fitness communities",
     ],
   },
   {
-    year: "2010-2014",
-    stage: "Market Expansion",
+    year: "2010–2011",
+    stage: "Launch of C4 Pre-Workout",
     requirements: [
-      "Initial funding of $400,000",
-      "Series A funding of $2.5M",
-      "Enhanced distribution network",
-      "Marketing infrastructure",
+      "Secured $400,000 in funding",
+      "Developed and launched C4 Extreme",
+      "Expanded marketing efforts",
     ],
     keyMetrics: [
-      "Revenue growth to $200M",
-      "Launch of C4 pre-workout",
-      "Retail partnership expansion",
-      "Product line diversification",
+      "Sales grew to $2 million",
+      "Partnership with Bodybuilding.com",
     ],
     enablers: [
-      "GNC partnership",
-      "Bodybuilding.com success",
-      "Influencer collaborations",
-      "Award-winning products",
+      "Premium packaging and effective formulations",
+      "Increased online presence",
     ],
   },
   {
-    year: "2015-2019",
-    stage: "Global Scale",
+    year: "2012–2014",
+    stage: "Expansion and Growth",
     requirements: [
-      "Series A funding of $250M",
-      "International expansion plans",
-      "Enhanced production capacity",
-      "Marketing capabilities",
+      "Raised $2.5 million in Series A funding",
+      "Expanded product lines (CLK, COR-Performance Series)",
+      "Intensified marketing and influencer collaborations",
     ],
     keyMetrics: [
-      "Revenue: $300M-500M",
-      "Global market presence",
-      "Product line expansion",
-      "Brand recognition",
+      "Sales soared to $200 million",
+      "C4 Extreme awarded 'Pre-Workout of the Year' by Bodybuilding.com",
     ],
     enablers: [
-      "International market entry",
-      "C4 Ultimate launch",
-      "Digital marketing success",
-      "Retail expansion",
+      "Endorsements from fitness influencers and athletes",
+      "Retail expansion into GNC and Vitamin Shoppe",
     ],
   },
   {
-    year: "2020-2024",
-    stage: "Market Leadership",
+    year: "2015–2017",
+    stage: "International Expansion",
     requirements: [
-      "Series B & C funding totaling $400M",
-      "Celebrity partnerships",
-      "Innovation capabilities",
-      "Sustainability initiatives",
+      "Secured $250 million in Series A funding",
+      "Diversified product lineup",
+      "Penetrated international markets",
     ],
     keyMetrics: [
-      "Revenue: $600M+",
-      "2B+ servings sold",
-      "Mainstream retail presence",
-      "Environmental impact",
+      "Sales reached $300 million",
+      "Launch of C4 Ultimate and G4 Series",
     ],
     enablers: [
-      "WWE partnership",
-      "Mars collaboration",
-      "Kevin Hart investment",
-      "Sustainability programs",
+      "Innovative product development",
+      "Increased global brand awareness",
+    ],
+  },
+  {
+    year: "2018–2019",
+    stage: "Brand Diversification",
+    requirements: [
+      "Raised $200 million in Series C funding",
+      "Expanded into energy drinks and new categories",
+      "Enhanced social media marketing",
+    ],
+    keyMetrics: [
+      "Sales hit $500 million",
+      "Expanded flavor offerings and celebrity collaborations",
+    ],
+    enablers: [
+      "Influencer partnerships on Instagram and YouTube",
+      "Product collaborations (e.g., Post Malone)",
+    ],
+  },
+  {
+    year: "2020–2022",
+    stage: "Mainstream Market Penetration",
+    requirements: [
+      "Secured $200 million in Series B funding",
+      "Scaled operations and distribution networks",
+      "Formed strategic partnerships",
+    ],
+    keyMetrics: [
+      "Sales reached $600 million",
+      "Became official energy drink partner of WWE",
+    ],
+    enablers: [
+      "Retail expansion into Walmart, Target, and 7-Eleven",
+      "Partnerships with celebrities like Kevin Hart",
     ],
   },
 ];
 
 export const marketingStages = [
   {
-    category: "Sports & Entertainment Partnerships",
+    category: "Brand and Positioning",
     requirements: [
-      "Brand credibility",
-      "Marketing infrastructure",
-      "Celebrity relationships",
-      "Event presence",
+      "Emphasize high performance and innovation",
+      "Position as leader in sports and fitness industry",
+      "Appeal to both fitness enthusiasts and mainstream consumers",
     ],
     examples: [
       {
-        partnership: "WWE Collaboration",
+        partnership: "Mars Inc. Collaboration", // Changed from initiative to partnership
         conditions: [
-          "Official energy drink partner",
-          "WWE Superstar endorsements",
-          "Event integration",
-          "Content creation",
+          // Changed from details to conditions
+          "Partnered with Mars Inc. for Skittles and Starburst flavors",
+          "Limited-edition flavors with celebrities like Post Malone",
         ],
       },
       {
-        partnership: "Mars Incorporated",
+        partnership: "WWE Partnership",
         conditions: [
-          "Flavor collaborations",
-          "Brand alignment",
-          "Product innovation",
-          "Market expansion",
+          "Official energy drink partner of WWE",
+          "Sponsorship of events like SXSW",
         ],
       },
     ],
   },
   {
-    category: "Sustainability Initiatives",
+    category: "Digital Marketing",
     requirements: [
-      "Environmental commitment",
-      "Partner relationships",
-      "Implementation capability",
-      "Consumer education",
+      "Strong social media presence",
+      "Targeted ads on Google and Facebook",
+      "Influencer partnerships",
     ],
     examples: [
       {
-        partnership: "Plastic Bank",
+        partnership: "Social Media Influencers",
         conditions: [
-          "Plastic neutral commitment",
-          "Environmental impact",
-          "Consumer awareness",
-          "Sustainability goals",
+          "Engaging content on Instagram, Twitter, and TikTok",
+          "Collaborations with fitness influencers and athletes",
         ],
       },
       {
-        partnership: "How2Recycle",
+        partnership: "Content Marketing",
         conditions: [
-          "Package labeling",
-          "Consumer education",
-          "Recycling initiatives",
-          "Environmental responsibility",
+          "Optimized blog content focusing on energy, fitness, and well-being",
+          "Educational articles to position as industry thought leader",
+        ],
+      },
+    ],
+  },
+  {
+    category: "Experiential Marketing",
+    requirements: [
+      "Organize tasting events and sampling campaigns",
+      "Participate in fitness expos and events",
+      "Create immersive brand experiences",
+    ],
+    examples: [
+      {
+        partnership: "Fitness Events",
+        conditions: [
+          "Sampling at gyms and fitness expos like Arnold Classic",
+          "Sponsorship of major sporting events",
+        ],
+      },
+      {
+        partnership: "Retail Activations",
+        conditions: [
+          "Mobile beverage bars and pop-up trucks",
+          "Innovative packaging designs to attract attention",
         ],
       },
     ],
   },
 ];
 
+export const topInvestors = [
+  {
+    name: "KarpReilly",
+    logoUrl: "URL_TO_IMAGE",
+    totalRoundsParticipated: 2,
+    roundsParticipated: ["Series A", "Series B"],
+    leadInvestments: ["Series A"],
+    otherInvestments: ["Sprinkles Cupcakes", "Mendocino Farms"],
+    website: "https://karpreilly.com",
+    description:
+      "KarpReilly is a private investment firm focused on consumer growth companies.",
+  },
+  {
+    name: "Kevin Hart",
+    logoUrl: "URL_TO_IMAGE",
+    totalRoundsParticipated: 1,
+    roundsParticipated: ["Strategic Investment 2020"],
+    leadInvestments: [],
+    otherInvestments: ["Various entertainment and lifestyle brands"],
+    website: null,
+    description:
+      "Actor and entrepreneur with strategic investments in health and wellness.",
+  },
+  {
+    name: "MidOcean Partners",
+    logoUrl: "URL_TO_IMAGE",
+    totalRoundsParticipated: 1,
+    roundsParticipated: ["Growth Investment"],
+    leadInvestments: ["Growth Investment"],
+    otherInvestments: ["LA Fitness", "The Original Cakerie"],
+    website: "https://midoceanpartners.com",
+    description: "Private equity firm focusing on middle market companies.",
+  },
+];
+
+export const ownershipData = [
+  { date: "2002-01-01", foundersOwnership: 100, investorsOwnership: 0 },
+  { date: "2012-01-01", foundersOwnership: 80, investorsOwnership: 20 },
+  { date: "2015-01-01", foundersOwnership: 60, investorsOwnership: 40 },
+  { date: "2018-01-01", foundersOwnership: 45, investorsOwnership: 55 },
+  { date: "2020-01-01", foundersOwnership: 35, investorsOwnership: 65 },
+];
+
+export const investorParticipation = [
+  {
+    investor: "KarpReilly",
+    "Deal #1": 1,
+    "Deal #2": 1,
+    "Deal #3": 0,
+  },
+  {
+    investor: "Kevin Hart",
+    "Deal #1": 0,
+    "Deal #2": 0,
+    "Deal #3": 1,
+  },
+  {
+    investor: "MidOcean Partners",
+    "Deal #1": 0,
+    "Deal #2": 1,
+    "Deal #3": 0,
+  },
+];
+
+export const valuationData = [
+  { date: "2010-01-01", preMoneyValuation: 5, postMoneyValuation: 5.4 },
+  { date: "2012-01-01", preMoneyValuation: 20, postMoneyValuation: 22.5 },
+  { date: "2015-01-01", preMoneyValuation: 280, postMoneyValuation: 530 },
+  { date: "2018-01-01", preMoneyValuation: 600, postMoneyValuation: 800 },
+  { date: "2020-01-01", preMoneyValuation: 900, postMoneyValuation: 1100 },
+];
 export const revenueData = [
   { year: 2002, revenue: 0.05 },
-  { year: 2011, revenue: 2 },
-  { year: 2014, revenue: 200 },
-  { year: 2017, revenue: 300 },
-  { year: 2019, revenue: 500 },
-  { year: 2022, revenue: 600 },
+  { year: 2010, revenue: 2 },
+  { year: 2012, revenue: 200 },
+  { year: 2015, revenue: 300 },
+  { year: 2018, revenue: 500 },
+  { year: 2020, revenue: 600 },
 ];
 
 export const capitalRaisedData = [
@@ -259,32 +372,60 @@ export const capitalRaisedData = [
   { date: "2020-01-01", cumulativeRaised: 652.9 },
 ];
 
+export const revenueWithMilestones = [
+  { year: 2002, revenue: 0.05, milestone: "Company Founded" },
+  { year: 2010, revenue: 2, milestone: "Launch of C4 Pre-Workout" },
+  { year: 2012, revenue: 200, milestone: "Expansion and Growth" },
+  { year: 2015, revenue: 300, milestone: "International Expansion" },
+  { year: 2018, revenue: 500, milestone: "Brand Diversification" },
+  { year: 2020, revenue: 600, milestone: "Mainstream Market Penetration" },
+];
+
 export const businessEvents = [
   {
     year: 2002,
     category: "Founding",
-    event: "Cellucor established by Nutrabolt",
-  },
-  { year: 2009, category: "Distribution", event: "Retail launch in GNC" },
-  {
-    year: 2011,
-    category: "Product",
-    event: "Launch of C4 Extreme pre-workout",
+    event: "Cellucor founded under Nutrabolt",
   },
   {
-    year: 2021,
+    year: 2010,
+    category: "Product Launch",
+    event: "Launched C4 Extreme Pre-Workout",
+  },
+  {
+    year: 2012,
+    category: "Funding",
+    event: "Secured $2.5 million in Series A funding",
+  },
+  {
+    year: 2015,
+    category: "Funding",
+    event: "Raised $250 million for international expansion",
+  },
+  {
+    year: 2018,
+    category: "Funding",
+    event: "Raised $200 million in Series C funding",
+  },
+  {
+    year: 2020,
     category: "Partnership",
-    event: "Kevin Hart investment and Mars collaboration",
+    event: "Investment from Kevin Hart",
   },
   {
     year: 2022,
-    category: "Marketing",
-    event: "Official WWE energy drink partnership",
+    category: "Branding & Marketing",
+    event: "Became official energy drink partner of WWE",
   },
   {
-    year: 2024,
-    category: "Expansion",
-    event: "Global market presence and sustainability initiatives",
+    year: 2022,
+    category: "Sustainability",
+    event: "Partnered with Plastic Bank and adopted How2Recycle labels",
+  },
+  {
+    year: 2023,
+    category: "Marketing",
+    event: "Emphasized experiential marketing at events like SXSW",
   },
 ];
 

@@ -1,5 +1,5 @@
-import LiquidDeathLanding from "@/components/liquid-death-landing";
+import { redirect } from "next/navigation";
 
-export default function Home() {
-  return <LiquidDeathLanding />;
+export default function HomePage() {
+  redirect("/liquiddeath");
 }

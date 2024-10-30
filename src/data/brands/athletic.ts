@@ -5,205 +5,275 @@ export const HEADINGS = {
   imageAlt: "Athletic Brewing Non-Alcoholic Craft Beer Products",
 };
 
+export const executives = [
+  {
+    name: "Bill Shufelt",
+    title: "Co-Founder and CEO",
+    image:
+      "https://media.licdn.com/dms/image/C5603AQEmzl6K_JxHog/profile-displayphoto-shrink_200_200/0/1517724740147?e=1699488000&v=beta&t=yGQkQGmZx_FzhRLYcPNUDB4bIN6y0Fapgn8uW5WRN6k",
+    experience: [
+      "Former Trader and Portfolio Manager at Point72 Asset Management",
+      "Background in finance and investment management",
+    ],
+    entrepreneurial: [
+      "Founded Athletic Brewing Company in 2017",
+      "Pioneered the non-alcoholic craft beer movement",
+    ],
+    linkedin: "https://www.linkedin.com/in/bill-shufelt-50b14b2/",
+  },
+  {
+    name: "John Walker",
+    title: "Co-Founder and Head Brewer",
+    image:
+      "https://media.licdn.com/dms/image/C5603AQGywx1ZxV72lA/profile-displayphoto-shrink_200_200/0/1617041965910?e=1699488000&v=beta&t=Vjv8P1BS0pmswXCdftMjdj5apKOR1CiF6zHmxObfqpA",
+    experience: [
+      "Former Head Brewer at Second Street Brewery",
+      "Over a decade of experience in craft brewing",
+    ],
+    entrepreneurial: [
+      "Co-founded Athletic Brewing Company",
+      "Developed award-winning non-alcoholic beers",
+    ],
+    linkedin: "https://www.linkedin.com/in/john-walker-253b26162/",
+  },
+  // Add more executives if available
+];
+
+export const founderData = {
+  name: "Bill Shufelt",
+  title: "Co-Founder and CEO",
+  education:
+    "Bachelor's Degree in Economics from Middlebury College; Certified Health Coach",
+  professionalBackground: [
+    "Former Trader and Portfolio Manager at Point72 Asset Management",
+    "Left finance to pursue passion in health and wellness",
+  ],
+  socials: {
+    twitter: "https://twitter.com/AthleticBrewing",
+    linkedin: "https://www.linkedin.com/in/bill-shufelt-50b14b2/",
+  },
+  entrepreneurialCareer: {
+    title: "Founder and CEO of Athletic Brewing Company",
+    ventures: {
+      preAthleticBrewing:
+        "Identified a gap in the market for high-quality non-alcoholic beer while pursuing a healthier lifestyle",
+      athleticBrewingLaunch:
+        "Founded Athletic Brewing Company in 2017 with John Walker, launching first products in 2018",
+    },
+  },
+  inspiration: [
+    "Passion for fitness and a healthy lifestyle",
+    "Desire for a flavorful non-alcoholic beer that complements an active life",
+  ],
+  publicPresence: [
+    "Featured in Forbes 30 Under 30",
+    "Speaker at industry conferences on entrepreneurship and non-alcoholic trends",
+    "Active on social media promoting sober living and wellness",
+  ],
+};
+
 export const distributionStages = [
   {
-    year: "2018",
-    stage: "Initial Launch",
+    year: "2017",
+    stage: "Seed Funding and Product Development",
     requirements: [
-      "Initial investment of $100,000",
-      "Friends and family funding of $125,000",
-      "Basic production facility established",
-      "Initial retail relationships",
-      "Product development capability",
+      "Initial seed funding of $500k secured",
+      "Development of core product lineup",
+      "Establishment of brewing facility in Stratford, Connecticut",
     ],
     keyMetrics: [
       "Revenue: $53,000",
-      "Initial retail placement",
-      "Market response rate",
-      "Product quality metrics",
+      "Product trials in seven stores across New England",
     ],
     enablers: [
-      "Shark Tank investment secured",
-      "Rohan Oza partnership",
-      "Innovative brewing process",
-      "Strong brand positioning",
+      "Strong founder vision and industry expertise",
+      "Focus on high-quality, craft non-alcoholic beer",
     ],
   },
   {
-    year: "2019-2020",
-    stage: "Early Retail",
+    year: "2018",
+    stage: "Initial Retail Distribution",
     requirements: [
-      "Seed funding of $2.5 million",
-      "Series A funding of $10 million",
-      "Expanded production capacity",
-      "Distribution partnerships",
-      "E-commerce platform",
+      "Product-market fit validation",
+      "Establishment of relationships with local retailers",
+      "Compliance with brewing regulations",
     ],
     keyMetrics: [
-      "Revenue: $2.8M to $8.6M",
-      "1,800 retail locations",
-      "E-commerce performance",
-      "Market penetration",
+      "Sales through grocery and convenience stores",
+      "40-60% of sales from e-commerce channels",
     ],
     enablers: [
-      "Whole Foods partnership",
-      "Amazon marketplace presence",
-      "COVID-19 online growth",
-      "Product line expansion",
+      "Growing demand in the 'sober curious' market",
+      "Effective online presence and direct-to-consumer sales",
+    ],
+  },
+  {
+    year: "2019",
+    stage: "Series A Funding and Market Expansion",
+    requirements: [
+      "Series A funding of $3.1 million secured",
+      "Scaling production capabilities",
+      "Expansion into more U.S. states",
+    ],
+    keyMetrics: ["Revenue: $2.5 million", "Ambassador program launched"],
+    enablers: [
+      "Partnerships with Tastemaker Capital Partners and Blake Mycoskie",
+      "Strong brand identity centered on wellness",
+    ],
+  },
+  {
+    year: "2020",
+    stage: "Scaling Production and National Distribution",
+    requirements: [
+      "Series B funding of $17.5 million secured",
+      "Acquisition of San Diego brewing facility",
+      "Increased production capacity by 400%",
+    ],
+    keyMetrics: ["Revenue: $15 million", "Production of 37,500 barrels"],
+    enablers: [
+      "Award-winning products gaining recognition",
+      "Expanded marketing efforts including TV advertising",
     ],
   },
   {
     year: "2021",
-    stage: "National Growth",
+    stage: "International Expansion and Recognition",
     requirements: [
-      "Series A2 funding of $13.5M",
-      "Influencer marketing infrastructure",
-      "Expanded distribution network",
-      "Social media strategy",
+      "Series C funding of $50 million secured",
+      "Expansion into international markets (Canada, UK, Australia)",
+      "Enhanced brewing capacity and product offerings",
     ],
     keyMetrics: [
-      "Revenue: $31M",
-      "6,000 retail locations",
-      "TikTok engagement metrics",
-      "Celebrity investment participation",
+      "Revenue: $37 million",
+      "Products available in 40 U.S. states",
     ],
     enablers: [
-      "Celebrity investments",
-      "Viral social media presence",
-      "Enhanced retail partnerships",
-      "Expanded product portfolio",
+      "Named in TIME's '100 Most Influential Companies'",
+      "Investment from celebrities like J.J. Watt",
     ],
   },
   {
     year: "2022",
-    stage: "Market Leadership",
+    stage: "Scaling and Market Leadership",
     requirements: [
-      "Series B funding of $25M",
-      "Mass market distribution",
-      "Multiple SKU management",
-      "Enhanced production capacity",
+      "Series D funding of $75.5 million secured",
+      "Opening of new 150,000 sq ft facility in Milford, CT",
+      "Expansion to over 50,000 retailers",
     ],
     keyMetrics: [
-      "Revenue: $100M",
-      "23,000 retail locations",
-      "465% growth rate",
-      "Market share metrics",
+      "Revenue: Approx. $74 million",
+      "Annual production capacity of 6 million cases",
     ],
     enablers: [
-      "Major retail presence",
-      "Product innovation",
-      "Supply chain optimization",
-      "Brand market position",
+      "Partnerships with Keurig Dr Pepper",
+      "Growing ambassador network of 1,500 members",
     ],
   },
   {
-    year: "2023-2024",
-    stage: "Global Scale",
+    year: "2023",
+    stage: "Product Diversification and Global Partnerships",
     requirements: [
-      "Series C funding of $41.9M",
-      "International distribution network",
-      "Brand collaboration capability",
-      "Enhanced marketing infrastructure",
+      "Introduction of new products (Athletic Lite, DayPack Sparkling Water)",
+      "Partnership with Arsenal Football Club",
+      "Focus on direct-to-consumer relationships",
     ],
     keyMetrics: [
-      "Revenue: $500M",
-      "35,000 retail locations",
-      "19% Amazon market share",
-      "International growth metrics",
+      "Continued revenue growth (exact figures undisclosed)",
+      "Recognition as one of Fast Company's 'Most Creative Companies'",
     ],
     enablers: [
-      "International expansion",
-      "Major brand partnerships",
-      "Super Bowl exposure",
-      "Projected 58,000 locations",
+      "Strong DTC channel driving innovation",
+      "Global brand recognition in non-alcoholic beer movement",
+    ],
+  },
+  {
+    year: "2024",
+    stage: "Continued Expansion and Investment",
+    requirements: [
+      "Venture funding of $200 million secured from General Atlantic",
+      "Doubling of production capacity with third brewing facility",
+      "Tripling retail footprint in Canada",
+    ],
+    keyMetrics: [
+      "Raised to date: $271.91 million",
+      "Products available in major retailers like Walmart and Target",
+    ],
+    enablers: [
+      "Strategic investments for sustainable growth",
+      "Expanded international distribution channels",
     ],
   },
 ];
 
 export const marketingStages = [
   {
-    category: "Celebrity Partnerships",
+    category: "Ambassador Program and Athlete Partnerships",
     requirements: [
-      "Brand recognition established",
-      "Social media infrastructure",
-      "Content production capability",
-      "Influencer network",
+      "Established brand identity focused on wellness",
+      "Network within athletic and outdoor communities",
+      "Marketing resources for ambassador engagement",
     ],
     examples: [
       {
-        partnership: "Post Malone Collaboration",
+        partnership: "Professional Athletes and Celebrities",
         conditions: [
-          "Custom flavor development",
-          "Personal story alignment",
-          "Mass market distribution",
-          "Social media amplification",
+          "Investments from J.J. Watt, Lance Armstrong, and others",
+          "Brand ambassadors embodying active lifestyles",
         ],
       },
       {
-        partnership: "Jennifer Lopez Partnership",
+        partnership: "NCAA Collegiate Athletes",
         conditions: [
-          "Lifestyle brand alignment",
-          "Health-conscious messaging",
-          "Social media reach",
-          "Content creation capability",
+          "Launch of ambassador program in 2019",
+          "Engagement with younger, health-conscious demographics",
         ],
       },
     ],
   },
   {
-    category: "Brand Collaborations",
+    category: "Award Recognition and Media Features",
     requirements: [
-      "Brand equity established",
-      "Product development capability",
-      "Cross-promotional strategy",
-      "Retail distribution network",
+      "High-quality products",
+      "Participation in industry competitions",
+      "PR and media outreach capabilities",
     ],
     examples: [
       {
-        partnership: "Mattel/Barbie Collaboration",
+        partnership: "International Beer Challenge",
         conditions: [
-          "Youth market appeal",
-          "Product innovation capability",
-          "Creative packaging design",
-          "Cross-promotional strategy",
+          "Winning awards like 'Supreme Champion Beer' in 2020",
+          "Leveraging accolades for marketing purposes",
         ],
       },
       {
-        partnership: "Miami Pickleball Club",
+        partnership: "TIME Magazine and Inc. Magazine",
         conditions: [
-          "Sports and wellness alignment",
-          "Event activation capability",
-          "Celebrity athlete partnerships",
-          "Venue distribution strategy",
+          "Recognition as an influential and fast-growing company",
+          "Utilizing media features to enhance brand credibility",
         ],
       },
     ],
   },
   {
-    category: "Digital & Events",
+    category: "Digital Marketing and DTC Engagement",
     requirements: [
-      "Social media presence",
-      "Event production capability",
+      "Robust e-commerce platform",
+      "Data analytics for customer insights",
       "Content creation resources",
-      "Digital marketing infrastructure",
     ],
     examples: [
       {
-        partnership: "Viral TikTok Campaigns",
+        partnership: "Fit For All Times Campaign",
         conditions: [
-          "Influencer relationships",
-          "Quick response capability",
-          "Engagement metrics tracking",
-          "Content strategy",
+          "Featuring celebrities and athletes",
+          "Connecting with Gen Z and millennials",
         ],
       },
       {
-        partnership: "Pop-Up Experiences",
+        partnership: "Social Media and Online-Only Products",
         conditions: [
-          "Event space management",
-          "Celebrity attendance",
-          "Brand activation design",
-          "Super Bowl commercial production",
+          "Offering exclusive beers through online platform",
+          "Engaging customers with limited-time offerings",
         ],
       },
     ],
@@ -212,305 +282,207 @@ export const marketingStages = [
 
 export const topInvestors = [
   {
-    name: "CAVU Consumer Partners",
+    name: "General Atlantic",
     logoUrl:
-      "https://www.cavuventures.com/wp-content/uploads/2022/03/CAVU-Logo.png",
+      "https://www.generalatlantic.com/wp-content/uploads/2018/04/General-Atlantic-Logo-Color.png",
+    totalRoundsParticipated: 1,
+    roundsParticipated: ["Deal #11"],
+    leadInvestments: ["Deal #11"],
+    otherInvestments: ["Airbnb", "Uber", "Slack"],
+    website: "https://www.generalatlantic.com",
+    description:
+      "General Atlantic is a leading global growth equity firm providing capital and strategic support for growth companies.",
+  },
+  {
+    name: "Keurig Dr Pepper",
+    logoUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/2/2e/Keurig_Dr_Pepper_logo.svg",
+    totalRoundsParticipated: 1,
+    roundsParticipated: ["Deal #8"],
+    leadInvestments: [],
+    otherInvestments: ["Core Hydration", "Bai Brands", "Polar Beverages"],
+    website: "https://www.keurigdrpepper.com",
+    description:
+      "Keurig Dr Pepper is a leading beverage company in North America offering hot and cold beverages together at scale.",
+  },
+  {
+    name: "Alliance Consumer Growth",
+    logoUrl:
+      "https://www.allianceconsumergrowth.com/wp-content/themes/acg/img/acg-logo.svg",
+    totalRoundsParticipated: 2,
+    roundsParticipated: ["Deal #6", "Deal #8"],
+    leadInvestments: ["Deal #6"],
+    otherInvestments: ["Krave Jerky", "EVOL Foods", "SkinnyPop Popcorn"],
+    website: "https://www.allianceconsumergrowth.com",
+    description:
+      "Alliance Consumer Growth is a consumer-focused growth equity firm that invests in the most promising emerging brands.",
+  },
+  {
+    name: "TRB Advisors",
+    logoUrl: "https://s24.q4cdn.com/505609653/files/design/logos/logo-v3.png",
+    totalRoundsParticipated: 3,
+    roundsParticipated: ["Deal #3", "Deal #4", "Deal #6"],
+    leadInvestments: ["Deal #6"],
+    otherInvestments: ["Beyond Meat", "Impossible Foods"],
+    website: null,
+    description:
+      "TRB Advisors is a private investment firm founded by Timothy Barakett, focusing on venture capital and growth investments.",
+  },
+  {
+    name: "Blake Mycoskie",
+    logoUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/9/9e/Blake_Mycoskie_in_NYC.jpg",
     totalRoundsParticipated: 4,
-    roundsParticipated: ["Seed Round", "Series A", "Series A2", "Series B"],
-    leadInvestments: ["Series A", "Series A2"],
-    otherInvestments: ["Vitamin Water", "Vita Coco", "Bai"],
-    website: "https://www.cavuventures.com",
+    roundsParticipated: ["Deal #3", "Deal #4", "Deal #6", "Deal #7"],
+    leadInvestments: [],
+    otherInvestments: ["TOMS Shoes (Founder)", "Madefor"],
+    website: "https://www.blakemycoskie.com",
     description:
-      "CAVU Consumer Partners is a venture capital firm focusing on consumer goods, led by Rohan Oza, known for successful beverage brand investments.",
+      "Blake Mycoskie is an entrepreneur, philanthropist, and founder of TOMS Shoes, known for his 'One for One' business model.",
+  },
+];
+
+export const ownershipData = [
+  { date: "2017-09-13", foundersOwnership: 100, investorsOwnership: 0 },
+  { date: "2019-12-09", foundersOwnership: 80, investorsOwnership: 20 },
+  { date: "2020-03-20", foundersOwnership: 70, investorsOwnership: 30 },
+  { date: "2021-05-11", foundersOwnership: 60, investorsOwnership: 40 },
+  { date: "2022-11-15", foundersOwnership: 50, investorsOwnership: 50 },
+  { date: "2024-08-09", foundersOwnership: 40, investorsOwnership: 60 },
+];
+
+export const investorParticipation = [
+  {
+    investor: "General Atlantic",
+    "Deal #11": 1,
+    "Deal #10": 0,
+    "Deal #9": 0,
+    "Deal #8": 0,
+    "Deal #6": 0,
+    "Deal #4": 0,
+    "Deal #3": 0,
+    "Deal #1": 0,
   },
   {
-    name: "Russell Westbrook",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/4/47/Russell_Westbrook_%282021%29.jpg",
-    totalRoundsParticipated: 1,
-    roundsParticipated: ["Series A2"],
-    leadInvestments: [],
-    otherInvestments: ["Why Not? Foundation", "Honor the Gift"],
-    website: null,
-    description:
-      "NBA star Russell Westbrook is a strategic investor in consumer brands and wellness products.",
+    investor: "Keurig Dr Pepper",
+    "Deal #11": 0,
+    "Deal #10": 0,
+    "Deal #9": 0,
+    "Deal #8": 1,
+    "Deal #6": 0,
+    "Deal #4": 0,
+    "Deal #3": 0,
+    "Deal #1": 0,
   },
   {
-    name: "The Chainsmokers",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/9/9f/The_Chainsmokers_2019.png",
-    totalRoundsParticipated: 1,
-    roundsParticipated: ["Series A2"],
-    leadInvestments: [],
-    otherInvestments: ["JaJa Tequila", "MANTL", "Step"],
-    website: "https://www.thechainsmokers.com",
-    description:
-      "The Chainsmokers are musicians and entrepreneurs who invest in consumer brands and technology startups.",
+    investor: "Alliance Consumer Growth",
+    "Deal #11": 0,
+    "Deal #10": 0,
+    "Deal #9": 0,
+    "Deal #8": 1,
+    "Deal #6": 1,
+    "Deal #4": 0,
+    "Deal #3": 0,
+    "Deal #1": 0,
   },
   {
-    name: "Access Capital",
-    logoUrl: "",
-    totalRoundsParticipated: 1,
-    roundsParticipated: ["Series B"],
-    leadInvestments: [],
-    otherInvestments: ["Consumer goods investments"],
-    website: null,
-    description:
-      "Access Capital is an investment firm focusing on high-growth consumer brands.",
+    investor: "TRB Advisors",
+    "Deal #11": 0,
+    "Deal #10": 0,
+    "Deal #9": 0,
+    "Deal #8": 1,
+    "Deal #6": 1,
+    "Deal #4": 1,
+    "Deal #3": 1,
+    "Deal #1": 0,
   },
   {
-    name: "Priyanka Chopra",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/3/36/Priyanka_Chopra_at_2023_Met_Gala.png",
-    totalRoundsParticipated: 1,
-    roundsParticipated: ["Series B"],
-    leadInvestments: [],
-    otherInvestments: ["Bumble", "Perfect Moment"],
-    website: null,
-    description:
-      "Actress and entrepreneur Priyanka Chopra invests in consumer brands and technology startups.",
+    investor: "Blake Mycoskie",
+    "Deal #11": 0,
+    "Deal #10": 0,
+    "Deal #9": 0,
+    "Deal #8": 1,
+    "Deal #6": 1,
+    "Deal #4": 1,
+    "Deal #3": 1,
+    "Deal #1": 0,
   },
+];
+
+export const valuationData = [
+  { date: "2017-09-13", preMoneyValuation: 2.5, postMoneyValuation: 3 },
+  { date: "2019-12-09", preMoneyValuation: 10, postMoneyValuation: 13 },
+  { date: "2020-03-20", preMoneyValuation: 40, postMoneyValuation: 57.5 },
+  { date: "2021-05-11", preMoneyValuation: 150, postMoneyValuation: 200 },
+  { date: "2022-11-15", preMoneyValuation: 424.55, postMoneyValuation: 500 },
+  { date: "2024-08-09", preMoneyValuation: 750, postMoneyValuation: 950 },
 ];
 
 export const revenueData = [
-  { year: 2018, revenue: 0.852 },
-  { year: 2019, revenue: 2.8 },
-  { year: 2020, revenue: 8.6 },
-  { year: 2021, revenue: 31.0 },
-  { year: 2022, revenue: 100.0 },
-  { year: 2023, revenue: 500.0 },
+  { year: 2017, revenue: 0 },
+  { year: 2018, revenue: 0.053 },
+  { year: 2019, revenue: 2.5 },
+  { year: 2020, revenue: 15 },
+  { year: 2021, revenue: 37 },
+  { year: 2022, revenue: 74 },
+  { year: 2023, revenue: null }, // Undisclosed
 ];
 
 export const capitalRaisedData = [
-  { date: "2018-12-16", cumulativeRaised: 0.1 }, // Friends and family
-  { date: "2018-12-31", cumulativeRaised: 0.5 }, // Shark Tank
-  { date: "2019-06-01", cumulativeRaised: 3.0 }, // Early stage VC
-  { date: "2020-12-31", cumulativeRaised: 13.0 }, // Series A
-  { date: "2021-08-30", cumulativeRaised: 26.5 }, // Series A2
-  { date: "2022-12-13", cumulativeRaised: 51.5 }, // Series B
-  { date: "2023-12-31", cumulativeRaised: 93.4 }, // Series C
+  { date: "2017-09-13", cumulativeRaised: 0.5 },
+  { date: "2018-10-02", cumulativeRaised: 0.88 },
+  { date: "2019-12-09", cumulativeRaised: 3 },
+  { date: "2020-03-20", cumulativeRaised: 17.5 },
+  { date: "2021-05-11", cumulativeRaised: 80 },
+  { date: "2022-11-15", cumulativeRaised: 155.45 },
+  { date: "2024-08-09", cumulativeRaised: 355.45 },
 ];
 
 export const revenueWithMilestones = [
-  { year: 2018, revenue: 0.852, milestone: "Farmer's Market to Retail" },
-  { year: 2019, revenue: 2.8, milestone: "Regional Retail Growth" },
-  { year: 2020, revenue: 8.6, milestone: "Major Retail Expansion" },
-  {
-    year: 2021,
-    revenue: 31.0,
-    milestone: "Celebrity Investments & TikTok Viral",
-  },
-  { year: 2022, revenue: 100.0, milestone: "National Scale" },
-  { year: 2023, revenue: 500.0, milestone: "Mass Market Dominance" },
+  { year: 2017, revenue: 0, milestone: "Company Founded" },
+  { year: 2018, revenue: 0.053, milestone: "First Products Launched" },
+  { year: 2019, revenue: 2.5, milestone: "Series A Funding and Expansion" },
+  { year: 2020, revenue: 15, milestone: "Acquired San Diego Facility" },
+  { year: 2021, revenue: 37, milestone: "International Expansion" },
+  { year: 2022, revenue: 74, milestone: "Opened Milford Facility" },
+  { year: 2023, revenue: null, milestone: "Global Partnerships Established" },
 ];
 
 export const businessEvents = [
   {
     year: 2018,
-    category: "Launch",
-    event: "Shark Tank Success & Brand Launch",
+    category: "Product",
+    event: "Launched Run Wild IPA and Upside Dawn Golden Ale",
   },
   {
     year: 2019,
-    category: "Distribution",
-    event: "Regional Retail Expansion",
+    category: "Marketing",
+    event: "Ambassador Program Initiated",
   },
   {
     year: 2020,
-    category: "Retail",
-    event: "Whole Foods & Major Retailer Entry",
+    category: "Expansion",
+    event: "Acquired San Diego Brewing Facility",
   },
   {
     year: 2021,
-    category: "Marketing",
-    event: "TikTok Viral Growth & Celebrity Investment",
+    category: "Recognition",
+    event: "Named in TIME's '100 Most Influential Companies'",
   },
   {
     year: 2022,
-    category: "Expansion",
-    event: "23,000 Store Milestone",
+    category: "Funding",
+    event: "Secured Series D Funding of $75.5 Million",
   },
   {
     year: 2023,
-    category: "Partnership",
-    event: "Mattel/Barbie & Post Malone Collaborations",
+    category: "Product",
+    event: "Introduced Athletic Lite and DayPack Sparkling Water",
   },
   {
     year: 2024,
-    category: "Innovation",
-    event: "Super Bowl Success & Global Expansion",
-  },
-];
-
-export const valuationData = [
-  { date: "2018-12-16", preMoneyValuation: 0.94, postMoneyValuation: 1.26 },
-  { date: "2019-06-01", preMoneyValuation: 2.5, postMoneyValuation: 5.0 },
-  { date: "2020-12-31", preMoneyValuation: 8.0, postMoneyValuation: 18.0 },
-  { date: "2021-08-30", preMoneyValuation: 25.0, postMoneyValuation: 38.5 },
-  { date: "2022-12-13", preMoneyValuation: 75.0, postMoneyValuation: 100.0 },
-  { date: "2023-12-31", preMoneyValuation: 150.0, postMoneyValuation: 173.0 },
-];
-
-export const ownershipData = [
-  { date: "2018-12-16", foundersOwnership: 79.17, investorsOwnership: 20.83 },
-  { date: "2018-12-31", foundersOwnership: 75.0, investorsOwnership: 25.0 },
-  { date: "2019-06-01", foundersOwnership: 65.0, investorsOwnership: 35.0 },
-  { date: "2020-12-31", foundersOwnership: 55.0, investorsOwnership: 45.0 },
-  { date: "2021-08-30", foundersOwnership: 45.0, investorsOwnership: 55.0 },
-  { date: "2022-12-13", foundersOwnership: 35.0, investorsOwnership: 65.0 },
-  { date: "2023-12-31", foundersOwnership: 25.0, investorsOwnership: 75.0 },
-];
-
-export const executives = [
-  {
-    name: "Chris Hall",
-    title: "Chief Executive Officer",
-    image: "", // No image URL provided in documents
-    education: "BS Business, Marketing and HR, Central Washington University",
-    experience: [
-      "Chief Executive Officer at Talking Rain Beverage Company",
-      "Chief Operating Officer at Talking Rain Beverage Company",
-      "Vice President of Sales at Talking Rain Beverage Company",
-      "Sonar Technician Submarines - 2nd Class Petty Officer at U.S. Navy",
-    ],
-    entrepreneurial: [
-      "Led Sparkling Ice to become #1 selling sparkling water brand in the U.S.",
-      "Launched new beverage brands under Talking Rain portfolio",
-      "Focused on innovation and market expansion",
-    ],
-    linkedin: "https://www.linkedin.com/in/chris-swenson-hall/",
-  },
-  {
-    name: "Joshua Gittler",
-    title: "Chief Financial Officer",
-    image: "", // No image URL provided in documents
-    education: [
-      "BS, Finance and International Business, Penn State University",
-      "MBA, Investment Banking Immersion, Cornell Johnson Graduate School of Management",
-    ],
-    experience: [
-      "CFO at Nutrabolt",
-      "Senior Vice President of Finance & Corporate Development at NBG Home",
-      "Head of Corporate Finance at Amplify Snack Brands",
-      "Senior roles at Jefferies & Company, TD Securities, and J.P. Morgan",
-    ],
-    entrepreneurial: [
-      "Key role in Amplify Snack Brands' $1.6 billion sale to Hershey",
-      "Leading financial strategy and operations at Poppi",
-    ],
-    linkedin: "https://www.linkedin.com/in/joshua-gittler-65638b10/",
-  },
-  {
-    name: "Andy Judd",
-    title: "Chief Marketing Officer",
-    image: "", // No image URL provided in documents
-    education: [
-      "BBA, Marketing, University of Oklahoma - Price College of Business",
-      "MBA, Marketing, University of Oklahoma - Price College of Business",
-    ],
-    experience: [
-      "Chief Commercial Officer at Laird Superfood",
-      "Chief Marketing Officer at Yasso, Inc.",
-      "Chief Marketing Officer at ONE Brands",
-      "Vice President of Marketing at Pinnacle Foods",
-      "Director of Marketing at Saputo Inc.",
-    ],
-    entrepreneurial: [
-      "Board member at Naturally Boulder (2019-2022)",
-      "Developed innovative marketing strategies across multiple brands",
-      "Expertise in influencer marketing and brand building",
-    ],
-    linkedin: "https://www.linkedin.com/in/andy-judd/",
-  },
-  {
-    name: "Bridget McCarthy Lasda",
-    title: "Chief Sales Officer",
-    image: "", // No image URL provided in documents
-    education: [
-      "BS, Special Education, Penn State University",
-      "MBA, Emory University - Goizueta Business School",
-    ],
-    experience: [
-      "Chief Customer Officer at King Juice Co./Calypso Lemonade",
-      "Vice President of National Sales at The HEINEKEN Company",
-      "Vice President of Sales at The Coca-Cola Company",
-      "Vice President of Category Commercialization at The Coca-Cola Company",
-    ],
-    entrepreneurial: [
-      "Led Women's Leadership Forum re-launch at HEINEKEN",
-      "Driving significant revenue growth across beverage brands",
-      "Building strong relationships with retailers and enhancing brand visibility",
-    ],
-    linkedin: "https://www.linkedin.com/in/bridgetmlasda/",
-  },
-];
-
-export const founderData = [
-  {
-    name: "Bill Shufelt",
-    title: "Co-Founder & CEO",
-    education: "Not specified in documents",
-    professionalBackground: [
-      "Successful trader at Point72 Asset Management",
-      "Focused on health and wellness lifestyle",
-      "Left finance career in 2017 to start Athletic Brewing",
-      "Recognized need for high-quality non-alcoholic beer options",
-    ],
-    socials: {
-      linkedin: "https://www.linkedin.com/company/athletic-brewing-company",
-    },
-    entrepreneurialCareer: {
-      title: "Co-Founder and CEO of Athletic Brewing Company",
-      ventures: {
-        preAthletic: "Successful career in financial trading",
-        athleticLaunch:
-          "Founded in 2017 with John Walker, pioneering non-alcoholic craft brewing",
-      },
-    },
-    inspiration: [
-      "Personal journey toward healthier lifestyle",
-      "Training for ultramarathon led to quitting alcohol",
-      "Identified gap in non-alcoholic beer market",
-      "Commitment to creating great-tasting NA alternatives",
-    ],
-    publicPresence: [
-      "Featured in business and wellness publications",
-      "Speaks about entrepreneurship and healthy lifestyle choices",
-      "Advocates for non-alcoholic craft beer movement",
-    ],
-  },
-  {
-    name: "John Walker",
-    title: "Co-Founder & Head Brewer",
-    education: "Not specified in documents",
-    professionalBackground: [
-      "Award-winning brewer",
-      "Extensive brewing industry experience",
-      "Expertise in craft beer production",
-      "Developed proprietary brewing methods",
-    ],
-    socials: {
-      linkedin: "https://www.linkedin.com/company/athletic-brewing-company",
-    },
-    entrepreneurialCareer: {
-      title: "Co-Founder and Head Brewer of Athletic Brewing Company",
-      ventures: {
-        preAthletic: "Professional brewing career",
-        athleticLaunch:
-          "Co-founded Athletic Brewing in 2017, developing innovative NA brewing processes",
-      },
-    },
-    inspiration: [
-      "Vision to create full-flavored non-alcoholic craft beer",
-      "Interest in brewing innovation",
-      "Commitment to quality craft brewing",
-      "Desire to revolutionize NA beer category",
-    ],
-    publicPresence: [
-      "Recognized for brewing expertise",
-      "Contributor to brewing innovation",
-      "Advocate for craft brewing quality",
-    ],
+    category: "Investment",
+    event: "Raised $200 Million from General Atlantic",
   },
 ];
 

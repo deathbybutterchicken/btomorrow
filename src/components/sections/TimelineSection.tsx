@@ -1,11 +1,10 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
-
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -14,7 +13,6 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
-import { timelineData } from "@/data/brands/liquiddeath";
 
 type TimelineEvent = {
   date: string;
@@ -144,8 +142,8 @@ function AdditionalInfo({
                 <Image
                   src={info.image.url}
                   alt={info.image.alt}
-                  width={500} // You can adjust these values
-                  height={300} // based on your needs
+                  width={500}
+                  height={300}
                   className="object-contain rounded-md"
                 />
               </div>
@@ -295,20 +293,37 @@ function AdditionalInfo({
   );
 }
 
+interface TimelineSectionProps {
+  getPageScale: (index: number) => number;
+  brandId: string;
+}
+
 export function TimelineSection({
   getPageScale,
-}: {
-  getPageScale: (index: number) => number;
-}) {
+  brandId,
+}: TimelineSectionProps) {
+  const [timelineData, setTimelineData] = useState<TimelineEvent[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [expandedEvent, setExpandedEvent] = useState<string | null>(null);
+
+  useEffect(() => {
+    const loadData = async () => {
+      const brandData = await import(`@/data/brands/${brandId}`);
+      setTimelineData(brandData.timelineData || []);
+    };
+    loadData();
+  }, [brandId]);
+
   const categories = useMemo(() => {
     return Array.from(new Set(timelineData.map((event) => event.category)));
-  }, []);
-  const [expandedEvent, setExpandedEvent] = useState<string | null>(null);
+  }, [timelineData]);
+
   const filteredEvents = useMemo(() => {
     if (!selectedCategory) return timelineData;
     return timelineData.filter((event) => event.category === selectedCategory);
-  }, [selectedCategory]);
+  }, [selectedCategory, timelineData]);
+
+  if (!timelineData.length) return null;
 
   return (
     <motion.div

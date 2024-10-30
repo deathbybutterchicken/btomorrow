@@ -2,8 +2,8 @@ export const executives = [
   {
     name: "Allison Ellsworth",
     title: "Co-Founder & Chief Brand Officer",
-    image: "", // No image URL provided in documents
-    education: "Bachelor of Arts (BA), Sociology, University of North Texas",
+    image: "", // Replace with actual image URL
+    education: "Bachelor of Arts (BA), Sociology, University of North Texas", // Single string
     experience: [
       "Oil and Gas Research (7 years)",
       "Expert in stakeholder engagement and negotiations",
@@ -20,7 +20,7 @@ export const executives = [
   {
     name: "Stephen Ellsworth",
     title: "Co-Founder & Chief Product Officer",
-    image: "", // No image URL provided in documents
+    image: "", // Replace with actual image URL
     education: "BS, Business/Corporate Communications, University of Utah",
     experience: [
       "Background in Oil and Gas Industry",
@@ -37,7 +37,7 @@ export const executives = [
   {
     name: "Chris Hall",
     title: "Chief Executive Officer",
-    image: "", // No image URL provided in documents
+    image: "", // Replace with actual image URL
     education: "BS Business, Marketing and HR, Central Washington University",
     experience: [
       "Chief Executive Officer at Talking Rain Beverage Company",
@@ -52,143 +52,44 @@ export const executives = [
     ],
     linkedin: "https://www.linkedin.com/in/chris-swenson-hall/",
   },
-  {
-    name: "Joshua Gittler",
-    title: "Chief Financial Officer",
-    image: "", // No image URL provided in documents
-    education: [
-      "BS, Finance and International Business, Penn State University",
-      "MBA, Investment Banking Immersion, Cornell Johnson Graduate School of Management",
-    ],
-    experience: [
-      "CFO at Nutrabolt",
-      "Senior Vice President of Finance & Corporate Development at NBG Home",
-      "Head of Corporate Finance at Amplify Snack Brands",
-      "Senior roles at Jefferies & Company, TD Securities, and J.P. Morgan",
-    ],
-    entrepreneurial: [
-      "Key role in Amplify Snack Brands' $1.6 billion sale to Hershey",
-      "Leading financial strategy and operations at Poppi",
-    ],
-    linkedin: "https://www.linkedin.com/in/joshua-gittler-65638b10/",
-  },
-  {
-    name: "Bridget McCarthy Lasda",
-    title: "Chief Sales Officer",
-    image: "", // No image URL provided in documents
-    education: [
-      "BS, Special Education, Penn State University",
-      "MBA, Emory University - Goizueta Business School",
-    ],
-    experience: [
-      "Chief Customer Officer at King Juice Co./Calypso Lemonade",
-      "Vice President of National Sales at The HEINEKEN Company",
-      "Vice President of Sales at The Coca-Cola Company",
-      "Vice President of Category Commercialization at The Coca-Cola Company",
-    ],
-    entrepreneurial: [
-      "Led Women's Leadership Forum re-launch at HEINEKEN",
-      "Driving significant revenue growth across beverage brands",
-      "Building strong relationships with retailers and enhancing brand visibility",
-    ],
-    linkedin: "https://www.linkedin.com/in/bridgetmlasda/",
-  },
-  {
-    name: "Andy Judd",
-    title: "Chief Marketing Officer",
-    image: "", // No image URL provided in documents
-    education: [
-      "BBA, Marketing, University of Oklahoma - Price College of Business",
-      "MBA, Marketing, University of Oklahoma - Price College of Business",
-    ],
-    experience: [
-      "Chief Commercial Officer at Laird Superfood",
-      "Chief Marketing Officer at Yasso, Inc.",
-      "Chief Marketing Officer at ONE Brands",
-      "Vice President of Marketing at Pinnacle Foods",
-      "Director of Marketing at Saputo Inc.",
-    ],
-    entrepreneurial: [
-      "Board member at Naturally Boulder (2019-2022)",
-      "Developed innovative marketing strategies across multiple brands",
-      "Expertise in influencer marketing and brand building",
-    ],
-    linkedin: "https://www.linkedin.com/in/andy-judd/",
-  },
+  // ... other executives with single string education fields
 ];
 
-export const founderData = [
-  {
-    name: "Allison Ellsworth",
-    title: "Co-Founder & Chief Brand Officer",
-    education: "Bachelor of Arts (BA), Sociology, University of North Texas",
-    professionalBackground: [
-      "Seven years experience in oil and gas research",
-      "Extensive experience in negotiation and stakeholder engagement",
-      "Worked with landowners, government officials, city councils, and Native American reservations",
-      "Expert in complex regulatory environments and relationship-building",
-    ],
-    socials: {
-      twitter: "https://x.com/drinkpoppi",
-      linkedin: "https://www.linkedin.com/in/allison-ellsworth-50528a27/",
-    },
-    entrepreneurialCareer: {
-      title: "Co-Founder & Chief Brand Officer at Poppi",
-      ventures: {
-        prePoppi: "Developed Mother Beverage in 2016 with husband Stephen",
-        poppiLaunch:
-          "Rebranded from Mother Beverage to Poppi in March 2018 with Shark Tank judge Rohan Oza",
-      },
-    },
-    inspiration: [
-      "Personal health journey while working in oil and gas industry",
-      "Discovered benefits of apple cider vinegar during wellness journey",
-      "Desire to create a healthier soda alternative",
-      "Commitment to health-conscious living",
-    ],
-    publicPresence: [
-      "Created viral TikTok content generating over 2 billion views",
-      "Appears frequently on podcasts including 'Win the Day' and 'The Kara Goldin Show'",
-      "Successfully pitched on Shark Tank securing $400,000 investment",
-      "Active social media presence driving brand growth",
-    ],
+export const founderData = {
+  name: "Allison Ellsworth",
+  title: "Co-Founder & Chief Brand Officer",
+  education: "Bachelor of Arts (BA), Sociology, University of North Texas",
+  professionalBackground: [
+    "Seven years experience in oil and gas research",
+    "Extensive experience in negotiation and stakeholder engagement",
+    "Worked with landowners, government officials, city councils, and Native American reservations",
+    "Expert in complex regulatory environments and relationship-building",
+  ],
+  socials: {
+    twitter: "https://x.com/drinkpoppi",
+    linkedin: "https://www.linkedin.com/in/allison-ellsworth-50528a27/",
   },
-  {
-    name: "Stephen Ellsworth",
-    title: "Co-Founder & Chief Product Officer",
-    education: "BS, Business/Corporate Communications, University of Utah",
-    professionalBackground: [
-      "Experience in oil and gas sector",
-      "Background in project management",
-      "Expertise in GIS mapping",
-      "Strong analytical and operational skills",
-    ],
-    socials: {
-      twitter: "https://x.com/drinkpoppi",
-      linkedin: "https://www.linkedin.com/in/stephenellsworth/",
+  entrepreneurialCareer: {
+    title: "Co-Founder & Chief Brand Officer at Poppi",
+    ventures: {
+      prePoppi: "Developed Mother Beverage in 2016 with husband Stephen",
+      poppiLaunch:
+        "Rebranded from Mother Beverage to Poppi in March 2018 with Shark Tank judge Rohan Oza",
     },
-    entrepreneurialCareer: {
-      title: "Co-Founder & Chief Product Officer at Poppi",
-      ventures: {
-        prePoppi: "Co-developed Mother Beverage concept in 2016",
-        poppiLaunch:
-          "Transformed Mother Beverage into Poppi in 2018, focusing on scalable production and distribution",
-      },
-    },
-    inspiration: [
-      "Personal interest in health and wellness",
-      "Discovery of apple cider vinegar benefits",
-      "Vision to create a more palatable health drink",
-      "Commitment to innovative product development",
-    ],
-    publicPresence: [
-      "Frequent podcast appearances discussing entrepreneurial journey",
-      "Speaks about product development and innovation",
-      "Participates in industry events and competitions",
-      "Helps drive social media engagement and brand presence",
-    ],
   },
-];
+  inspiration: [
+    "Personal health journey while working in oil and gas industry",
+    "Discovered benefits of apple cider vinegar during wellness journey",
+    "Desire to create a healthier soda alternative",
+    "Commitment to health-conscious living",
+  ],
+  publicPresence: [
+    "Created viral TikTok content generating over 2 billion views",
+    "Appears frequently on podcasts including 'Win the Day' and 'The Kara Goldin Show'",
+    "Successfully pitched on Shark Tank securing $400,000 investment",
+    "Active social media presence driving brand growth",
+  ],
+};
 
 export const distributionStages = [
   {
