@@ -80,6 +80,8 @@ export const founderData = {
     "Former Creative Director at Netflix.",
     "Played in punk rock and heavy metal bands.",
   ],
+  image:
+    "https://cdn.prod.website-files.com/5fce0f6bc9af69423eefaa13/64466094c008d96198b4a9fc_Mike.jpeg",
   socials: {
     twitter: "https://x.com/cessario?lang=en",
     linkedin: "https://www.linkedin.com/in/mikecessario/",
@@ -317,7 +319,7 @@ export const marketingStages = [
 export const topInvestors = [
   {
     name: "SuRo Capital",
-    logoUrl: "https://s3-symbol-logo.tradingview.com/suro-capital--600.png",
+    logo: "https://s3-symbol-logo.tradingview.com/suro-capital--600.png",
     totalRoundsParticipated: 2,
     roundsParticipated: ["Deal #8", "Deal #9"],
     leadInvestments: [],
@@ -328,8 +330,7 @@ export const topInvestors = [
   },
   {
     name: "Live Nation Entertainment",
-    logoUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw_vwBk4mOrfEeIsqLjHHxso9NelJp7SLTcg&s",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw_vwBk4mOrfEeIsqLjHHxso9NelJp7SLTcg&s",
     totalRoundsParticipated: 4,
     roundsParticipated: ["Deal #6", "Deal #7", "Deal #8", "Deal #12"],
     leadInvestments: [],
@@ -340,8 +341,7 @@ export const topInvestors = [
   },
   {
     name: "Science Inc.",
-    logoUrl:
-      "https://media.licdn.com/dms/image/v2/D560BAQGnlO29lFscuQ/company-logo_200_200/company-logo_200_200/0/1719256270542/scienceinc_logo?e=2147483647&v=beta&t=lkRl9gf-vnyizlUXJEHa9H6gJGUIm9rxvfSIafu-Vu0",
+    logo: "https://media.licdn.com/dms/image/v2/D560BAQGnlO29lFscuQ/company-logo_200_200/company-logo_200_200/0/1719256270542/scienceinc_logo?e=2147483647&v=beta&t=lkRl9gf-vnyizlUXJEHa9H6gJGUIm9rxvfSIafu-Vu0",
     totalRoundsParticipated: 4,
     roundsParticipated: ["Deal #1", "Deal #2", "Deal #7", "Deal #8"],
     leadInvestments: ["Deal #1", "Deal #8"],
@@ -352,8 +352,7 @@ export const topInvestors = [
   },
   {
     name: "Gray's Creek Capital Partners",
-    logoUrl:
-      "https://grayscreekcapital.com/wp-content/uploads/2021/03/cropped-Site-Icon.png",
+    logo: "https://grayscreekcapital.com/wp-content/uploads/2021/03/cropped-Site-Icon.png",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Deal #12"],
     leadInvestments: [],
@@ -364,8 +363,7 @@ export const topInvestors = [
   },
   {
     name: "Josh Brolin",
-    logoUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_v8k2arE-Pu7z0Vpp2JX8aOsAIsNM5DahEg&s",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_v8k2arE-Pu7z0Vpp2JX8aOsAIsNM5DahEg&s",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Deal #12"],
     leadInvestments: [],
@@ -376,8 +374,7 @@ export const topInvestors = [
   },
   {
     name: "DeAndre Hopkins",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/0/05/DeAndre_Hopkins_2020.jpg",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/0/05/DeAndre_Hopkins_2020.jpg",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Deal #12"],
     leadInvestments: [],
@@ -388,8 +385,7 @@ export const topInvestors = [
   },
   {
     name: "Neal Brennan",
-    logoUrl:
-      "https://bigthink.com/wp-content/uploads/2023/08/Neal-Brennan-profile-02.jpg?w=512&h=512&crop=1",
+    logo: "https://bigthink.com/wp-content/uploads/2023/08/Neal-Brennan-profile-02.jpg?w=512&h=512&crop=1",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Deal #12"],
     leadInvestments: [],

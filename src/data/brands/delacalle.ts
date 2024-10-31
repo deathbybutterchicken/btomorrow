@@ -2,7 +2,8 @@ export const executives = [
   {
     name: "Alex Matthews",
     title: "Co-Founder & CEO",
-    image: "URL_TO_IMAGE",
+    image:
+      "https://media.licdn.com/dms/image/C5603AQGkEkoUQoSGMg/profile-displayphoto-shrink_200_200/0/1600141585377?e=2147483647&v=beta&t=SqUilTXRSg8F4_joMr4f3eBdk6798dIKmuR_M5zqlFM",
     experience: [
       "Former Regional Director at Berkeley Scott",
       "West Coast Manager at G-Star",
@@ -20,7 +21,8 @@ export const executives = [
   {
     name: "Rafael Martin Del Campo",
     title: "Co-Founder and Chief of Fermentation",
-    image: "URL_TO_IMAGE",
+    image:
+      "https://cdn.theorg.com/8a5b85ca-4737-44c2-b659-e27958315b45_medium.jpg",
     experience: [
       "Third-generation tepache maker",
       "Background in food science and fermentation",
@@ -40,6 +42,8 @@ export const founderData = {
     "Former CEO & Co-Founder of Juice Served Here",
     "Chief Marketing Officer at Forager Project",
   ],
+  image:
+    "https://media.licdn.com/dms/image/C5603AQGkEkoUQoSGMg/profile-displayphoto-shrink_200_200/0/1600141585377?e=2147483647&v=beta&t=SqUilTXRSg8F4_joMr4f3eBdk6798dIKmuR_M5zqlFM",
   socials: {
     linkedin: "https://www.linkedin.com/in/alexkmatthews/",
   },
@@ -227,7 +231,7 @@ export const marketingStages = [
 export const topInvestors = [
   {
     name: "KarpReilly",
-    logoUrl: "URL_TO_IMAGE",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm-Rg-dZPUNABfo2Kk5SsLO6u0_4K7uY3qzA&s",
     totalRoundsParticipated: 3,
     roundsParticipated: ["Deal #1", "Deal #2", "Deal #3"],
     leadInvestments: ["Deal #1"],
@@ -238,7 +242,7 @@ export const topInvestors = [
   },
   {
     name: "DrinkPAK",
-    logoUrl: "URL_TO_IMAGE",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVjccBNtQRJ3jj9OIvrp-uRXosuK0FvURRNw&s",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Deal #2"],
     leadInvestments: [],
@@ -249,7 +253,7 @@ export const topInvestors = [
   },
   {
     name: "HERE Studio",
-    logoUrl: "URL_TO_IMAGE",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0dXVTgQa94kjMdUx1axdh9y2bkFwT6mx9XQ&s",
     totalRoundsParticipated: 2,
     roundsParticipated: ["Deal #2", "Deal #3"],
     leadInvestments: [],

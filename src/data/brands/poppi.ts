@@ -1,23 +1,5 @@
 export const executives = [
   {
-    name: "Allison Ellsworth",
-    title: "Co-Founder & Chief Brand Officer",
-    image: "", // Replace with actual image URL
-    education: "Bachelor of Arts (BA), Sociology, University of North Texas", // Single string
-    experience: [
-      "Oil and Gas Research (7 years)",
-      "Expert in stakeholder engagement and negotiations",
-      "Worked with landowners, government officials, and Native American reservations",
-      "Co-founded Mother Beverage in 2016 (now Poppi)",
-    ],
-    entrepreneurial: [
-      "Created Poppi's viral TikTok presence with over 2 billion views",
-      "Successfully pitched on Shark Tank securing $400,000 investment",
-      "Led company growth from farmers markets to national retail presence",
-    ],
-    linkedin: "https://www.linkedin.com/in/allison-ellsworth-50528a27/",
-  },
-  {
     name: "Stephen Ellsworth",
     title: "Co-Founder & Chief Product Officer",
     image: "", // Replace with actual image URL
@@ -59,6 +41,7 @@ export const founderData = {
   name: "Allison Ellsworth",
   title: "Co-Founder & Chief Brand Officer",
   education: "Bachelor of Arts (BA), Sociology, University of North Texas",
+  logo: "https://fashionweekdaily.com/wp-content/uploads/2024/09/Poppi-2.jpg",
   professionalBackground: [
     "Seven years experience in oil and gas research",
     "Extensive experience in negotiation and stakeholder engagement",
@@ -331,8 +314,7 @@ export const marketingStages = [
 export const topInvestors = [
   {
     name: "CAVU Consumer Partners",
-    logoUrl:
-      "https://www.cavuventures.com/wp-content/uploads/2022/03/CAVU-Logo.png",
+    logo: "https://media.licdn.com/dms/image/v2/C4E0BAQFMd0Vu4QPdfg/company-logo_200_200/company-logo_200_200/0/1661386855794/cavu_consumer_partners_logo?e=2147483647&v=beta&t=fGcgfOMsC28xg9UQ2xyps566qA_09iX0AQpfX4lYt1g",
     totalRoundsParticipated: 4,
     roundsParticipated: ["Seed Round", "Series A", "Series A2", "Series B"],
     leadInvestments: ["Series A", "Series A2"],
@@ -343,8 +325,7 @@ export const topInvestors = [
   },
   {
     name: "Russell Westbrook",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/4/47/Russell_Westbrook_%282021%29.jpg",
+    logo: "https://cdn.nba.com/headshots/nba/latest/1040x760/201566.png",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Series A2"],
     leadInvestments: [],
@@ -355,8 +336,7 @@ export const topInvestors = [
   },
   {
     name: "The Chainsmokers",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/9/9f/The_Chainsmokers_2019.png",
+    logo: "https://artafinance.com/static/9dd60346ea96a60c67d14eded5d77353/0b6c6/insider-angels-01-chainsmokers-billboard.jpg",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Series A2"],
     leadInvestments: [],
@@ -367,8 +347,7 @@ export const topInvestors = [
   },
   {
     name: "Halsey",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/d/d7/Halsey_2019_by_Glenn_Francis.jpg",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/4/48/Halsey_September_2019.jpg",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Series A2"],
     leadInvestments: [],
@@ -379,8 +358,7 @@ export const topInvestors = [
   },
   {
     name: "Kevin Love",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/4/4e/Kevin_Love_2018.jpg",
+    logo: "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3449.png",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Series A2"],
     leadInvestments: [],
@@ -391,8 +369,7 @@ export const topInvestors = [
   },
   {
     name: "Priyanka Chopra",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/3/36/Priyanka_Chopra_at_2023_Met_Gala.png",
+    logo: "https://www.usmagazine.com/wp-content/uploads/2018/05/priyanka-chopra.jpg?crop=0px%2C0px%2C1800px%2C1018px&resize=1600%2C900&quality=40&strip=all",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Series B"],
     leadInvestments: [],
@@ -403,8 +380,7 @@ export const topInvestors = [
   },
   {
     name: "Joe Jonas",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/8/8e/Joe_Jonas_2019_by_Glenn_Francis.jpg",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/1/12/Joe_Jonas_Raleigh_928_%28cropped%29.jpg",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Series B"],
     leadInvestments: [],
@@ -415,8 +391,7 @@ export const topInvestors = [
   },
   {
     name: "Mindy Kaling",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/a/a6/Mindy_Kaling_2022.jpg",
+    logo: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/316144_v9_bc.jpg",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Series B"],
     leadInvestments: [],

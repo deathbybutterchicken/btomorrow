@@ -11,7 +11,7 @@ export interface TimelineEvent {
       alt: string;
       caption?: string;
     };
-    video?: 
+    video?: {
       url: string;
       title: string;
     };

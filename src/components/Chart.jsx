@@ -11,6 +11,7 @@ import {
   Legend,
   BarElement,
 } from "chart.js";
+import { BarChart } from "recharts";
 
 ChartJS.register(
   CategoryScale,

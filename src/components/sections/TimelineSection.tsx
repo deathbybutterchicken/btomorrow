@@ -327,7 +327,7 @@ export function TimelineSection({
 
   return (
     <motion.div
-      className="w-full h-full overflow-y-auto bg-black text-white"
+      className="py-15 w-full h-full overflow-y-auto bg-black text-white custom-scrollbar-dark"
       animate={{ scale: getPageScale(0) }}
     >
       <div className="container mx-auto p-4 min-h-screen">

@@ -1,15 +1,6 @@
 "use client";
 
-import React from "react";
 import dynamic from "next/dynamic";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Dialog,
   DialogContent,
@@ -17,6 +8,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 // Dynamically import components with SSR disabled
 const Timeline = dynamic(() => import("./Timeline"), { ssr: false });
@@ -79,7 +71,7 @@ function Summary() {
   const router = useRouter();
 
   // Update the selectedCell state interface to include brands
-  const [selectedCell, setSelectedCell] = React.useState<{
+  const [selectedCell, setSelectedCell] = useState<{
     activity: string;
     stage: string;
     value: number;

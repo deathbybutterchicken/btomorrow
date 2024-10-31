@@ -29,7 +29,7 @@ function TopInvestors({ getPageScale, investors }: TopInvestorsProps) {
     const [isExpanded, setIsExpanded] = useState(false);
 
     return (
-      <Card className="bg-white/20 backdrop-blur-lg border-gray-300 cursor-pointer hover:bg-white/90 transition-all overflow-hidden relative">
+      <Card className="bg-white/20 backdrop-blur-lg border-gray-300 cursor-pointer hover:bg-white/90 transition-all overflow-hidden relative custom-scrollbar-dark">
         <CardHeader
           onClick={() => setIsExpanded(!isExpanded)}
           className="relative z-10"
@@ -43,7 +43,10 @@ function TopInvestors({ getPageScale, investors }: TopInvestorsProps) {
             )}
           </CardTitle>
           <CardDescription className="text-gray-600">
-            {investor.investmentRound}
+            {investor.investmentRound && <div>{investor.investmentRound}</div>}
+            {investor.amount && (
+              <div className="mt-1 font-medium">{investor.amount}</div>
+            )}
           </CardDescription>
         </CardHeader>
         <CardContent className="relative z-10">
@@ -90,8 +93,8 @@ function TopInvestors({ getPageScale, investors }: TopInvestorsProps) {
   return (
     <motion.div className="min-h-screen bg-orange-50 text-black p-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-[12vw] sm:text-[8vw] font-bold text-black tracking-tight whitespace-nowrap overflow-hidden font-['PP_Mori',sans-serif] mb-4">
+        <div className="text-left mb-12">
+          <h2 className="text-[10vw] sm:text-[6vw] font-bold text-black tracking-tight whitespace-nowrap overflow-hidden font-['PP_Mori',sans-serif] mb-4">
             NOTED INVESTORS
           </h2>
         </div>
@@ -117,15 +120,17 @@ export function InvestorsSection({
     const loadData = async () => {
       try {
         setIsLoading(true);
+        console.log("Loading data for brandId:", brandId);
         const brandData = await import(`@/data/brands/${brandId}`);
+        console.log("Loaded brand data:", brandData);
         setInvestors(brandData.topInvestors || []);
       } catch (error) {
-        console.error("Error loading investors data:", error);
-        setInvestors([]);
+        console.error("Error loading investors:", error);
       } finally {
         setIsLoading(false);
       }
     };
+
     loadData();
   }, [brandId]);
 
@@ -133,7 +138,7 @@ export function InvestorsSection({
     return (
       <motion.div
         className="relative w-full h-screen overflow-y-auto p-6"
-        animate={{ scale: getPageScale(0) }}
+        animate={{ scale: getPageScale(1) }}
       >
         <div className="container mx-auto px-4 py-12">
           <p>Loading investors...</p>
@@ -158,7 +163,7 @@ export function InvestorsSection({
   return (
     <motion.div
       className="relative w-full h-screen overflow-y-auto p-6"
-      animate={{ scale: getPageScale(0) }}
+      animate={{ scale: getPageScale(3) }}
     >
       <div className="container mx-auto px-4 py-12">
         <TopInvestors getPageScale={getPageScale} investors={investors} />

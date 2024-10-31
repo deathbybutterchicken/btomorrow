@@ -2,9 +2,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import { ChevronRight } from "lucide-react";
 import { NavBar } from "./ui/nav-bar";
 
 // Import sections
@@ -14,7 +11,6 @@ import { ExecutivesSection } from "./sections/ExecutivesSection";
 import { TimelineSection } from "./sections/TimelineSection";
 import { AnalyticsSection } from "./sections/AnalyticsSection";
 import { InvestorsSection } from "./sections/InvestorsSection";
-import { Button } from "./ui/button";
 import StrategyEvolution from "./sections/StrategyEvolution";
 
 const pages = [
@@ -22,21 +18,21 @@ const pages = [
     id: 0,
     title: "Welcome",
     subtitle: " Landing Page",
-    color: "bg-orange-50",
+    color: "bg-[#E2A688]",
     textColor: "text-black",
   },
   {
     id: 1,
     title: "Founder",
     subtitle: "Brand Fouder",
-    color: "bg-[#3C5E66]",
-    textColor: "text-black",
+    color: "bg-[#0f0f0f]",
+    textColor: "text-white",
   },
   {
     id: 2,
     title: "Executive Team",
     subtitle: "Leadership Team",
-    color: "bg-orange-50",
+    color: "bg-[#0f0f0f]",
     textColor: "text-white",
   },
   {
@@ -98,17 +94,18 @@ export default function BrandLanding({ brandId }: BrandLandingProps) {
     return 1 - distance * 0.05;
   };
 
-  const getBorderRadius = (index: number) => {
-    const distance = Math.abs(currentPage - index);
-    return distance * 20; // Increase border radius as pages get further
-  };
-
   return (
     <>
       <NavBar />
       <div
         ref={containerRef}
-        className="h-screen overflow-y-auto snap-y snap-mandatory"
+        className="h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth
+          scrollbar scrollbar-thin
+          scrollbar-track-transparent 
+          scrollbar-thumb-gray-400/5
+          hover:scrollbar-thumb-gray-400/10
+          scrollbar-thumb-rounded-full
+          scrollbar-track-rounded-full"
       >
         {pages.map((page, index) => (
           <motion.div

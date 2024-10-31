@@ -2,7 +2,8 @@ export const executives = [
   {
     name: "Ben Goodwin",
     title: "Co-Founder & CEO",
-    image: "",
+    image:
+      "https://images.squarespace-cdn.com/content/v1/5b8839e18ab72215e9c52e39/17069f78-2a7c-471f-96cf-e121fbb193d7/Ben+Headshot.jpg",
     experience: [
       "Led Olipop from launch to $500M+ revenue",
       "Previous experience with functional beverages",
@@ -13,6 +14,8 @@ export const executives = [
   {
     name: "David Lester",
     title: "Co-Founder",
+    image:
+      "https://mission.org/wp-content/uploads/2022/09/David04-1038x778-1.jpeg",
     experience: [
       "Early leadership at Olipop",
       "Expertise in business development",
@@ -30,6 +33,8 @@ export const founderData = {
     "Background in prebiotic formula development",
     "Built Olipop from initial $100K investment",
   ],
+  image:
+    "https://images.squarespace-cdn.com/content/v1/5b8839e18ab72215e9c52e39/17069f78-2a7c-471f-96cf-e121fbb193d7/Ben+Headshot.jpg",
   entrepreneurialCareer: {
     title: "Founder of Olipop",
     ventures: {

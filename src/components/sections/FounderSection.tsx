@@ -15,6 +15,7 @@ interface FounderData {
   title: string;
   education: string;
   professionalBackground: string[];
+  image: string;
   socials: {
     twitter: string;
     linkedin: string;
@@ -55,13 +56,13 @@ export function FounderSection({ getPageScale, brandId }: FounderSectionProps) {
 
   return (
     <motion.div
-      className="relative w-full h-screen overflow-y-auto bg-[#3C5E66]"
+      className="relative w-full h-screen overflow-y-auto bg-[#0f0f0f] custom-scrollbar-dark"
       animate={{ scale: getPageScale(0) }}
     >
       <div className="container mx-auto px-4 py-12 min-h-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl w-full">
-          <Card className="col-span-1 lg:col-span-2 bg-[#8CACA9] text-[#10151B]">
-            <CardContent className="p-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl mx-auto w-full">
+          <Card className="col-span-1 lg:col-span-2 relative overflow-hidden backdrop-blur-md bg-white/60 text-white before:absolute before:inset-0 before:bg-gradient-to-br before:from-[#8CACA9] before:to-transparent before:pointer-events-none">
+            <CardContent className="p-6 relative z-10">
               <div className="flex flex-col lg:flex-row">
                 <div className="lg:w-1/2 lg:pr-6">
                   <div className="flex items-center mb-4">
@@ -94,11 +95,11 @@ export function FounderSection({ getPageScale, brandId }: FounderSectionProps) {
                       />
                     </svg>
                     <span className="text-2xl font-bold">
-                      {founderData.name}
+                      {founderData.title}
                     </span>
                   </div>
                   <h2 className="text-4xl font-bold mb-6">
-                    {founderData.title}
+                    {founderData.name}
                   </h2>
                   <div className="mb-6">
                     <h3 className="text-2xl font-bold mb-4">Education</h3>
@@ -126,7 +127,7 @@ export function FounderSection({ getPageScale, brandId }: FounderSectionProps) {
                           href={socialLinks.twitter}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[#10151B] hover:text-[#10151B]/50"
+                          className="text-white hover:text-white/50"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +147,7 @@ export function FounderSection({ getPageScale, brandId }: FounderSectionProps) {
                           href={socialLinks.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[#10151B] hover:text-[#10151B]/50"
+                          className="text-white hover:text-white/50"
                         >
                           <Linkedin className="w-6 h-6" />
                           <span className="sr-only">LinkedIn</span>
@@ -156,17 +157,13 @@ export function FounderSection({ getPageScale, brandId }: FounderSectionProps) {
                   </div>
                 </div>
                 <div className="lg:w-1/2 mt-6 lg:mt-0">
-                  <div
-                    className="relative w-full h-0"
-                    style={{ paddingBottom: "100%" }}
-                  >
+                  <div className="relative aspect-square">
                     <Image
-                      src="https://cdn.prod.website-files.com/5fce0f6bc9af69423eefaa13/64466094c008d96198b4a9fc_Mike.jpeg"
-                      alt="Mike Cessario holding Liquid Death cans"
-                      layout="fill"
-                      objectFit="cover"
-                      className="rounded-lg"
-                      sizes="200px"
+                      src={founderData.image || ""}
+                      alt={`${founderData.name} portrait`}
+                      fill
+                      priority
+                      className="rounded-lg object-cover"
                       style={{ opacity: 0.9 }}
                     />
                   </div>
@@ -174,8 +171,8 @@ export function FounderSection({ getPageScale, brandId }: FounderSectionProps) {
               </div>
             </CardContent>
           </Card>
-          <Card className="bg-[#20464F] text-[#CFD5D2]">
-            <CardContent className="p-6">
+          <Card className="relative overflow-hidden backdrop-blur-md bg-white/30 text-white before:absolute before:inset-0 before:bg-gradient-to-br before:from-[#20464F] before:to-transparent before:pointer-events-none">
+            <CardContent className="p-6 relative z-10">
               <div className="flex items-center mb-4">
                 <svg
                   className="w-5 h-5 mr-2"
@@ -223,8 +220,8 @@ export function FounderSection({ getPageScale, brandId }: FounderSectionProps) {
               </div>
             </CardContent>
           </Card>
-          <Card className="bg-[#94B4AF] text-black">
-            <CardContent className="p-6">
+          <Card className="relative overflow-hidden backdrop-blur-md bg-white/30 text-white before:absolute before:inset-0 before:bg-gradient-to-br before:from-[#94B4AF] before:to-transparent before:pointer-events-none">
+            <CardContent className="p-6 relative z-10">
               <div className="flex items-center mb-4">
                 <svg
                   className="w-5 h-5 mr-2"

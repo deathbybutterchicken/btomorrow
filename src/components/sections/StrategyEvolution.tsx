@@ -64,7 +64,7 @@ const StrategyEvolution: React.FC<StrategyEvolutionProps> = ({
   }
 
   return (
-    <div className="p-4 space-y-4 bg-gray-50 overflow-auto max-h-screen">
+    <div className="p-4 py-4 space-y-4 bg-gray-50 overflow-auto max-h-screen custom-scrollbar-dark transform scale-90">
       <div className="space-y-2">
         <h1 className="text-3xl font-bold">Strategy Evolution Requirements</h1>
         <p className="text-gray-600">
@@ -83,7 +83,7 @@ const StrategyEvolution: React.FC<StrategyEvolutionProps> = ({
             {strategyData.distributionStages.map((stage, index) => (
               <Card
                 key={index}
-                className="bg-[#FFF7ED] backdrop-blur-sm bg-opacity-5"
+                className="text-xl bg-[#FFF7ED] backdrop-blur-sm bg-opacity-5 transform scale-90"
               >
                 <CardHeader>
                   <div className="flex items-center justify-between">
@@ -136,7 +136,7 @@ const StrategyEvolution: React.FC<StrategyEvolutionProps> = ({
         <TabsContent value="marketing">
           <div className="space-y-4">
             {strategyData.marketingStages.map((stage, index) => (
-              <Card key={index}>
+              <Card key={index} className="transform scale-90">
                 <CardHeader>
                   <CardTitle>{stage.category}</CardTitle>
                   <CardDescription>

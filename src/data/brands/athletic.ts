@@ -7,25 +7,10 @@ export const HEADINGS = {
 
 export const executives = [
   {
-    name: "Bill Shufelt",
-    title: "Co-Founder and CEO",
-    image:
-      "https://media.licdn.com/dms/image/C5603AQEmzl6K_JxHog/profile-displayphoto-shrink_200_200/0/1517724740147?e=1699488000&v=beta&t=yGQkQGmZx_FzhRLYcPNUDB4bIN6y0Fapgn8uW5WRN6k",
-    experience: [
-      "Former Trader and Portfolio Manager at Point72 Asset Management",
-      "Background in finance and investment management",
-    ],
-    entrepreneurial: [
-      "Founded Athletic Brewing Company in 2017",
-      "Pioneered the non-alcoholic craft beer movement",
-    ],
-    linkedin: "https://www.linkedin.com/in/bill-shufelt-50b14b2/",
-  },
-  {
     name: "John Walker",
     title: "Co-Founder and Head Brewer",
     image:
-      "https://media.licdn.com/dms/image/C5603AQGywx1ZxV72lA/profile-displayphoto-shrink_200_200/0/1617041965910?e=1699488000&v=beta&t=Vjv8P1BS0pmswXCdftMjdj5apKOR1CiF6zHmxObfqpA",
+      "https://cdn.brewersassociation.org/wp-content/uploads/2022/08/03104741/John-Walker.jpg",
     experience: [
       "Former Head Brewer at Second Street Brewery",
       "Over a decade of experience in craft brewing",
@@ -48,6 +33,8 @@ export const founderData = {
     "Former Trader and Portfolio Manager at Point72 Asset Management",
     "Left finance to pursue passion in health and wellness",
   ],
+  image:
+    "https://maxpodcasting.com/wp-content/uploads/2024/06/Bill-Shufelt-Wild-Business-Growth-Podcast-293-Athletic-Brewing-Non-Alcoholic-Beer-Guy-768x512.jpg",
   socials: {
     twitter: "https://twitter.com/AthleticBrewing",
     linkedin: "https://www.linkedin.com/in/bill-shufelt-50b14b2/",
@@ -283,8 +270,7 @@ export const marketingStages = [
 export const topInvestors = [
   {
     name: "General Atlantic",
-    logoUrl:
-      "https://www.generalatlantic.com/wp-content/uploads/2018/04/General-Atlantic-Logo-Color.png",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRru21QWK4tchjo-jiEzEi8tXJNSfaoj2TP3A&s",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Deal #11"],
     leadInvestments: ["Deal #11"],
@@ -295,8 +281,7 @@ export const topInvestors = [
   },
   {
     name: "Keurig Dr Pepper",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/2/2e/Keurig_Dr_Pepper_logo.svg",
+    logo: "https://logosandtypes.com/wp-content/uploads/2023/03/Keurig-Dr-Pepper.png",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Deal #8"],
     leadInvestments: [],
@@ -307,8 +292,7 @@ export const topInvestors = [
   },
   {
     name: "Alliance Consumer Growth",
-    logoUrl:
-      "https://www.allianceconsumergrowth.com/wp-content/themes/acg/img/acg-logo.svg",
+    logo: "https://pbs.twimg.com/profile_images/1059234316369022978/QpBiUNUn_400x400.jpg",
     totalRoundsParticipated: 2,
     roundsParticipated: ["Deal #6", "Deal #8"],
     leadInvestments: ["Deal #6"],
@@ -319,7 +303,7 @@ export const topInvestors = [
   },
   {
     name: "TRB Advisors",
-    logoUrl: "https://s24.q4cdn.com/505609653/files/design/logos/logo-v3.png",
+    logo: "https://uspto.report/TM/85654457/mark.png",
     totalRoundsParticipated: 3,
     roundsParticipated: ["Deal #3", "Deal #4", "Deal #6"],
     leadInvestments: ["Deal #6"],
@@ -330,8 +314,7 @@ export const topInvestors = [
   },
   {
     name: "Blake Mycoskie",
-    logoUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/9/9e/Blake_Mycoskie_in_NYC.jpg",
+    logo: "https://pbs.twimg.com/profile_images/1234585013175250945/r19cdFYx_400x400.jpg",
     totalRoundsParticipated: 4,
     roundsParticipated: ["Deal #3", "Deal #4", "Deal #6", "Deal #7"],
     leadInvestments: [],

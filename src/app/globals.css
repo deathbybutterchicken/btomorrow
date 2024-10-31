@@ -68,3 +68,22 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .custom-scrollbar {
+    @apply scrollbar scrollbar-thin
+      scrollbar-track-transparent 
+      scrollbar-thumb-gray-400/5
+      hover:scrollbar-thumb-gray-400/10
+      scrollbar-thumb-rounded-full
+      scrollbar-track-rounded-full;
+  }
+  .custom-scrollbar-dark {
+    @apply scrollbar scrollbar-thin
+      scrollbar-track-transparent 
+      scrollbar-thumb-gray-400/5
+      hover:scrollbar-thumb-gray-400/10
+      scrollbar-thumb-rounded-full
+      scrollbar-track-rounded-full;
+  }
+}

@@ -2,7 +2,8 @@ export const executives = [
   {
     name: "Doss Cunningham",
     title: "Co-Founder & Chief Brand Officer",
-    image: "URL_TO_IMAGE",
+    image:
+      "https://miro.medium.com/v2/resize:fill:1200:900/g:fp:0.53:0.26/1*VjloLYTst6yPDvnQJInxig.jpeg",
     experience: [
       "Joined Nutrabolt in 2007 and became CEO the same year",
       "Led Nutrabolt to global success in the sports nutrition sector",
@@ -22,7 +23,7 @@ export const executives = [
   {
     name: "Sabba Naserian",
     title: "Chief Revenue Officer, Emerging Brands & New Ventures",
-    image: "URL_TO_IMAGE",
+    image: "https://nutrabolt.com/wp-content/uploads/Sabba.png",
     experience: [
       "Former VP at Canopy Growth Corporation",
       "Led revenue strategies at Nutrabolt",
@@ -36,7 +37,8 @@ export const executives = [
   {
     name: "Kyle Thomas",
     title: "Global Chief Commercial Officer",
-    image: "URL_TO_IMAGE",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWMx6VEI3reYHVpv8p5rULYEXw0bPPOqCMdA&s",
     experience: [
       "Former E.V.P. at Nutrabolt",
       "Held leadership roles at The Coca-Cola Company",
@@ -48,7 +50,8 @@ export const executives = [
   {
     name: "Brittany Cullison",
     title: "Chief People Officer",
-    image: "URL_TO_IMAGE",
+    image:
+      "https://cdn.theorg.com/4aafc3e5-b037-40a0-9e70-eaa03ec4d3b1_medium.jpg",
     experience: [
       "Over 15 years in human resources",
       "Led HR strategies at Nutrabolt",
@@ -60,7 +63,8 @@ export const executives = [
   {
     name: "Robert Zajac",
     title: "Chief Marketing Officer",
-    image: "URL_TO_IMAGE",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQFL1xA3PxpB1Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1697643104588?e=2147483647&v=beta&t=2IjvQDnTJF5uTUDZG00QMm630e0jV24-61rctrBr-bc",
     experience: [
       "Former SVP at Abercrombie & Fitch",
       "Held leadership roles at Nike and ESPN",
@@ -84,6 +88,8 @@ export const founderData = {
     "Led the company to global success in sports nutrition",
     "Over 16 years of leadership experience",
   ],
+  image:
+    "https://miro.medium.com/v2/resize:fit:1400/1*VjloLYTst6yPDvnQJInxig.jpeg",
   socials: {
     linkedin: "https://www.linkedin.com/in/dosscunningham/",
     twitter: "https://x.com/NutraboltDoss",
@@ -287,7 +293,7 @@ export const marketingStages = [
 export const topInvestors = [
   {
     name: "KarpReilly",
-    logoUrl: "URL_TO_IMAGE",
+    logo: "https://media.licdn.com/dms/image/C4D0BAQGBI7f8oquAkg/company-logo_200_200/0/1630508120922/karpreilly_llc_logo?e=2147483647&v=beta&t=uwWU1xbZ9-z94RvVKMduNOyrHnwGSBgx8rSmRXqPDd4",
     totalRoundsParticipated: 2,
     roundsParticipated: ["Series A", "Series B"],
     leadInvestments: ["Series A"],
@@ -298,7 +304,7 @@ export const topInvestors = [
   },
   {
     name: "Kevin Hart",
-    logoUrl: "URL_TO_IMAGE",
+    logo: "https://m.media-amazon.com/images/M/MV5BMTY4OTAxMjkxN15BMl5BanBnXkFtZTgwODg5MzYyMTE@._V1_.jpg",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Strategic Investment 2020"],
     leadInvestments: [],
@@ -309,12 +315,12 @@ export const topInvestors = [
   },
   {
     name: "MidOcean Partners",
-    logoUrl: "URL_TO_IMAGE",
+    logo: "https://www.midoceanpartners.com/images/layout/og-logo.jpg",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Growth Investment"],
     leadInvestments: ["Growth Investment"],
     otherInvestments: ["LA Fitness", "The Original Cakerie"],
-    website: "https://midoceanpartners.com",
+    website: "https://www.midoceanpartners.com/images/layout/og-logo.jpg",
     description: "Private equity firm focusing on middle market companies.",
   },
 ];

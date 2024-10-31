@@ -15,13 +15,7 @@ import {
   Legend as RechartsLegend, // Rename Legend from recharts
   TooltipProps,
 } from "recharts";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+
 import { Badge } from "@/components/ui/badge";
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import {
@@ -88,9 +82,9 @@ const CustomTooltip: React.FC<CustomTooltipProps> = ({
   if (active && payload && payload.length) {
     return (
       <div className="bg-[rgba(17,25,40,0.95)] border border-blue-500/20 rounded-lg p-3 text-gray-100">
-        <p className="font-space-mono text-sm">{label}</p>
+        <p className="font-space-mono text-m">{label}</p>
         {payload.map((pld, index) => (
-          <p key={index} className="text-sm" style={{ color: pld.color }}>
+          <p key={index} className="text-m" style={{ color: pld.color }}>
             {`${pld.name}: ${
               typeof pld.value === "number" ? pld.value.toFixed(2) : pld.value
             }`}
@@ -260,40 +254,44 @@ function AnalyticsDashboard({
   }, [valuationData, revenueWithMilestones, ownershipData, capitalRaisedData]);
 
   return (
-    <div className="min-h-screen p-8">
-      <div className="max-w-7xl mx-auto space-y-8">
-        <h2 className="text-[12vw] sm:text-[8vw] font-bold text-white">
+    <div className="p-4 custom-scrollbar">
+      <div className="w-full space-y-6">
+        <h2 className="text-[12vw] m:text-[8vw] font-bold text-white">
           ANALYTICS
         </h2>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-8 xl:grid-cols-2">
           {/* Valuation Journey */}
           <div
-            className="bg-[rgba(17,25,40,0.75)] backdrop-blur-xl border border-white/10 rounded-xl p-6 col-span-2"
-            style={{ height: "400px" }}
+            className="bg-[rgba(17,25,40,0.75)] backdrop-blur-2xl border border-white/10 rounded-xl p-8 col-span-1 flex flex-col"
+            style={{ height: "750px" }}
           >
-            <h2 className="font-montserrat text-xl font-bold text-white mb-1">
-              Valuation Journey & Milestones
-            </h2>
-            <p className="font-space-mono text-sm text-blue-300/80 mb-4">
-              Strategic growth trajectory
-            </p>
-            {valuationData.length > 0 ? (
-              <ValuationChart data={valuationData} />
-            ) : (
-              <p>No data available for Valuation Chart.</p>
-            )}
+            <div className="flex flex-col flex-1 justify-center">
+              <h2 className="font-montserrat text-2xl font-bold text-white mb-1">
+                Valuation Journey & Milestones
+              </h2>
+              <p className="font-space-mono text-m text-blue-300/80 mb-4">
+                Strategic growth trajectory
+              </p>
+              <div className="h-[calc(100%-80px)]">
+                {valuationData.length > 0 ? (
+                  <ValuationChart data={valuationData} />
+                ) : (
+                  <p>No data available for Valuation Chart.</p>
+                )}
+              </div>
+            </div>
           </div>
 
           {/* Revenue Growth */}
           <div
-            className="bg-[rgba(17,25,40,0.75)] backdrop-blur-xl border border-white/10 rounded-xl p-6"
-            style={{ height: "550px" }}
+            className="bg-[rgba(17,25,40,0.75)] backdrop-blur-2xl border border-white/10 rounded-xl p-8"
+            style={{ height: "750px" }}
           >
-            <h2 className="font-montserrat text-xl font-bold text-white mb-1">
+            <h2 className="font-montserrat text-2xl font-bold text-white mb-1">
               Revenue Growth & Business Evolution
             </h2>
-            <p className="font-space-mono text-sm text-blue-300/80 mb-4">
+            <p className="font-space-mono text-m text-blue-300/80 mb-4">
               Revenue with strategic milestones
             </p>
             {revenueWithMilestones.length > 0 ? (
@@ -307,20 +305,18 @@ function AnalyticsDashboard({
                   <Badge variant="outline" className="text-blue-300">
                     {item.year}
                   </Badge>
-                  <span className="text-sm text-blue-200">
-                    {item.milestone}
-                  </span>
+                  <span className="text-m text-blue-200">{item.milestone}</span>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Strategic Milestones */}
-          <div className="bg-[rgba(17,25,40,0.75)] backdrop-blur-xl border border-white/10 rounded-xl p-6">
-            <h2 className="font-montserrat text-xl font-bold text-white mb-1">
+          <div className="bg-[rgba(17,25,40,0.75)] backdrop-blur-2xl border border-white/10 rounded-xl p-8">
+            <h2 className="font-montserrat text-2xl font-bold text-white mb-1">
               Strategic Milestones
             </h2>
-            <p className="font-space-mono text-sm text-blue-300/80 mb-4">
+            <p className="font-space-mono text-m text-blue-300/80 mb-4">
               Key business events and initiatives
             </p>
             <div className="space-y-4">
@@ -331,7 +327,7 @@ function AnalyticsDashboard({
                   </Badge>
                   <div>
                     <p className="font-medium text-white">{event.category}</p>
-                    <p className="text-sm text-blue-200">{event.event}</p>
+                    <p className="text-m text-blue-200">{event.event}</p>
                   </div>
                 </div>
               ))}
@@ -339,11 +335,11 @@ function AnalyticsDashboard({
           </div>
 
           {/* Ownership Evolution */}
-          <div className="bg-[rgba(17,25,40,0.75)] backdrop-blur-xl border border-white/10 rounded-xl p-6">
-            <h2 className="font-montserrat text-xl font-bold text-white mb-1">
+          <div className="bg-[rgba(17,25,40,0.75)] backdrop-blur-2xl border border-white/10 rounded-xl p-8">
+            <h2 className="font-montserrat text-2xl font-bold text-white mb-1">
               Ownership Evolution
             </h2>
-            <p className="font-space-mono text-sm text-blue-300/80 mb-4">
+            <p className="font-space-mono text-m text-blue-300/80 mb-4">
               Equity distribution over time
             </p>
             {ownershipData.length > 0 ? (
@@ -354,11 +350,11 @@ function AnalyticsDashboard({
           </div>
 
           {/* Capital Raised */}
-          <div className="bg-[rgba(17,25,40,0.75)] backdrop-blur-xl border border-white/10 rounded-xl p-6">
-            <h2 className="font-montserrat text-xl font-bold text-white mb-1">
+          <div className="bg-[rgba(17,25,40,0.75)] backdrop-blur-2xl border border-white/10 rounded-xl p-8">
+            <h2 className="font-montserrat text-2xl font-bold text-white mb-1">
               Cumulative Capital Raised
             </h2>
-            <p className="font-space-mono text-sm text-blue-300/80 mb-4">
+            <p className="font-space-mono text-m text-blue-300/80 mb-4">
               Total funding over time
             </p>
             {capitalRaisedData.length > 0 ? (
@@ -407,10 +403,10 @@ export function AnalyticsSection({
 
   return (
     <motion.div
-      className="relative w-full h-screen overflow-y-auto bg-black"
+      className="relative w-full h-screen overflow-y-auto bg-black custom-scrollbar-dark"
       animate={{ scale: getPageScale(0) }}
     >
-      <div className="container mx-auto px-4 py-12">
+      <div className="w-full px-6 py-2">
         <AnalyticsDashboard
           valuationData={analyticsData.valuationData}
           revenueWithMilestones={analyticsData.revenueWithMilestones}

@@ -2,7 +2,8 @@ export const executives = [
   {
     name: "Jesslyn Rollins",
     title: "CEO",
-    image: "/placeholder-executives/jesslyn.jpg", // Replace with actual image URL
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUDc-LuBpqhgnIY8Q7A-rRAC0qqd34FiFObQ&s", // Replace with actual image URL
     education:
       "Double major in Theater and Communication, University of Georgia", // Added education field
     experience: [
@@ -19,7 +20,8 @@ export const executives = [
   {
     name: 'Dr. Luther "Trey" Rollins',
     title: "Founder",
-    image: "/placeholder-executives/trey.jpg", // Replace with actual image URL
+    image:
+      "https://i.shgcdn.com/682cbee0-0016-4459-8bb4-84c19314a2c8/-/format/auto/-/preview/3000x3000/-/quality/lighter/", // Replace with actual image URL
     education: "Doctor of Medicine (MD)", // Added education field
     experience: [
       "Anesthesiologist with over 43 years of experience",
@@ -60,6 +62,8 @@ export const founderData = {
     "Became CEO in 2019 at the age of 26",
     "Has driven significant growth and expansion for the company",
   ],
+  image:
+    "https://static.citylifestyle.com/articles/iv-in-a-bottle/biolite_C3A1920-1279.jpg?v=1",
   socials: {
     linkedin: "https://www.linkedin.com/in/jesslynrollins/",
   },
@@ -216,7 +220,7 @@ export const distributionStages = [
 export const topInvestors = [
   {
     name: "Rollins Family Investment",
-    logoUrl: "/placeholder-investors/rollins.jpg", // Replace with actual image URL
+    logo: "https://www.prnewswire.com/news-releases/rollins-provides-updates-on-strategic-priorities-and-growth-initiatives-reinforces-powerful-model-for-value-creation-302149670.html", // Replace with actual image URL
     totalRoundsParticipated: 2,
     roundsParticipated: ["Seed (2016)", "Series A"],
     leadInvestments: ["Seed (2016)"],
@@ -226,19 +230,8 @@ export const topInvestors = [
       "Family office investment supporting Biolyte's mission to revolutionize hydration.",
   },
   {
-    name: "Strategic Health Investors",
-    logoUrl: "/placeholder-investors/health.jpg", // Replace with actual image URL
-    totalRoundsParticipated: 1,
-    roundsParticipated: ["Series A"],
-    leadInvestments: ["Series A"],
-    otherInvestments: ["Healthcare Technology", "Wellness Brands"],
-    website: null,
-    description:
-      "Group of healthcare professionals investing in innovative health solutions.",
-  },
-  {
     name: "Atlanta Growth Partners",
-    logoUrl: "/placeholder-investors/atlanta.jpg", // Replace with actual image URL
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-nKP3TyyKGoBKBVWeZ984iovllqnvVvxe_Q&s", // Replace with actual image URL
     totalRoundsParticipated: 1,
     roundsParticipated: ["Series B"],
     leadInvestments: [],

@@ -8,14 +8,14 @@ const brands = [
   "delacalle",
   "lemonperfect",
   "hint",
-  "athleticbrewing",
+  "athletic",
   "cellucor",
   "biolyte",
 ];
 
 export function NavBar() {
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 p-4 bg-black/20 backdrop-blur-sm">
+    <div className="fixed top-0 left-0 right-0 z-50 p-4 bg-black/0 backdrop-blur-sm">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         <div className="flex space-x-2">
           {brands.map((brand) => (

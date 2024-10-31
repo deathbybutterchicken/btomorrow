@@ -2,7 +2,8 @@ export const executives = [
   {
     name: "Yanni Hufnagel",
     title: "Founder and Executive Chairman",
-    image: "URL_TO_IMAGE",
+    image:
+      "https://149363979.v2.pressablecdn.com/wp-content/uploads/2023/08/yanni-hufnagel.jpg",
     experience: [
       "Former college basketball coach at Harvard University, Vanderbilt University, and University of Nevada, Reno",
       "Strong background in performance and nutrition",
@@ -15,7 +16,8 @@ export const executives = [
   {
     name: "Jim Brennan",
     title: "President & Chief Revenue Officer",
-    image: "URL_TO_IMAGE",
+    image:
+      "https://media.licdn.com/dms/image/v2/C5603AQGak3U1V0rcBw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1588865829143?e=2147483647&v=beta&t=kuh2yngJWRr3t9G4WaPiV50OvdWREuHvZzXmO2vMI54",
     experience: [
       "32-year career with The Coca-Cola Company and Coca-Cola Enterprises",
       "Held roles including Executive Vice President of National Retail Sales",
@@ -28,7 +30,8 @@ export const executives = [
   {
     name: "Jeff Popkin",
     title: "Chief Executive Officer",
-    image: "URL_TO_IMAGE",
+    image:
+      "https://www.citybiz.co/wp-content/uploads/2024/10/1726951498309.jpeg",
     experience: [
       "Former CEO at Vita Coco",
       "Previous roles at Red Bull, The Coca-Cola Company, and GT Spirits",
@@ -42,26 +45,14 @@ export const executives = [
   {
     name: "Richa Anand",
     title: "Senior Director, Brand Marketing",
-    image: "URL_TO_IMAGE",
+    image:
+      "https://media.licdn.com/dms/image/v2/C4E03AQGfQDM9FPYdZQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1570812648761?e=2147483647&v=beta&t=iHTdQhiAhqMriGtoVB5F3ZIVyxfeUhP26Rx2xdmrF8w",
     experience: [
       "Former Marketing Manager at Taco Bell",
       "Over 8 years of experience in marketing and brand management",
     ],
     entrepreneurial: ["Leads brand marketing initiatives at Lemon Perfect"],
     linkedin: "https://www.linkedin.com/in/richaanand1/",
-  },
-  {
-    name: "Rachael Marsteller",
-    title: "Senior Director of Sales",
-    image: "URL_TO_IMAGE",
-    experience: [
-      "13 years at The Coca-Cola Company as Sales Director",
-      "Expertise in sales strategy and execution",
-    ],
-    entrepreneurial: [
-      "Drives sales growth and retail partnerships at Lemon Perfect",
-    ],
-    linkedin: "https://www.linkedin.com/in/rachael-marsteller-8b280269/",
   },
 ];
 
@@ -79,6 +70,8 @@ export const founderData = {
   socials: {
     linkedin: "https://www.linkedin.com/in/yhufnagel/",
   },
+  image:
+    "https://149363979.v2.pressablecdn.com/wp-content/uploads/2023/08/yanni-hufnagel.jpg",
   entrepreneurialCareer: {
     title: "Founder and Executive Chairman of Lemon Perfect",
     ventures: {
@@ -276,7 +269,7 @@ export const marketingStages = [
 export const topInvestors = [
   {
     name: "Beyoncé Knowles-Carter",
-    logoUrl: "URL_TO_IMAGE",
+    logo: "https://i.kinja-img.com/img/if0lnpenbnkasqgpnihl",
     totalRoundsParticipated: 1,
     roundsParticipated: ["Deal #2"],
     leadInvestments: [],
@@ -287,7 +280,7 @@ export const topInvestors = [
   },
   {
     name: "Melitas Ventures",
-    logoUrl: "URL_TO_IMAGE",
+    logo: "https://media.licdn.com/dms/image/v2/C560BAQGRuynjFVOT-Q/company-logo_200_200/company-logo_200_200/0/1630670908287/melitasventures_logo?e=2147483647&v=beta&t=Zz5k-R7RsEBzVai3qm_0UT-D2njs4QPHjcLCdiy6k_I",
     totalRoundsParticipated: 2,
     roundsParticipated: ["Deal #1", "Deal #2"],
     leadInvestments: [],
@@ -298,7 +291,7 @@ export const topInvestors = [
   },
   {
     name: "Goat Rodeo Capital",
-    logoUrl: "URL_TO_IMAGE",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3G3WjvHhDVwqsbRd81Z0ERdvQgsl1wkwmOw&s",
     totalRoundsParticipated: 2,
     roundsParticipated: ["Deal #1", "Deal #2"],
     leadInvestments: [],
@@ -309,7 +302,7 @@ export const topInvestors = [
   },
   {
     name: "Beechwood Capital",
-    logoUrl: "URL_TO_IMAGE",
+    logo: "https://media.licdn.com/dms/image/v2/C4E0BAQHGVPjJ0lW5mg/company-logo_200_200/company-logo_200_200/0/1651177193547/beechwoodcap_logo?e=2147483647&v=beta&t=3mZvJpZrzBz1snALH4P15QaA31-HKWtZ_ddNMmQ2SN8",
     totalRoundsParticipated: 2,
     roundsParticipated: ["Deal #1", "Deal #2"],
     leadInvestments: [],
@@ -320,7 +313,7 @@ export const topInvestors = [
   },
   {
     name: "Trousdale Ventures",
-    logoUrl: "URL_TO_IMAGE",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShi5S2lTmlEf97ipuncabpVOLvuUt3bGBa5w&s",
     totalRoundsParticipated: 2,
     roundsParticipated: ["Deal #1", "Deal #2"],
     leadInvestments: [],

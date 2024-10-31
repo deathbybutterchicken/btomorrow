@@ -7,8 +7,18 @@ interface WelcomePageProps {
   brandId: string;
 }
 
+interface BrandData {
+  name: string;
+  description: string;
+  imageAlt: string;
+  mainHeading: string;
+  line1: string;
+  line2: string;
+  // Add other properties as needed
+}
+
 export function WelcomePage({ getPageScale, brandId }: WelcomePageProps) {
-  const [HEADINGS, setHEADINGS] = useState<any>(null);
+  const [HEADINGS, setHEADINGS] = useState<BrandData | null>(null);
 
   useEffect(() => {
     const loadData = async () => {
@@ -21,53 +31,104 @@ export function WelcomePage({ getPageScale, brandId }: WelcomePageProps) {
   if (!HEADINGS) return null;
 
   return (
-    <div className="relative w-full h-full overflow-hidden bg-orange-50">
-      {/* XYZ Background */}
-      <div className="absolute inset-0 flex items-center justify-center text-[40vw] font-bold text-white/10 select-none opacity-50 bg-[#FFF8EF]">
-        <span className="absolute top-0 left-0 transform -translate-x-1/4 -translate-y-1/4">
-          X
-        </span>
-        <span className="absolute bottom-0 left-0 transform -translate-x-1/4 translate-y-1/4">
-          Y
-        </span>
-        <span className="absolute top-0 right-0 transform translate-x-1/4 -translate-y-1/4">
-          Z
-        </span>
-      </div>
+    <div className="relative min-h-screen bg-[#E2A688] overflow-hidden overflow-y-auto custom-scrollbar">
+      {/* Font-face declaration */}
+      <style jsx global>{`
+        @font-face {
+          font-family: "Proxima Nova";
+          src: url("/fonts/ProximaNova-Regular.woff2") format("woff2"),
+            url("/fonts/ProximaNova-Regular.woff") format("woff");
+          font-weight: normal;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "Proxima Nova";
+          src: url("/fonts/ProximaNova-Bold.woff2") format("woff2"),
+            url("/fonts/ProximaNova-Bold.woff") format("woff");
+          font-weight: bold;
+          font-style: normal;
+        }
+      `}</style>
 
-      {/* Main Heading */}
-      <div className="absolute inset-x-0 top-0 p-4 sm:p-8 flex justify-center">
-        <h1 className="text-[15vw] sm:text-[12vw] font-bold text-[#8C1201] tracking-tight whitespace-nowrap overflow-hidden text-center">
-          {HEADINGS.mainHeading}
-        </h1>
-      </div>
+      {/* Hero section */}
+      <div className="relative w-full h-screen">
+        {/* Gradient circle background */}
+        <div
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          style={{ opacity: 0.4 }}
+        >
+          <div
+            className="w-[800px] h-[800px] rounded-full"
+            style={{
+              background:
+                "radial-gradient(circle at center, #) 0%, rgba(255, 193, 192,0.8) 100%)",
+              filter: "blur(80px)",
+            }}
+          />
+        </div>
 
-      {/* Product Image and Text */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center p-8">
-        <div className="flex flex-col items-center justify-between w-full max-w-7xl">
-          <div className="relative w-1/2 max-w-xxl aspect-[3/2] mb-8">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/file%20(1)-ysMqT25Xisbmc6fahrZVW38EAYsuqf.png"
-              alt={HEADINGS.imageAlt}
-              layout="fill"
-              objectFit="contain"
-              priority
-            />
-          </div>
-          <div className="w-full text-center">
-            <h2
-              className="text-[6vw] sm:text-[4vw] font-bold text-[#27305E] tracking-tight whitespace-nowrap overflow-hidden"
-              style={{ lineHeight: "1" }}
-            >
-              {HEADINGS.line1}
-            </h2>
-            <h2
-              className="text-[6vw] sm:text-[4vw] font-bold text-[#27305E] tracking-tight whitespace-nowrap overflow-hidden"
-              style={{ lineHeight: "1" }}
-            >
-              {HEADINGS.line2}
-            </h2>
-          </div>
+        {/* Glassmorphism circle */}
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          <div
+            className="w-[500px] h-[500px] rounded-full bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg"
+            style={{
+              boxShadow:
+                "-8px -8px 20px rgba(255, 186, 154, 0.5), 8px 8px 20px rgba(255, 240, 240, 0.4)",
+            }}
+          />
+        </div>
+
+        {/* Centered image */}
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 overflow-visible">
+          <Image
+            src={`/can/${brandId}.png`}
+            alt={HEADINGS.imageAlt}
+            width={960}
+            height={560}
+            className="object-contain"
+            priority
+            style={{
+              width: "600px",
+              height: "auto",
+              maxWidth: "none",
+              opacity: 0.9,
+            }}
+          />
+        </div>
+
+        {/* Top left text */}
+        <div className="absolute top-8 left-8">
+          <h1
+            className="text-6xl font-bold tracking-wider"
+            style={{
+              fontFamily: "'Proxima Nova', 'Helvetica', 'Arial', sans-serif",
+              color: "#FFF0F0",
+            }}
+          >
+            {HEADINGS.mainHeading}
+          </h1>
+        </div>
+
+        {/* Bottom left text */}
+        <div className="absolute bottom-8 right-8 max-w-md text-right">
+          <p
+            className="text-3xl font-semibold leading-tight"
+            style={{
+              fontFamily: "'Proxima Nova', 'Helvetica', 'Arial', sans-serif",
+              color: "#FFF0F0",
+            }}
+          >
+            {HEADINGS.line1}
+          </p>
+          <p
+            className="text-4xl font-semibold leading-tight mt-2"
+            style={{
+              fontFamily: "'Proxima Nova', 'Helvetica', 'Arial', sans-serif",
+              color: "#FFF0F0",
+            }}
+          >
+            {HEADINGS.line2}
+          </p>
         </div>
       </div>
     </div>

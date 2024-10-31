@@ -1,40 +1,42 @@
 import { notFound } from "next/navigation";
 import BrandLanding from "@/components/liquid-death-landing";
 
-export async function generateStaticParams() {
-  const brands = [
-    "liquiddeath",
-    "poppi",
-    "olipop",
-    "delacalle",
-    "lemonperfect",
-    "hint",
-    "athletic",
-    "cellucor",
-    "biolyte",
-  ];
+interface PageProps {
+  params: Promise<{
+    brandId: string;
+  }>;
+}
 
-  return brands.map((brand) => ({
+const validBrands = [
+  "liquiddeath",
+  "poppi",
+  "olipop",
+  "delacalle",
+  "lemonperfect",
+  "hint",
+  "athletic",
+  "cellucor",
+  "biolyte",
+] as const;
+
+export async function generateStaticParams() {
+  return validBrands.map((brand) => ({
     brandId: brand,
   }));
 }
 
-export default function BrandPage({ params }: { params: { brandId: string } }) {
-  const validBrands = [
-    "liquiddeath",
-    "poppi",
-    "olipop",
-    "delacalle",
-    "lemonperfect",
-    "hint",
-    "athletic",
-    "cellucor",
-    "biolyte",
-  ];
+export default async function BrandPage({ params }: PageProps) {
+  // Await the params
+  const { brandId } = await params;
 
-  if (!validBrands.includes(params.brandId)) {
+  // Validate the brandId
+  if (!validBrands.includes(brandId as (typeof validBrands)[number])) {
     notFound();
   }
 
-  return <BrandLanding brandId={params.brandId} />;
+  return (
+    <div>
+      <BrandLanding brandId={brandId} />
+    </div>
+  );
 }

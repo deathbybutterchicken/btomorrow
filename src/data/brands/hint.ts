@@ -2,7 +2,8 @@ export const executives = [
   {
     name: "Kara Goldin",
     title: "Founder and CEO",
-    image: "/placeholder-executives/kara.jpg", // Replace with actual image URL
+    image:
+      "https://mom.ceo/storage/uploads/user_uploads/Kara%20Goldin/KaraGoldin-Hint-Water.jpg", // Replace with actual image URL
     education:
       "Arizona State University, Walter Cronkite School of Journalism and Mass Communication with Minor in Finance",
     experience: [
@@ -21,7 +22,8 @@ export const executives = [
   {
     name: "Theo Goldin",
     title: "Co-Founder and Board Member",
-    image: "/placeholder-executives/theo.jpg", // Replace with actual image URL
+    image:
+      "https://cooalliance.com/wp-content/uploads/2020/12/Theo-Goldin-150x150.png?crop=1", // Replace with actual image URL
     education:
       "JD from New York University School of Law, Bachelor's from Amherst College",
     experience: [
@@ -64,6 +66,8 @@ export const founderData = {
     "CNN: Worked in advertising sales",
     "AOL: Vice President of Shopping and E-commerce Partnerships",
   ],
+  image:
+    "https://karagoldin.com/wp-content/uploads/2022/03/kara-my-story-banner.jpg",
   socials: {
     linkedin: "https://www.linkedin.com/in/karagoldin/",
   },
@@ -234,7 +238,7 @@ export const marketingStages = [
 export const topInvestors = [
   {
     name: "Springboard Growth Capital",
-    logoUrl: "/placeholder-investors/springboard.jpg", // Replace with actual image URL
+    logo: "https://images.squarespace-cdn.com/content/v1/5ad4affaaf2096b881ab3a23/e8946a4e-f051-4edc-8b1a-518a334b198e/SGC.png", // Replace with actual image URL
     totalRoundsParticipated: 2,
     roundsParticipated: ["Series C (2019)", "Series D (2020)"],
     leadInvestments: ["Series D (2020)"],
@@ -245,7 +249,7 @@ export const topInvestors = [
   },
   {
     name: "Verlinvest",
-    logoUrl: "/placeholder-investors/verlinvest.jpg", // Replace with actual image URL
+    logo: "https://www.humblegrowth.com/site/assets/files/1106/group_475.640x0.jpg", // Replace with actual image URL
     totalRoundsParticipated: 2,
     roundsParticipated: ["Series A (2012)", "Series C (2019)"],
     leadInvestments: [],
@@ -256,7 +260,7 @@ export const topInvestors = [
   },
   {
     name: "John Legend",
-    logoUrl: "/placeholder-investors/legend.jpg", // Replace with actual image URL
+    logo: "https://i.scdn.co/image/ab6761610000e5eb01784e44ffd1a339350f4417", // Replace with actual image URL
     totalRoundsParticipated: 1,
     roundsParticipated: ["Series A (2012)"],
     leadInvestments: [],
