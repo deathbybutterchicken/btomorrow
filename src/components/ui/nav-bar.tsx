@@ -13,16 +13,20 @@ const brands = [
   "biolyte",
 ];
 
-export function NavBar() {
+interface NavBarProps {
+  textColor?: string;
+}
+
+export function NavBar({ textColor = "text-white" }: NavBarProps) {
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 p-4 bg-black/0 backdrop-blur-sm">
+    <nav className={`fixed top-0 w-full z-50 ${textColor}`}>
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         <div className="flex space-x-2">
           {brands.map((brand) => (
             <Link key={brand} href={`/${brand}`}>
               <Button
                 variant="ghost"
-                className="text-white hover:text-white/80"
+                className={`${textColor} hover:${textColor}/80`}
               >
                 {brand.charAt(0).toUpperCase() + brand.slice(1)}
               </Button>
@@ -31,17 +35,17 @@ export function NavBar() {
         </div>
         <div className="flex space-x-2">
           <Link href="/summary">
-            <Button variant="ghost" className="text-white hover:text-white/80">
+            <Button variant="ghost" className={`${textColor} hover:${textColor}/80`}>
               Summary
             </Button>
           </Link>
           <Link href="/about">
-            <Button variant="ghost" className="text-white hover:text-white/80">
+            <Button variant="ghost" className={`${textColor} hover:${textColor}/80`}>
               About
             </Button>
           </Link>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
