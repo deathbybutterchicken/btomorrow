@@ -1,12 +1,6 @@
 import { notFound } from "next/navigation";
 import BrandLanding from "@/components/liquid-death-landing";
 
-interface PageProps {
-  params: {
-    brandId: string;
-  };
-}
-
 const validBrands = [
   "liquiddeath",
   "poppi",
@@ -25,15 +19,10 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function BrandPage({ params }: PageProps) {
-  console.log("Received params:", params);
-  const { brandId } = params;
+export default function Page(props: any) {
+  const { brandId } = props.params;
 
-  console.log("Checking brand:", brandId);
-  console.log("Valid brands:", validBrands);
-
-  if (!validBrands.includes(brandId as (typeof validBrands)[number])) {
-    console.log("Brand not found, redirecting to 404");
+  if (!validBrands.includes(brandId)) {
     notFound();
   }
 
