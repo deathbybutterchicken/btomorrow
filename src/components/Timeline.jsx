@@ -59,7 +59,7 @@ const stages = [
 const Timeline = () => {
   return (
     <ScrollArea className="h-[calc(100vh-4rem)] w-full max-w-4xl mx-auto">
-      <div className="p-8 bg-gradient-to-b from-gray-50 to-white rounded-xl shadow-xl">
+      <div className="p-8 bg-gradient-to-b from-[#F0DDE5] to-white rounded-xl shadow-xl">
         <h1 className="text-4xl font-bold text-center mb-4 text-gray-800">
           Typical Growth Path
         </h1>
@@ -68,7 +68,7 @@ const Timeline = () => {
         </p>
 
         <div className="relative">
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-500 to-green-500"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#816F7B] to-[#DDC0C8]"></div>
 
           {stages.map((stage, index) => (
             <div
@@ -80,7 +80,7 @@ const Timeline = () => {
               <div className="w-1/2"></div>
               <Badge
                 variant="outline"
-                className="absolute left-1/2 transform -translate-x-1/2 z-10 bg-white text-blue-500 border-blue-500"
+                className="absolute left-1/2 transform -translate-x-1/2 z-10 bg-white text-[#816F7B] border-[#816F7B]"
               >
                 {`Stage ${index + 1}`}
               </Badge>
@@ -90,7 +90,7 @@ const Timeline = () => {
                 } transition-all duration-300 ease-in-out hover:shadow-lg`}
               >
                 <CardHeader>
-                  <CardTitle className="text-2xl font-semibold text-blue-700">
+                  <CardTitle className="text-2xl font-semibold text-[#816F7B]">
                     {stage.title}
                   </CardTitle>
                 </CardHeader>
@@ -101,7 +101,7 @@ const Timeline = () => {
                         key={itemIndex}
                         className="flex items-center text-gray-700"
                       >
-                        <ChevronRight className="mr-2 h-4 w-4 text-green-500 flex-shrink-0" />
+                        <ChevronRight className="mr-2 h-4 w-4 text-[#DDC0C8] flex-shrink-0" />
                         <span className="text-sm">{item}</span>
                       </li>
                     ))}
@@ -113,14 +113,14 @@ const Timeline = () => {
 
           <Badge
             variant="default"
-            className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-500 text-white"
+            className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#816F7B] text-white"
           >
             Start
           </Badge>
 
           <Badge
             variant="default"
-            className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-green-500 text-white"
+            className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-[#DDC0C8] text-white"
           >
             Goal
           </Badge>

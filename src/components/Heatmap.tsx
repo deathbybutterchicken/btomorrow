@@ -1147,17 +1147,20 @@ const Heatmap: React.FC<HeatmapProps> = ({ onCellClick }) => {
                     stage as keyof typeof activityData.stages
                   ];
                 const value = cellData.count;
-                const intensity = Math.min(0.9, value * 0.2 + 0.1);
+                const getBackgroundColor = (value: number) => {
+                  if (value === 0) return 'transparent';
+                  if (value >= 8) return '#816F7B';  // darkest
+                  if (value >= 6) return '#DDC0C8';  // medium dark
+                  if (value >= 4) return '#E4C9D2';  // medium light
+                  return '#F0DDE5';                  // lightest
+                };
 
                 return (
                   <td
                     key={idx}
                     className="border px-4 py-2 text-center cursor-pointer"
                     style={{
-                      backgroundColor:
-                        value > 0
-                          ? `rgba(59, 130, 246, ${intensity})`
-                          : "transparent",
+                      backgroundColor: getBackgroundColor(value)
                     }}
                     onClick={() => {
                       if (value > 0) {

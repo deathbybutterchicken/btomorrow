@@ -21,6 +21,7 @@ import {
   BarElement,
   Tooltip,
   Legend,
+  TooltipItem,
 } from "chart.js";
 import { Chart as ChartJSReact } from "react-chartjs-2";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -46,11 +47,6 @@ const Timeline = dynamic(() => import("./Timeline"), { ssr: false });
 const Heatmap = dynamic(() => import("./Heatmap").then((mod) => mod.default), {
   ssr: false,
 });
-const BarChartComponent = dynamic(() => import("./BarChartComponent"), {
-  ssr: false,
-});
-const SankeyDiagram = dynamic(() => import("./SankeyDiagram"), { ssr: false });
-const BrandCard = dynamic(() => import("./BrandCard"), { ssr: false });
 
 // Data structures
 interface ActivityData {
@@ -218,9 +214,12 @@ const growthData = [
   }
 ];
 
-function Summary() {
-  const router = useRouter();
+// Add this type definition at the top of the file with other interfaces
+interface TooltipContext {
+  raw: number;
+}
 
+function Summary() {
   // Update the selectedCell state interface to include brands
   const [selectedCell, setSelectedCell] = useState<{
     activity: string;
@@ -282,8 +281,9 @@ function Summary() {
       responsive: true,
       scales: {
         y: {
+          beginAtZero: true,
           ticks: {
-            callback: function(value: number) {
+            callback: function(this: unknown, value: number | string) {
               return `$${value}M`;
             }
           }
@@ -298,8 +298,8 @@ function Summary() {
       plugins: {
         tooltip: {
           callbacks: {
-            label: function(context: any) {
-              return `$${context.raw}M`;
+            label: function(tooltipItem: TooltipItem<"bar">) {
+              return `${tooltipItem.formattedValue}`;
             }
           }
         }
@@ -390,10 +390,6 @@ function Summary() {
     { brand: "Biolyte", years: 7 }
   ];
 
-  const strategyData = [
-    // ... copy the strategyData array from your provided code ...
-  ];
-
   // Update the TabsContent components to use ChartJS
   const FundingAnalysisChart = () => {
     const chartData = {
@@ -458,15 +454,15 @@ function Summary() {
 
   return (
     <>
-      <NavBar textColor="text-black" />
-      <div className="flex flex-col items-center min-h-screen bg-background">
+      <NavBar textColor="text-[#231E24]" />
+      <div className="flex flex-col items-center min-h-screen bg-[#F0DDE5]">
         <div className="w-full max-w-7xl space-y-20 px-4 sm:px-6 lg:px-8 py-16">
           {/* Hero Section */}
           <div className="text-center space-y-4">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-[#231E24] sm:text-6xl">
               Beverage Brand Growth Analysis
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-[#524751] max-w-2xl mx-auto">
               Comprehensive analysis of growth patterns across funding stages for
               successful beverage brands
             </p>
@@ -481,46 +477,44 @@ function Summary() {
             {/* Heatmap */}
             <div className="space-y-6">
               <div className="text-center space-y-2">
-                <h2 className="text-3xl font-bold">
+                <h2 className="text-3xl font-bold text-[#231E24]">
                   Activities Frequency Heatmap
                 </h2>
-                <p className="text-muted-foreground">
+                <p className="text-[#524751]">
                   Activity intensity and brand participation across funding stages
                 </p>
               </div>
               <Heatmap onCellClick={handleCellClick} />
             </div>
-          </section>{" "}
-          {/* Add this closing tag */}
+          </section>
           {/* Dialog for cell details */}
           <Dialog
             open={!!selectedCell}
             onOpenChange={() => setSelectedCell(null)}
           >
-            <DialogContent>
+            <DialogContent className="bg-[#E4C9D2]">
               <DialogHeader>
-                <DialogTitle>
+                <DialogTitle className="text-[#231E24]">
                   {selectedCell?.activity} - {selectedCell?.stage}
                 </DialogTitle>
               </DialogHeader>
               {selectedCell && (
-                <div className="space-y-4">
+                <div className="space-y-4 text-[#524751]">
                   <p>
-                    <strong>Activity:</strong> {selectedCell.activity}
+                    <strong className="text-[#231E24]">Activity:</strong> {selectedCell.activity}
                   </p>
                   <p>
-                    <strong>Stage:</strong> {selectedCell.stage}
+                    <strong className="text-[#231E24]">Stage:</strong> {selectedCell.stage}
                   </p>
                   <p>
-                    <strong>Number of Brands:</strong> {selectedCell.value}
+                    <strong className="text-[#231E24]">Number of Brands:</strong> {selectedCell.value}
                   </p>
-                  {/* Brands list with descriptions */}
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Brands:</h3>
+                    <h3 className="text-lg font-semibold text-[#231E24] mb-2">Brands:</h3>
                     <ul className="list-disc list-inside space-y-2">
                       {selectedCell.brands.map((brand, idx) => (
                         <li key={idx}>
-                          <strong>{brand.name}:</strong> {brand.description}
+                          <strong className="text-[#231E24]">{brand.name}:</strong> {brand.description}
                         </li>
                       ))}
                     </ul>
@@ -531,17 +525,16 @@ function Summary() {
           </Dialog>
           {/* Add the Funding Comparison component */}
           <FundingComparison />
-          {/* Add the Liquid Death button */}
           {/* Market Overview Cards */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {marketMetrics.map((metric, index) => (
-              <Card key={index}>
+              <Card key={index} className="bg-[#DDC0C8] border-[#231E24]/10">
                 <CardHeader className="pb-2">
-                  <CardTitle className="text-sm">{metric.metric}</CardTitle>
+                  <CardTitle className="text-sm text-[#231E24]">{metric.metric}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-2xl font-bold">{metric.value}</div>
-                  <p className="text-xs text-muted-foreground">{metric.subtext}</p>
+                  <div className="text-2xl font-bold text-[#231E24]">{metric.value}</div>
+                  <p className="text-xs text-[#816F7B]">{metric.subtext}</p>
                 </CardContent>
               </Card>
             ))}
@@ -550,13 +543,13 @@ function Summary() {
           {/* Stage Achievement Cards */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {stageMetrics.map((metric, index) => (
-              <Card key={index}>
+              <Card key={index} className="bg-[#DDC0C8] border-[#231E24]/10">
                 <CardHeader className="pb-2">
-                  <CardTitle className="text-sm">{metric.metric}</CardTitle>
+                  <CardTitle className="text-sm text-[#231E24]">{metric.metric}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-2xl font-bold">{metric.value}</div>
-                  <p className="text-xs text-muted-foreground">{metric.subtext}</p>
+                  <div className="text-2xl font-bold text-[#231E24]">{metric.value}</div>
+                  <p className="text-xs text-[#816F7B]">{metric.subtext}</p>
                 </CardContent>
               </Card>
             ))}
@@ -564,16 +557,28 @@ function Summary() {
 
           {/* Detailed Analysis Tabs */}
           <Tabs defaultValue="funding" className="w-full">
-            <TabsList>
-              <TabsTrigger value="funding">Funding Analysis</TabsTrigger>
-              <TabsTrigger value="time">Time to Scale</TabsTrigger>
+            <TabsList className="bg-[#DDC0C8]">
+              <TabsTrigger 
+                value="funding"
+                className="data-[state=active]:bg-[#E4C9D2] data-[state=active]:text-[#231E24] text-[#524751]"
+              >
+                Funding Analysis
+              </TabsTrigger>
+              <TabsTrigger 
+                value="time"
+                className="data-[state=active]:bg-[#E4C9D2] data-[state=active]:text-[#231E24] text-[#524751]"
+              >
+                Time to Scale
+              </TabsTrigger>
             </TabsList>
 
             <TabsContent value="funding">
-              <Card>
+              <Card className="bg-[#E4C9D2] border-[#231E24]/10">
                 <CardHeader>
-                  <CardTitle>Funding Rounds Comparison</CardTitle>
-                  <CardDescription>Investment raised by round (millions USD)</CardDescription>
+                  <CardTitle className="text-[#231E24]">Funding Rounds Comparison</CardTitle>
+                  <CardDescription className="text-[#816F7B]">
+                    Investment raised by round (millions USD)
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="h-96">
@@ -584,10 +589,12 @@ function Summary() {
             </TabsContent>
 
             <TabsContent value="time">
-              <Card>
+              <Card className="bg-[#E4C9D2] border-[#231E24]/10">
                 <CardHeader>
-                  <CardTitle>Time to $100M Revenue</CardTitle>
-                  <CardDescription>Years from founding to $100M revenue</CardDescription>
+                  <CardTitle className="text-[#231E24]">Time to $100M Revenue</CardTitle>
+                  <CardDescription className="text-[#816F7B]">
+                    Years from founding to $100M revenue
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="h-96">
@@ -601,21 +608,38 @@ function Summary() {
           {/* Add after the existing Tabs component */}
           <section className="space-y-6">
             <div className="text-center space-y-2">
-              <h2 className="text-3xl font-bold">Normalized Growth Analysis</h2>
-              <p className="text-muted-foreground">Growth trajectories from company inception</p>
+              <h2 className="text-3xl font-bold text-[#231E24]">Normalized Growth Analysis</h2>
+              <p className="text-[#524751]">Growth trajectories from company inception</p>
             </div>
             <Tabs defaultValue="revenue" className="w-full">
-              <TabsList>
-                <TabsTrigger value="revenue">Revenue Growth</TabsTrigger>
-                <TabsTrigger value="retail">Retail Expansion</TabsTrigger>
-                <TabsTrigger value="growth">Growth Rates</TabsTrigger>
+              <TabsList className="bg-[#DDC0C8]">
+                <TabsTrigger 
+                  value="revenue"
+                  className="data-[state=active]:bg-[#E4C9D2] data-[state=active]:text-[#231E24] text-[#524751]"
+                >
+                  Revenue Growth
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="retail"
+                  className="data-[state=active]:bg-[#E4C9D2] data-[state=active]:text-[#231E24] text-[#524751]"
+                >
+                  Retail Expansion
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="growth"
+                  className="data-[state=active]:bg-[#E4C9D2] data-[state=active]:text-[#231E24] text-[#524751]"
+                >
+                  Growth Rates
+                </TabsTrigger>
               </TabsList>
 
               <TabsContent value="revenue">
-                <Card>
+                <Card className="bg-[#E4C9D2] border-[#231E24]/10">
                   <CardHeader>
-                    <CardTitle>Revenue Growth from Year 0</CardTitle>
-                    <CardDescription>Annual revenue by years since founding (in millions USD)</CardDescription>
+                    <CardTitle className="text-[#231E24]">Revenue Growth from Year 0</CardTitle>
+                    <CardDescription className="text-[#816F7B]">
+                      Annual revenue by years since founding (in millions USD)
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="h-96">
@@ -659,10 +683,12 @@ function Summary() {
               </TabsContent>
 
               <TabsContent value="retail">
-                <Card>
+                <Card className="bg-[#E4C9D2] border-[#231E24]/10">
                   <CardHeader>
-                    <CardTitle>Retail Location Growth</CardTitle>
-                    <CardDescription>Store count by years since founding</CardDescription>
+                    <CardTitle className="text-[#231E24]">Retail Location Growth</CardTitle>
+                    <CardDescription className="text-[#816F7B]">
+                      Store count by years since founding
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="h-96">
@@ -706,10 +732,12 @@ function Summary() {
               </TabsContent>
 
               <TabsContent value="growth">
-                <Card>
+                <Card className="bg-[#E4C9D2] border-[#231E24]/10">
                   <CardHeader>
-                    <CardTitle>Year-over-Year Growth Rates</CardTitle>
-                    <CardDescription>Growth rate comparison by stage (%)</CardDescription>
+                    <CardTitle className="text-[#231E24]">Year-over-Year Growth Rates</CardTitle>
+                    <CardDescription className="text-[#816F7B]">
+                      Growth rate comparison by stage (%)
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="h-96">
