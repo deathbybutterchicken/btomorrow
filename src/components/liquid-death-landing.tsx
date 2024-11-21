@@ -18,7 +18,7 @@ const pages = [
     id: 0,
     title: "Welcome",
     subtitle: " Landing Page",
-    color: "bg-[#E2A688]",
+    color: "bg-transparent",
     textColor: "text-black",
   },
   {
@@ -111,17 +111,21 @@ export default function BrandLanding({ brandId }: BrandLandingProps) {
           <motion.div
             key={page.id}
             id={page.id.toString()}
-            className={`h-screen w-full snap-start flex items-center justify-center ${page.color}`}
-            style={{ minHeight: "100vh" }}
+            className={`h-screen w-full snap-start flex items-center justify-center ${
+              index === 0 ? 'bg-transparent overflow-hidden rounded-3xl pt-6' : page.color
+            }`}
+            style={{ minHeight: "100vh", position: "relative" }}
           >
             <motion.div
-              className="w-full h-full"
+              className={`${index === 0 ? 'w-screen h-screen rounded-3xl mt-4' : 'w-full h-full'}`}
               animate={{ scale: getPageScale(3) }}
+              style={{ position: "relative" }}
             >
-              {index === 0 && (
-                <WelcomePage getPageScale={getPageScale} brandId={brandId} />
-              )}
-              {index !== 0 && (
+              {index === 0 ? (
+                <div className="absolute inset-0 scale-[1.1] rounded-3xl">
+                  <WelcomePage getPageScale={getPageScale} brandId={brandId} />
+                </div>
+              ) : (
                 <>
                   {index === 1 && (
                     <FounderSection

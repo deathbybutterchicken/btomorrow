@@ -59,7 +59,7 @@ export function WelcomePage({ getPageScale, brandId }: WelcomePageProps) {
   if (!HEADINGS) return null;
 
   return (
-    <div className="relative min-h-screen overflow-hidden overflow-y-auto custom-scrollbar">
+    <div className="relative h-screen w-screen overflow-hidden rounded-2xl">
       {/* Add SVG filter for goo effect */}
       <svg xmlns="http://www.w3.org/2000/svg" className="hidden">
         <defs>
@@ -164,7 +164,7 @@ export function WelcomePage({ getPageScale, brandId }: WelcomePageProps) {
       `}</style>
 
       {/* Updated Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#FFF5E6] to-[#FFFFFF]">
+      <div className="absolute inset-0 bg-gradient-to-r from-[#FFFFFF] to-[#FFFFFF] scale-110">
         <div className="gradients-container">
           <div className="welcome-gradient g1" />
           <div className="welcome-gradient g2" />
@@ -176,7 +176,7 @@ export function WelcomePage({ getPageScale, brandId }: WelcomePageProps) {
       {/* Glassmorphism circle */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <div
-          className="w-[500px] h-[500px] rounded-full bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg"
+          className="w-[600px] h-[600px] rounded-full bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg"
           style={{
             boxShadow:
               "-8px -8px 20px rgba(255, 204, 153, 0.5), 8px 8px 20px rgba(255, 102, 51, 0.4)",
@@ -194,7 +194,7 @@ export function WelcomePage({ getPageScale, brandId }: WelcomePageProps) {
           className="object-contain"
           priority
           style={{
-            width: "600px",
+            width: "700px",
             height: "auto",
             maxWidth: "none",
             opacity: 0.9,
@@ -203,9 +203,9 @@ export function WelcomePage({ getPageScale, brandId }: WelcomePageProps) {
       </div>
 
       {/* Text content */}
-      <div className="absolute top-8 left-8">
+      <div className="absolute top-12 left-12">
         <h1
-          className="text-6xl font-bold tracking-wider"
+          className="text-7xl font-bold tracking-wider"
           style={{
             fontFamily: "'Proxima Nova', 'Helvetica', 'Arial', sans-serif",
             color: "#4A2B0F",
@@ -215,7 +215,7 @@ export function WelcomePage({ getPageScale, brandId }: WelcomePageProps) {
         </h1>
       </div>
 
-      <div className="absolute bottom-8 right-8 max-w-md text-right">
+      <div className="absolute bottom-12 right-12 max-w-md text-right">
         <p
           className="text-3xl font-semibold leading-tight"
           style={{
