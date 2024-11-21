@@ -1,10 +1,10 @@
-/** @type {impo`r`t('next').NextConfig} */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
   images: {
     unoptimized: true,
   },
-  // other configurations...
+  // Remove the output: 'export' for development
+  // output: 'export', // Only use this when building for production
 };
 
 module.exports = nextConfig;
