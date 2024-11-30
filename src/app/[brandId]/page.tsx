@@ -13,18 +13,25 @@ const validBrands = [
   "biolyte",
 ] as const;
 
-export async function generateStaticParams() {
-  return validBrands.map((brand) => ({
-    brandId: brand,
-  }));
-}
+type ValidBrand = (typeof validBrands)[number];
 
-export default function Page(props: any) {
-  const { brandId } = props.params;
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ brandId: string }> | { brandId: string }
+}) {
+  const resolvedParams = await Promise.resolve(params);
+  const { brandId } = resolvedParams;
 
-  if (!validBrands.includes(brandId)) {
+  if (!validBrands.includes(brandId as ValidBrand)) {
     notFound();
   }
 
   return <BrandLanding brandId={brandId} />;
+}
+
+export function generateStaticParams() {
+  return validBrands.map((brand) => ({
+    brandId: brand,
+  }));
 }

@@ -149,17 +149,17 @@ export function WelcomePage({ getPageScale, brandId }: WelcomePageProps) {
       <style jsx global>{`
         @font-face {
           font-family: "Proxima Nova";
-          src: url("/fonts/ProximaNova-Regular.woff2") format("woff2"),
-            url("/fonts/ProximaNova-Regular.woff") format("woff");
+          src: url("/fonts/ProximaNova-Regular.woff2") format("woff2");
           font-weight: normal;
           font-style: normal;
+          font-display: swap;
         }
         @font-face {
           font-family: "Proxima Nova";
-          src: url("/fonts/ProximaNova-Bold.woff2") format("woff2"),
-            url("/fonts/ProximaNova-Bold.woff") format("woff");
+          src: url("/fonts/ProximaNova-Bold.woff2") format("woff2");
           font-weight: bold;
           font-style: normal;
+          font-display: swap;
         }
       `}</style>
 

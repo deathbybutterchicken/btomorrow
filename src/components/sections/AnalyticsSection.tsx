@@ -26,10 +26,11 @@ import {
   LineElement,
   Title,
   Filler,
-  BarController, // Import BarController
-  BarElement, // Import BarElement
-  Tooltip, // Import Tooltip for Chart.js
-  Legend, // Import Legend for Chart.js
+  BarController,
+  BarElement,
+  LineController,
+  Tooltip,
+  Legend,
 } from "chart.js";
 import { Chart as ChartJSReact } from "react-chartjs-2"; // Keep Tooltip and Legend from chart.js
 
@@ -39,12 +40,13 @@ ChartJS.register(
   LinearScale,
   PointElement,
   LineElement,
+  LineController,
   Title,
   Filler,
-  BarController, // Register BarController
-  BarElement, // Register BarElement
-  Tooltip, // Register Tooltip
-  Legend // Register Legend
+  BarController,
+  BarElement,
+  Tooltip,
+  Legend
 );
 
 // Define color palette
